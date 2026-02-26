@@ -1,0 +1,3 @@
+.notice-card {
+            @apply bg-white rounded-xl border border-slate-100 shadow-card-warm p-6 transition-all duration-300 hover:shadow-card-hover-warm hover:-translate-y-1;
+        }

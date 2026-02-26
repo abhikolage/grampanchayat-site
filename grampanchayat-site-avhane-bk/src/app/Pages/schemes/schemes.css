@@ -1,0 +1,46 @@
+/* .action-btn {
+            @apply brand-gradient-bg text-white transition-all duration-200 shadow-md;
+        } */
+.action-btn:hover {
+  @apply opacity-90 -translate-y-0.5 shadow-lg;
+}
+
+.outline-gradient-btn {
+  @apply relative p-[2px] rounded-lg transition-all duration-200 overflow-hidden;
+  background: linear-gradient(43deg, #2b8bcb 0%, #4a9952 100%);
+}
+
+  .outline-gradient-btn .btn-inner {
+    @apply bg-white px-6 py-2 rounded-[6px] text-sm font-bold flex items-center justify-center transition-all duration-200;
+  }
+
+  .outline-gradient-btn:hover .btn-inner {
+    @apply bg-transparent text-white;
+  }
+
+  .outline-gradient-btn .btn-inner span {
+    background: linear-gradient(43deg, #2b8bcb 0%, #4a9952 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .outline-gradient-btn:hover .btn-inner span {
+    -webkit-text-fill-color: white;
+  }
+
+.scheme-card {
+  @apply bg-white rounded-2xl border border-[#e5e1d5] p-6 shadow-card-warm transition-all duration-300;
+}
+/* .scheme-card:hover {
+            @apply shadow-card-hover-warm -translate-y-1;
+        } */
+.gradient-link {
+  @apply font-medium transition-colors;
+  background: linear-gradient(43deg, #2b8bcb 0%, #4a9952 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+  .gradient-link:hover {
+    @apply opacity-80 underline;
+  }

@@ -1,0 +1,79 @@
+<div class="sticky top-0 z-50">
+  <div class="bg-brand-gradient text-white py-2 px-4 md:px-8 xl:px-20 flex justify-between items-center text-sm font-medium">
+    <div class="flex items-center gap-4">
+      <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">call</span> +९१ ९४२१ ५५ ५९०६</span>
+      <span class="hidden md:flex items-center gap-1"><span class="material-symbols-outlined text-sm">mail</span> avhanebu@gmail.com</span>
+    </div>
+    <!-- <div class="flex items-center gap-4">
+    <a class="hover:underline font-bold" href="#">मराठी</a>
+    <span class="opacity-50">|</span>
+    <a class="hover:underline" href="#">English</a>
+    </div> -->
+  </div>
+  <header class="bg-white shadow-lg z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 px-4 md:px-8 xl:px-20 py-3">
+    <div class="max-w-[1700px] mx-auto flex flex-col xl:flex-row items-center justify-between gap-4">
+      <div class="flex items-center justify-between w-full xl:w-auto shrink-0">
+        <a href="#" routerLink="/home" class="flex items-center gap-3">
+          <div class="flex gap-x-4 2xl:gap-x-6">
+            <img src="assets/logo-icons/logo1.png" alt="आव्हाणे बु ग्रामपंचायत लोगो" class="gp-icon">
+            <img src="assets/logo-icons/logo2.png" alt="आव्हाणे बु ग्रामपंचायत लोगो" class="gp-icon">
+
+            <img src="assets/logo-icons/logo.png" alt="आव्हाणे बु ग्रामपंचायत लोगो" class="gp-icon">
+            <span class="gp-title gap-x-4 gap-2">
+              <span class="gp-main brand-gradient-text">आव्हाणे बु</span>
+              <span class="gp-sub text-primary-blue">ग्रामपंचायत</span>
+            </span>
+            <!-- <h1 class="text-xl font-black leading-tight tracking-tight text-slate-900">ग्रामपंचायत</h1> -->
+            <!-- <p class="text-[10px] uppercase tracking-widest text-primary-blue font-bold">डिजिटल प्रशासन, प्रगत गाव</p> -->
+          </div>
+        </a>
+        <button class="xl:hidden p-2 text-slate-900"
+                (click)="toggleMenu()">
+
+          <span class="material-symbols-outlined">
+            {{ isMobileMenuOpen ? 'close' : 'menu' }}
+          </span>
+        </button>
+      </div>
+      <nav class="hidden xl:flex flex-grow items-center justify-end ">
+        <a class="nav-link" href="#" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">मुख्यपृष्ठ</a>
+        <a class="nav-link" href="#" routerLink="/members" routerLinkActive="active">अधिकारी/पदाधिकारी</a>
+        <a class="nav-link" href="#" routerLink="/services" routerLinkActive="active">सेवा</a>
+        <a class="nav-link" href="#" routerLink="/schemes" routerLinkActive="active">योजना</a>
+        <a class="nav-link" href="#" routerLink="/development" routerLinkActive="active">विकासकामे</a>
+        <a class="nav-link" href="#" routerLink="/schools" routerLinkActive="active">शाळा</a>
+        <a class="nav-link" href="#" routerLink="/gallery" routerLinkActive="active">गॅलरी</a>
+        <a class="nav-link" href="#" routerLink="/about" routerLinkActive="active">ग्रामपंचायत बद्दल</a>
+        <a class="nav-link" href="#" routerLink="/notices" routerLinkActive="active">सूचना</a>
+        <a class="nav-link" href="#" routerLink="/contact" routerLinkActive="active">संपर्क</a>
+        <a class="nav-link" href="#" routerLink="/complaints" routerLinkActive="active">तक्रार विभाग</a>
+      </nav>
+      <!-- <div class="hidden xl:flex items-center shrink-0">
+      <button class="flex items-center justify-center rounded-lg h-10 px-6 brand-gradient-bg text-white text-sm font-bold hover:shadow-lg hover:opacity-90 transition-all">
+                      लॉगिन
+                  </button>
+      </div> -->
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="isMobileMenuOpen"
+       class="xl:hidden bg-white border-b border-slate-200 shadow-lg">
+
+    <nav class="flex text-center flex-col p-4 space-y-3 text-slate-700 font-semibold">
+
+      <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="toggleMenu()">मुख्यपृष्ठ</a>
+      <a class="nav-link" routerLink="/members" routerLinkActive="active" (click)="toggleMenu()">अधिकारी/पदाधिकारी</a>
+      <a class="nav-link" routerLink="/services" routerLinkActive="active" (click)="toggleMenu()">सेवा</a>
+      <a class="nav-link" routerLink="/schemes" routerLinkActive="active" (click)="toggleMenu()">योजना</a>
+      <a class="nav-link" routerLink="/development" routerLinkActive="active" (click)="toggleMenu()">विकासकामे</a>
+      <a class="nav-link" routerLink="/schools" routerLinkActive="active" (click)="toggleMenu()">शाळा</a>
+      <a class="nav-link" routerLink="/gallery" routerLinkActive="active" routerLinkActive="active" (click)="toggleMenu()">गॅलरी</a>
+      <a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="toggleMenu()">ग्रामपंचायत बद्दल</a>
+      <a class="nav-link" routerLink="/notices" routerLinkActive="active" (click)="toggleMenu()">सूचना</a>
+      <a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="toggleMenu()">संपर्क</a>
+      <a class="nav-link" routerLink="/complaints" routerLinkActive="active" (click)="toggleMenu()">तक्रार विभाग</a>
+
+    </nav>
+  </div>
+</div>

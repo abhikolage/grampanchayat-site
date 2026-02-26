@@ -1,0 +1,8 @@
+ .stats-chart-bar {
+            background: linear-gradient(43deg, #2b8bcb 0%, #4a9952 100%);
+        }
+        .bullet-point-gradient {
+            background: linear-gradient(43deg, #2b8bcb 0%, #4a9952 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }

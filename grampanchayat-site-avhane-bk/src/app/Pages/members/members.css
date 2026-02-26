@@ -1,0 +1,35 @@
+/* body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #FDFCF8;
+            background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 5L62.47 24.14L76.36 18.36L70.58 32.25L84.72 34.72L74.85 45.15L88.11 50.64L75.51 57.5L88.11 64.36L74.85 69.85L84.72 80.28L70.58 82.75L76.36 96.64L62.47 90.86L60 110L57.53 90.86L43.64 96.64L49.42 82.75L35.28 80.28L45.15 69.85L31.89 64.36L44.49 57.5L31.89 50.64L45.15 45.15L35.28 34.72L49.42 32.25L43.64 18.36L57.53 24.14L60 5Z' fill='%23b8a67c' fill-opacity='0.04'/%3E%3C/svg%3E");
+        }
+        .marathi-text {
+            line-height: 1.6;
+        }
+        .brand-gradient-bg {
+            background: linear-gradient(43deg, #2b8bcb 0%, #4a9952 100%);
+        }
+        .brand-gradient-text {
+            background: linear-gradient(43deg, #2b8bcb 0%, #4a9952 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            @apply text-slate-700 text-[13px] font-bold whitespace-nowrap hover:text-primary-blue transition-colors px-1 py-2 relative;
+        }
+        .nav-link.active {
+            @apply text-primary-blue;
+        }
+        .nav-link.active::after {
+            content: '';
+            @apply absolute bottom-0 left-0 w-full h-0.5 brand-gradient-bg;
+        }
+        .gradient-btn {
+            background: linear-gradient(43deg, #2b8bcb 0%, #4a9952 100%);
+        }
+     
+
+        .officer-card:hover {
+           
+            box-shadow: theme('boxShadow.card-hover-warm');
+        } */

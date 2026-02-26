@@ -1,0 +1,18 @@
+.gallery-item {
+            @apply relative overflow-hidden rounded-xl bg-white p-3 shadow-card-warm border border-white transition-all duration-500;
+        }
+        /* .gallery-item:hover {
+            @apply shadow-card-hover-warm -translate-y-2;
+        } */
+        .gallery-caption {
+            @apply absolute inset-x-3 bottom-3 bg-brand-gradient text-white p-4 translate-y-full transition-transform duration-300 rounded-b-lg font-bold text-center;
+        }
+        .gallery-item:hover .gallery-caption {
+            @apply translate-y-0;
+        }
+        .filter-btn {
+            @apply px-6 py-2 rounded-full text-sm font-bold border border-slate-200 bg-white text-slate-600 transition-all hover:border-primary-blue hover:text-primary-blue;
+        }
+        .filter-btn.active {
+            @apply bg-brand-gradient text-white border-transparent shadow-md;
+        }
