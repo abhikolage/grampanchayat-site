@@ -25,14 +25,16 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+        working-directory: grampanchayat-site-avhane-bk
 
       - name: Build Angular App
         run: npm run build -- --configuration production --base-href "/grampanchayat-site-avhane-bk/"
+        working-directory: grampanchayat-site-avhane-bk
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: grampanchayat-site-avhane-bk/dist
 
   deploy:
     environment:
