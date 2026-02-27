@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-notices',
-  imports: [],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './notices.html',
   styleUrl: './notices.css',
 })
