@@ -28,7 +28,7 @@ jobs:
         working-directory: grampanchayat-site-avhane-bk
 
       - name: Build Angular App
-        run: npm run build -- --configuration production --base-href "/grampanchayat-site-avhane-bk/"
+        run: npm run build -- --configuration production --base-href "/grampanchayat-avhane-bk/"
         working-directory: grampanchayat-site-avhane-bk
 
       - name: Upload artifact
