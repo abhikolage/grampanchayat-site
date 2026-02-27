@@ -34,7 +34,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: grampanchayat-site-avhane-bk/dist
+          path: grampanchayat-site-avhane-bk/dist/grampanchayat-site-avhane-bk/browser
 
   deploy:
     environment:
