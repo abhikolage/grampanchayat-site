@@ -1,0 +1,133 @@
+﻿using GrampanchayatAPI.Models;
+using MimeKit;
+using MailKit.Net.Smtp;
+
+namespace GrampanchayatAPI.Services
+{
+  public class EmailService
+  {
+    private readonly IConfiguration _config;
+
+    public EmailService(IConfiguration config)
+    {
+      _config = config;
+    }
+
+    public async Task SendContactEmail(ContactRequest request)
+    {
+      var email = new MimeMessage();
+
+      email.From.Add(new MailboxAddress(
+          _config["SmtpSettings:SenderName"],
+          _config["SmtpSettings:SenderEmail"]
+      ));
+
+      var receivers = _config
+     .GetSection("SmtpSettings:ReceiverEmails")
+     .Get<string[]>();
+
+      foreach (var emailAddress in receivers)
+      {
+        email.To.Add(MailboxAddress.Parse(emailAddress));
+      }
+
+      email.Subject = $"संपर्क - {request.Subject} - {DateTime.Now:HH:mm:ss}";
+
+      var builder = new BodyBuilder();
+
+      builder.HtmlBody = $@"
+                <h3>{request.Name} संपर्क करत आहे</h3>
+                <p><b>पूर्ण नाव:</b> {request.Name}</p>
+                <p><b>ईमेल:</b> {request.Email}</p>
+                <p><b>मोबाईल नंबर:</b> {request.Mobile}</p>
+                <p><b>विषय:</b> {request.Subject}</p>
+                <p><b>संदेश:</b> {request.Message}</p>
+            ";
+
+      email.Body = builder.ToMessageBody();
+
+      using var smtp = new SmtpClient();
+
+      await smtp.ConnectAsync(
+          _config["SmtpSettings:Server"],
+          int.Parse(_config["SmtpSettings:Port"]),
+          MailKit.Security.SecureSocketOptions.StartTls
+      );
+
+      await smtp.AuthenticateAsync(
+          _config["SmtpSettings:Username"],
+          _config["SmtpSettings:Password"]
+      );
+
+      await smtp.SendAsync(email);
+
+      await smtp.DisconnectAsync(true);
+    }
+
+    public async Task SendComplaintEmail(ComplaintRequest request)
+    {
+      var email = new MimeMessage();
+
+      email.From.Add(new MailboxAddress(
+          _config["SmtpSettings:SenderName"],
+          _config["SmtpSettings:SenderEmail"]
+      ));
+
+
+      var receivers = _config
+    .GetSection("SmtpSettings:ReceiverEmails")
+    .Get<string[]>();
+
+      foreach (var emailAddress in receivers)
+      {
+        email.To.Add(MailboxAddress.Parse(emailAddress));
+      }
+
+      email.Subject = $"नवीन तक्रार - {request.Subject} - {DateTime.Now:HH:mm:ss}";
+
+      var builder = new BodyBuilder();
+
+      builder.HtmlBody = $@"
+        <h3>{request.Name} नवीन तक्रार नोंदवत आहेत</h3>
+        <p><b>पूर्ण नाव:</b> {request.Name}</p>
+        <p><b>फोन नंबर:</b> {request.Phone}</p>
+        <p><b>ईमेल:</b> {request.Email}</p>
+        <p><b>आधार क्रमांक:</b> {request.Aadhaar}</p>
+        <p><b>पत्ता:</b> {request.Address}</p>
+        <p><b>तक्रारीचा विषय:</b> {request.Subject}</p>
+        <p><b>तक्रारीचे सविस्तर वर्णन:</b> {request.Message}</p>
+    ";
+
+      if (request.Photo != null)
+      {
+        using var ms = new MemoryStream();
+        await request.Photo.CopyToAsync(ms);
+
+        builder.Attachments.Add(
+            request.Photo.FileName,
+            ms.ToArray(),
+            ContentType.Parse(request.Photo.ContentType)
+        );
+      }
+
+      email.Body = builder.ToMessageBody();
+
+      using var smtp = new MailKit.Net.Smtp.SmtpClient();
+
+      await smtp.ConnectAsync(
+          _config["SmtpSettings:Server"],
+          int.Parse(_config["SmtpSettings:Port"]),
+          MailKit.Security.SecureSocketOptions.StartTls
+      );
+
+      await smtp.AuthenticateAsync(
+          _config["SmtpSettings:Username"],
+          _config["SmtpSettings:Password"]
+      );
+
+      await smtp.SendAsync(email);
+
+      await smtp.DisconnectAsync(true);
+    }
+  }
+}
