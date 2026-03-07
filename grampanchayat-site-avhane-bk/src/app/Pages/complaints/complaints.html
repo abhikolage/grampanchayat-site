@@ -97,7 +97,7 @@ class="h-40 mx-auto rounded-lg border shadow-md object-cover">
           <div class="pt-4 text-center">
             <button
 [disabled]="loading" class="w-full md:w-auto px-10 py-4 gradient-btn rounded-lg font-black text-lg shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all" type="submit">
-              तक्रार सादर करा
+              {{ loading ? 'पाठवत आहे...' : 'तक्रार सादर करा' }}
             </button>
 
             <div *ngIf="success"
