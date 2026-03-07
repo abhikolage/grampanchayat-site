@@ -9,24 +9,41 @@
     <div class="lg:col-span-7">
       <div class="bg-white p-8 md:p-10 rounded-2xl shadow-card-warm border border-slate-100">
         <h3 class="text-2xl font-bold text-slate-900 mb-8">आम्हाला संदेश पाठवा</h3>
-        <form class="space-y-6">
+        <form (ngSubmit)="submitContact()" class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label class="block text-sm font-bold text-slate-700 mb-2">पूर्ण नाव (Full Name)</label>
-              <input required class=" w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none " placeholder="तुमचे नाव प्रविष्ट करा" type="text" />
+              <input [(ngModel)]="contactForm.name"
+name="name" 
+required 
+class=" w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none " 
+placeholder="तुमचे नाव प्रविष्ट करा" 
+type="text" />
             </div>
             <div>
               <label class="block text-sm font-bold text-slate-700 mb-2">मोबाईल नंबर (Mobile Number)</label>
-              <input required class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none " placeholder="+९१" type="tel" />
+              <input [(ngModel)]="contactForm.mobile"
+name="mobile"
+ required 
+ class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none " 
+ placeholder="+९१" 
+ type="tel" />
             </div>
           </div>
           <div>
             <label class="block text-sm font-bold text-slate-700 mb-2">ईमेल पत्ता (Email - Optional)</label>
-            <input class=" w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" placeholder="example@mail.com" type="email" />
+            <input [(ngModel)]="contactForm.email"
+name="email" 
+class=" w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" 
+placeholder="example@mail.com" 
+type="email" />
           </div>
           <div>
             <label class="block text-sm font-bold text-slate-700 mb-2">विषय (Subject)</label>
-            <select required class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" type="input">
+            <select [(ngModel)]="contactForm.subject"
+name="subject" 
+required class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" 
+type="input">
               <option selected>सामान्य चौकशी</option>
               <!-- <option>तक्रार नोंदवा</option> -->
               <option>दाखल्यासाठी विचारणा</option>
@@ -36,12 +53,30 @@
           </div>
           <div>
             <label class="block text-sm font-bold text-slate-700 mb-2">तुमचा संदेश (Your Message)</label>
-<textarea required class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" placeholder="येथे लिहा..." rows="5"></textarea>
+<textarea [(ngModel)]="contactForm.message"
+name="message"
+ required 
+ class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" 
+ placeholder="येथे लिहा..." 
+ rows="5"></textarea>
           </div>
           <div class="text-center">
-            <button disabled class="brand-gradient-bg w-full md:w-auto px-10 py-4 text-white font-black text-lg rounded-lg shadow-lg hover:scale-[1.02] transition-transform hover:shadow-xl active:scale-95" type="submit">
-              संदेश पाठवा
-            </button>
+            <button
+type="submit"
+[disabled]="loading"
+class="brand-gradient-bg w-full md:w-auto px-10 py-4 text-white font-black text-lg rounded-lg shadow-lg">
+
+{{ loading ? 'पाठवत आहे...' : 'संदेश पाठवा' }}
+
+</button>
+<div *ngIf="success"
+class="mt-4 p-3 rounded-lg bg-green-100 text-green-700 font-semibold text-center">
+✅ तुमचा संदेश यशस्वीरित्या पाठवला गेला.
+</div>
+<div *ngIf="errorMessage"
+class="mt-4 p-3 rounded-lg bg-red-100 text-red-700 font-semibold text-center">
+⚠️ {{errorMessage}}
+</div>
           </div>
 
         </form>
@@ -50,7 +85,7 @@
     <div class="lg:col-span-5 space-y-8">
       <div class="bg-white p-8 rounded-2xl shadow-card-warm border border-slate-100 space-y-8">
         <div class="text-center">
-          `         <h3 class="text-2xl font-bold">स्मार्ट ग्रामपंचायत आव्हाणे बु</h3>
+           <h3 class="text-2xl font-bold">स्मार्ट ग्रामपंचायत आव्हाणे बु</h3>
           <div class="h-1.5 w-64 brand-gradient-bg mx-auto rounded-full"></div>
         </div>
         <div class="flex items-start gap-5">
@@ -68,7 +103,7 @@
           </div>
           <div>
             <h4 class="font-bold text-slate-900 text-lg">फोन नंबर</h4>
-            <p class="text-slate-600">+९१ ९४२१ ५५ ५९०६</p>
+            <p class="text-slate-600">+९१ ९७६७ ०२ ८७०६</p>
           </div>
         </div>
         <div class="flex items-start gap-5">
