@@ -20,7 +20,16 @@ namespace GrampanchayatAPI.Controllers
     [RequestSizeLimit(5242880)] // 5MB
     public async Task<IActionResult> SendComplaint([FromForm] ComplaintRequest request)
     {
-      await _emailService.SendComplaintEmail(request);
+
+      try
+      {
+        await _emailService.SendComplaintEmail(request);
+      }
+      catch (Exception ex)
+      {
+        return BadRequest(ex.Message);
+      }
+      
 
       return Ok(new { message = "Complaint submitted successfully" });
     }

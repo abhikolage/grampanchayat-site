@@ -21,8 +21,14 @@ namespace GrampanchayatAPI.Controllers
     {
       if (request == null)
         return BadRequest();
-
+      try 
+      { 
       await _emailService.SendContactEmail(request);
+      }
+      catch(Exception ex) 
+      {
+        return BadRequest(ex.Message);
+      }
 
       return Ok(new { message = "Email sent successfully" });
     }
