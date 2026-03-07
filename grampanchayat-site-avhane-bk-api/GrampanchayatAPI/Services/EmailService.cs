@@ -47,19 +47,24 @@ namespace GrampanchayatAPI.Services
       email.Body = builder.ToMessageBody();
 
       using var smtp = new SmtpClient();
+      Console.WriteLine("Before SMTP Connect");
 
       await smtp.ConnectAsync(
           _config["SmtpSettings:Server"],
           int.Parse(_config["SmtpSettings:Port"]),
           MailKit.Security.SecureSocketOptions.StartTls
       );
+      Console.WriteLine("After SMTP Connect");
 
       await smtp.AuthenticateAsync(
           _config["SmtpSettings:Username"],
           _config["SmtpSettings:Password"]
       );
+      Console.WriteLine("After SMTP Authentication");
+
 
       await smtp.SendAsync(email);
+      Console.WriteLine("After Mail Sending");
 
       await smtp.DisconnectAsync(true);
     }
