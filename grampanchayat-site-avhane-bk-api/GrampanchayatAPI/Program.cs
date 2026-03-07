@@ -11,6 +11,17 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient<EmailService>();
 builder.Services.AddScoped<EmailService>();
 
+builder.Services.AddCors(options =>
+{
+  options.AddPolicy("AllowAll",
+      policy =>
+      {
+        policy.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+      });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -18,6 +29,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
+app.UseCors("AllowAll");
 
 app.UseAuthorization();
 
