@@ -1,23 +1,35 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { SiteConfigService } from '../../Services/site-config.service';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, CommonModule],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
 export class Home {
 
+  config: any;
 
-    @HostListener('window:scroll', [])
-  onScroll(){
+  constructor(
+    private configService: SiteConfigService) { }
+
+  ngOnInit() {
+
+    this.config = this.configService.getConfig();
+
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll() {
     const elements = document.querySelectorAll('.fade-in');
-    elements.forEach(el=>{
+    elements.forEach(el => {
       const pos = el.getBoundingClientRect().top;
-      if(pos < window.innerHeight-100){
+      if (pos < window.innerHeight - 100) {
         el.classList.add('show');
       }
     });

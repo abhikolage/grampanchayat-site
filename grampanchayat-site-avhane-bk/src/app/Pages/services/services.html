@@ -1,215 +1,35 @@
 <main class="max-w-[1400px] mx-auto px-4 py-6">
   <section class="mb-16">
     <div class="text-center mb-10">
-      <span class="inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase tracking-widest">आमच्या सेवा</span>
-      <h3 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">सर्व नागरिक सेवा</h3>
+      <span class="inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase tracking-widest">{{config?.servicesPage?.header.badge}}</span>
+      <h3 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">{{config?.servicesPage?.header.title}}</h3>
       <div class="h-1.5 w-64 brand-gradient-bg mx-auto rounded-full mb-6"></div>
-      <p class="text-slate-600 max-w-2xl mx-auto">आपल्या सर्व गरजांसाठी पारदर्शक आणि जलद सरकारी सेवा आता उपलब्ध.</p>
+      <p class="text-slate-600 max-w-2xl mx-auto">{{config?.servicesPage?.header.description}}</p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-card-warm transition-all">
+      <div *ngFor="let service of config?.servicesPage?.services" class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-card-warm transition-all">
         <div class="h-48 overflow-hidden bg-slate-100 relative">
-          <img alt="Birth Certificate" class="w-full h-full object-cover  transition-transform duration-500" src="assets/services/birth-cert.jpg" />
+          <img alt="Birth Certificate" class="w-full h-full object-cover  transition-transform duration-500" [src]="service.image" />
           <div class="absolute top-4 left-4 w-12 h-12 brand-gradient-bg rounded-lg flex items-center justify-center text-white shadow-lg">
-            <span class="material-symbols-outlined text-2xl">child_care</span>
+            <span class="material-symbols-outlined text-2xl">{{service.icon}}</span>
           </div>
         </div>
         <div class="p-5">
-          <h4 class="text-lg font-bold mb-2">जन्म प्रमाणपत्र</h4>
+          <h4 class="text-lg font-bold mb-2">{{service.title}}</h4>
           <p class=" text-slate-600 mb-6">
-            जन्म झाल्यानंतर २१ दिवसांच्या आत नोंद करणे आवश्यक आहे.
+            {{service.description}}
           </p>
-          <p class="text-sm text-blue-600 mb-3 font-medium">विभाग: नागरिक सेवा</p>
-          <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-            <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-            <ul class="list-disc list-inside  text-gray-700 space-y-1">
-              <li>बाळाचा जन्म नोंद अर्ज</li>
-              <li>रुग्णालयाचा दाखला किंवा प्रसूती प्रमाणपत्र</li>
-              <li>पालकांचे ओळखपत्र (आधार कार्ड / पॅन कार्ड)</li>
-              <li>राहत्या पत्त्याचा पुरावा (वीज बिल / रेशन कार्ड)</li>
+          <p *ngIf="service.showDocuments" class="text-sm text-blue-600 mb-3 font-medium">{{service.department}}</p>
+          <div *ngIf="service.showDocuments" class="bg-blue-100 rounded-lg p-3 border border-blue-100">
+            <h4 class=" font-semibold text-blue-800 mb-2">{{service.documentTitle}}</h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+              <li *ngFor="let document of service.documents">
+                {{document}}
+              </li>
             </ul>
           </div>
-          <!-- <button class="w-full py-3 gradient-btn text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2">
-                                      अर्ज करा <span class="material-symbols-outlined ">open_in_new</span>
-          </button> -->
-        </div>
-      </div>
-      <div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-card-warm transition-all">
-        <div class="h-48 overflow-hidden bg-slate-100 relative">
-          <img alt="Property Tax" class="w-full h-full object-cover  transition-transform duration-500" src="assets/services/property-tax.png" />
-          <div class="absolute top-4 left-4 w-12 h-12 brand-gradient-bg rounded-lg flex items-center justify-center text-white shadow-lg">
-            <span class="material-symbols-outlined text-2xl">home_work</span>
-          </div>
-        </div>
-        <div class="p-5">
-          <h4 class="text-lg font-bold mb-2">मालमत्ता कर</h4>
-          <p class=" text-slate-600 mb-6">घरपट्टी आणि मालमत्ता कराचा भरणा करा व पावती मिळवा.</p>
-
-          <p class="text-sm text-blue-600 mb-3 font-medium">विभाग: कर विभाग</p>
-
-          <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-            <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-            <ul class="list-disc list-inside  text-gray-700 space-y-1">
-              <li>मालमत्तेचा हक्कपत्र / सातबारा</li>
-              <li>मागील कर पावती (जर असेल तर)</li>
-              <li>ओळखपत्र (आधार / पॅन)</li>
-            </ul>
-          </div>
-          <!-- <button class="w-full py-3 gradient-btn text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2">
-                                      कर भरा <span class="material-symbols-outlined ">payments</span>
-          </button> -->
-        </div>
-      </div>
-      <div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-card-warm transition-all">
-        <div class="h-48 overflow-hidden bg-slate-100 relative">
-          <img alt="Water Supply" class="w-full h-full object-cover  transition-transform duration-500" src="assets/services/water-supply.png" />
-
-          <div class="absolute top-4 left-4 w-12 h-12 brand-gradient-bg rounded-lg flex items-center justify-center text-white shadow-lg">
-            <span class="material-symbols-outlined text-2xl">water_drop</span>
-          </div>
-        </div>
-        <div class="p-5">
-          <h4 class="text-lg font-bold mb-2">पाणी पुरवठा</h4>
-          <p class=" text-slate-600 mb-6">नवीन नळ जोडणीसाठी अर्ज आणि पाणीपट्टी भरणा उपलब्ध.</p>
-
-          <p class="text-sm text-blue-600 mb-3 font-medium">विभाग: ग्रामविकास</p>
-
-          <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-            <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-            <ul class="list-disc list-inside  text-gray-700 space-y-1">
-              <li>मालकी हक्काचा दाखला / मालमत्ता कर पावती</li>
-              <li>घराचा नकाशा किंवा ठिकाणाचे फोटो</li>
-              <li>अर्जदाराचे ओळखपत्र (आधार / पॅन)</li>
-              <li>शेजाऱ्यांची संमती पत्र (जर आवश्यक असेल तर)</li>
-            </ul>
-          </div>
-          <!-- <button class="w-full py-3 gradient-btn text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2">
-                                      अधिक माहिती <span class="material-symbols-outlined ">info</span>
-          </button> -->
-        </div>
-      </div>
-      <div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-card-warm  transition-all">
-        <div class="h-48 overflow-hidden bg-slate-100 relative">
-          <img alt="Marriage Reg" class="w-full h-full object-cover  transition-transform duration-500" src="assets/services/marriage-cert.jpg" />
-          <div class="absolute top-4 left-4 w-12 h-12 brand-gradient-bg rounded-lg flex items-center justify-center text-white shadow-lg">
-            <span class="material-symbols-outlined text-2xl">favorite</span>
-          </div>
-        </div>
-        <div class="p-5">
-          <h4 class="text-lg font-bold mb-2">विवाह नोंदणी</h4>
-          <p class=" text-slate-600 mb-6">विवाह नोंदणी प्रमाणपत्रासाठी अधिकृत अर्ज करा.</p>
-          <p class="text-sm text-blue-600 mb-3 font-medium">विभाग: नागरिक सेवा</p>
-
-          <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-            <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-            <ul class="list-disc list-inside  text-gray-700 space-y-1">
-              <li>वधू-वरांचे आधार कार्ड</li>
-              <li>वयाचा पुरावा (शाळा सोडल्याचा दाखला/जन्म दाखला) </li>
-              <li>रहिवासी पुरावा</li>
-              <li>विवाहाचे आमंत्रण पत्र</li>
-              <li>लग्नाचे फोटो</li>
-              <li>२ पासपोर्ट आकाराचे फोटो</li>
-              <li>साक्षीदारांची (३) कागदपत्रे</li>
-            </ul>
-          </div>
-
-          <!-- <button class="w-full py-3 gradient-btn text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2">
-                                      नोंदणी करा <span class="material-symbols-outlined ">app_registration</span>
-          </button> -->
-        </div>
-      </div>
-      <div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-card-warm  transition-all">
-        <div class="h-48 overflow-hidden bg-slate-100 relative">
-          <div class="w-full h-full bg-slate-200 flex items-center justify-center">
-            <img alt="Death Cert" class="w-full h-full object-cover  transition-transform duration-500" src="assets/services/death-cert.png" />
-
-            <!-- <span class="material-symbols-outlined text-6xl text-slate-400">person_off</span> -->
-          </div>
-          <div class="absolute top-4 left-4 w-12 h-12 brand-gradient-bg rounded-lg flex items-center justify-center text-white shadow-lg">
-            <span class="material-symbols-outlined text-2xl">sentiment_sad</span>
-          </div>
-        </div>
-        <div class="p-5">
-          <h4 class="text-lg font-bold mb-2">मृत्यू प्रमाणपत्र</h4>
-          <p class=" text-slate-600 mb-6">मृत्यूची नोंदणी आणि प्रमाणपत्र मिळवण्यासाठी अर्ज प्रक्रिया.</p>
-
-          <p class="text-sm text-blue-600 mb-3 font-medium">विभाग: नागरिक सेवा</p>
-
-          <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-            <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-            <ul class="list-disc list-inside  text-gray-700 space-y-1">
-              <li>मृत व्यक्तीचा आधार कार्ड / ओळखपत्र</li>
-              <li>मृत्यूची तारीख आणि ठिकाणाची माहिती</li>
-              <li>रुग्णालयाचा किंवा डॉक्टरचा मृत्यू प्रमाणपत्र</li>
-              <li>अर्जदाराचे ओळखपत्र</li>
-              <li>हमीपत्र</li>
-              <li>रेशन कार्ड</li>
-            </ul>
-          </div>
-          <!-- <button class="w-full py-3 gradient-btn text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2">
-                                      अर्ज करा <span class="material-symbols-outlined ">content_paste</span>
-          </button> -->
-        </div>
-      </div>
-      <div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-card-warm  transition-all">
-        <div class="h-48 overflow-hidden bg-slate-100 relative">
-          <img alt="Documents" class="w-full h-full object-cover  transition-transform duration-500" src="assets/services/certificates.jpg" />
-          <div class="absolute top-4 left-4 w-12 h-12 brand-gradient-bg rounded-lg flex items-center justify-center text-white shadow-lg">
-            <span class="material-symbols-outlined text-2xl">description</span>
-          </div>
-        </div>
-        <div class="p-5">
-          <h4 class="text-lg font-bold mb-2">विविध दाखले</h4>
-          <p class=" text-slate-600 mb-6">उत्पन्न, रहिवासी आणि इतर सरकारी दाखले मिळवण्यासाठी 'आपले सरकार' सेवा केंद्राला भेट द्या.</p>
-
-          <p class="text-sm text-blue-600 mb-3 font-medium">विभाग: नागरिक सेवा</p>
-
-          <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-            <h4 class=" font-semibold text-blue-800 mb-2">महत्त्वाचे सरकारी प्रमाणपत्र आणि दाखले:</h4>
-            <ul class="list-disc list-inside  text-gray-700 space-y-1">
-              <li>आधार कार्ड</li>
-              <li>पॅन कार्ड</li>
-              <li>मतदान कार्ड</li>
-              <li>रहिवासी दाखला</li>
-              <li>उत्पन्न दाखला</li>
-              <li>सातबारा आणि आठ अ उतारे</li>
-            </ul>
-          </div>
-          <!-- <button class="w-full py-3 gradient-btn text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2">
-                                      अर्ज करा <span class="material-symbols-outlined ">edit_document</span>
-          </button> -->
-        </div>
-      </div>
-      <!-- <div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-card-warm  transition-all">
-      <div class="h-48 overflow-hidden bg-slate-100 relative">
-      <div class="absolute top-4 left-4 w-12 h-12 brand-gradient-bg rounded-lg flex items-center justify-center text-white shadow-lg">
-      <span class="material-symbols-outlined text-2xl">map</span>
-      </div>
-      </div>
-      <div class="p-5">
-      <h4 class="text-lg font-bold mb-2">गाव नकाशा</h4>
-      <p class=" text-slate-600 mb-6">गावाचा डिजिटल नकाशा आणि प्रभागनिहाय माहिती पाहण्यासाठी.</p>
-      <button class="w-full py-3 gradient-btn text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2">
-                                  नकाशा पहा <span class="material-symbols-outlined ">explore</span>
-      </button>
-      </div>
-      </div> -->
-      <div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-card-warm  transition-all">
-        <div class="h-48 overflow-hidden bg-slate-200 relative">
-          <div class="w-full h-full bg-slate-200 flex items-center justify-center">
-            <img alt="Death Cert" class="w-full h-full object-cover  transition-transform duration-500" src="assets/services/complaint.jpg" />
-
-            <!-- <span class="material-symbols-outlined text-6xl text-slate-400">report_problem</span> -->
-          </div>
-          <div class="absolute top-4 left-4 w-12 h-12 brand-gradient-bg rounded-lg flex items-center justify-center text-white shadow-lg">
-            <span class="material-symbols-outlined text-2xl">forum</span>
-          </div>
-        </div>
-        <div class="p-5">
-          <h4 class="text-lg font-bold mb-2">तक्रार निवारण</h4>
-          <p class=" text-slate-600 mb-6">गावातील समस्यांबाबत आपली तक्रार ऑनलाईन नोंदवा आणि पाठपुरावा करा.</p>
-          <button routerLink="/complaints" class="hover:scale-105 w-full py-3 gradient-btn text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2">
-            तक्रार नोंदवा <span class="material-symbols-outlined text-sm">send</span>
+          <button *ngIf="!service.showDocuments" [routerLink]="service.button.route" class="hover:scale-105 w-full py-3 gradient-btn text-white font-bold rounded-lg transition-all flex items-center justify-center gap-2">
+            {{service.button.text}} <span class="material-symbols-outlined text-sm">{{service.button.icon}}</span>
           </button>
         </div>
       </div>
@@ -219,17 +39,17 @@
     <div class="absolute top-0 right-0 w-64 h-64 brand-gradient-bg blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2 opacity-20"></div>
     <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
       <div class="max-w-2xl">
-        <h3 class="text-3xl font-black mb-4 flex items-center gap-3"><span class="material-symbols-outlined text-primary-blue">help</span> काही मदत हवी आहे का?</h3>
-        <p class="text-slate-400 text-lg">जर आपल्याला काही अडचणी येत असतील तर कृपया आमच्याशी संपर्क साधा.</p>
+        <h3 class="text-3xl font-black mb-4 flex items-center gap-3"><span class="material-symbols-outlined text-primary-blue">help</span> {{config?.servicesPage?.helpSection.title}}</h3>
+        <p class="text-slate-400 text-lg">{{config?.servicesPage?.helpSection.description}}</p>
       </div>
-      <button routerLink="/contact" class="flex min-w-[200px] items-center justify-center rounded-lg h-14 px-8 brand-gradient-bg text-white text-lg font-bold hover:scale-105 transition-transform shadow-lg shadow-blue-500/20">
-        आमच्याशी संपर्क साधा
+      <button [routerLink]="config?.servicesPage?.helpSection.buttonRoute" class="flex min-w-[200px] items-center justify-center rounded-lg h-14 px-8 brand-gradient-bg text-white text-lg font-bold hover:scale-105 transition-transform shadow-lg shadow-blue-500/20">
+        {{config?.servicesPage?.helpSection.buttonText}}
       </button>
     </div>
   </section>
   <div class="flex items-center justify-center pt-10">
-    <button routerLink="/home" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all" tabindex="0">
-      मुख्य पृष्ठावर जा
+    <button [routerLink]="config?.homepageRoute" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all" tabindex="0">
+      {{config?.backButtonSection.text}}
     </button>
   </div>
 </main>

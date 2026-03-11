@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { School } from '../../Models/school.model';
-import { SchoolService } from '../../Services/school.service';
+// import { SchoolService } from '../../Services/school.service';
 import { CommonModule } from '@angular/common';
+import { SiteConfigService } from '../../Services/site-config.service';
 
 @Component({
   selector: 'app-schools',
@@ -12,30 +13,36 @@ import { CommonModule } from '@angular/common';
   styleUrl: './schools.css',
 })
 export class Schools {
+  config: any;
   schools: School[] = [];
   selectedSchool!: School;
 
   selectedImage: string | null = null;
 
-    constructor(private schoolService: SchoolService) {}
+  constructor(private configService: SiteConfigService) { }
 
-      ngOnInit() {
-    this.schools = this.schoolService.getSchools();
+  ngOnInit() {
+    this.config = this.configService.getConfig();
+    this.schools = this.config?.schoolsPage?.schools;
     this.selectedSchool = this.schools[0]; // default active
   }
 
-    selectSchool(id: number) {
-    const school = this.schoolService.getSchoolById(id);
+  selectSchool(id: number) {
+    const school = this.schools.find(s => s.id === id);
     if (school) {
       this.selectedSchool = school;
     }
   }
 
-  openImage(img: string) {
-  this.selectedImage = img;
-}
+  getSchoolValue(field: keyof School) {
+    return this.selectedSchool?.[field]
+  }
 
-closeImage() {
-  this.selectedImage = null;
-}
+  openImage(img: string) {
+    this.selectedImage = img;
+  }
+
+  closeImage() {
+    this.selectedImage = null;
+  }
 }

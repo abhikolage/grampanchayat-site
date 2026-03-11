@@ -1,17 +1,29 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideAppInitializer, inject } from '@angular/core';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
 
 import { routes } from './app.routes';
-import { provideHttpClient } from '@angular/common/http';
+import { SiteConfigService } from './Services/site-config.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-     provideHttpClient(),
+
+    provideHttpClient(),
+
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes,
+
+    provideRouter(
+      routes,
       withInMemoryScrolling({
         scrollPositionRestoration: 'enabled',
         anchorScrolling: 'enabled'
-      }))
+      })
+    ),
+
+    provideAppInitializer(() => {
+      const configService = inject(SiteConfigService);
+      return configService.loadConfig();
+    })
+
   ]
 };

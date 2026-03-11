@@ -4,3 +4,23 @@
   background-repeat: no-repeat;
   background-position: right center;
 } */
+
+
+.notice-marquee {
+  animation: notice-marquee 40s linear infinite;
+}
+
+  .notice-marquee:hover {
+    animation-play-state: paused;
+  }
+
+@keyframes notice-marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+

@@ -1,41 +1,23 @@
-<main class="max-w-[1400px] mx-auto px-4 py-6">
-  <!-- <section class="relative overflow-hidden rounded-2xl mb-12">
-  <div class=" flex items-center hero-section bg-contain bg-no-repeat bg-center">
+<section>
+  <div class="w-full bg-blue-100 border-b border-blue-200 overflow-hidden">
 
-    <div class="w-2/3 hidden md:block bg-contain bg-no-repeat bg-center">
-      <img src="assets/temple.jpg"
-           class="w-full h-[500px] object-cover rounded-xl shadow-xl"
-           alt="Temple">
-    </div>
-    <div class="w-full md:w-1/2 text-white md:pl-12 text-center md:text-left">
+    <div class="flex items-center">
+      <!-- scrolling notice -->
+      <div class="overflow-hidden flex-1">
+        <div class="notice-marquee flex items-center gap-12 px-4 py-3 text-sm whitespace-nowrap">
 
-      <span class="inline-block brand-gradient-bg text-white px-4 py-1 rounded-full text-xs font-bold mb-4 uppercase tracking-widest">
-        स्वागतम
-      </span>
+          <span class="font-semibold text-green-700">
+            {{config?.homepage.homeNoticeType}} {{config?.homepage?.homeNotice}}
+          </span>
 
-      <h2 class="text-4xl  font-black mb-6 leading-tight">
-        ग्रामपंचायत <span class="brand-gradient-text bg-white">आदर्श गाव</span> मध्ये आपले स्वागत आहे
-      </h2>
-
-      <p class="text-white/80 text-lg mb-8 max-w-xl">
-        आपल्या गावाच्या सर्वांगीण विकासासाठी आणि पारदर्शक डिजिटल सेवांसाठी हे अधिकृत पोर्टल नागरिकांच्या सेवेत समर्पित आहे.
-      </p>
-
-      <div class="flex flex-wrap justify-center md:justify-start gap-4">
-        <button class="brand-gradient-bg text-white px-8 py-4 rounded-lg font-bold hover:scale-105 transition-transform">
-          डिजिटल सेवा पहा
-        </button>
-
-        <button class="bg-white/10 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all">
-          माहिती पत्रक
-        </button>
+        </div>
       </div>
 
     </div>
 
   </div>
-  </section> -->
-
+</section>
+<main class="max-w-[1400px] mx-auto px-4">
 
   <section class="relative overflow-hidden rounded-2xl mb-12">
     <div class="grid md:grid-cols-5">
@@ -44,306 +26,180 @@
              h-[260px] sm:h-[350px] md:h-[520px]
              bg-cover md:bg-cover bg-center
              md:rounded-l-2xl"
-           style="background-image:url('assets/village/temple.jpg');">
+           [style.background-image]="'url(' + config?.homepage?.hero?.imageLeft + ')'">
       </div>
       <div class="relative md:col-span-2
              h-[260px] sm:h-[350px] md:h-[520px]
              flex flex-col justify-end items-center md:items-start
              text-center md:text-left px-6 pb-6 md:pb-8
              md:rounded-r-2xl bg-cover bg-center"
-           style="background-image:linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('assets/village/nature1.jpg'); ">
-
-        <!-- <div class="absolute inset-0 bg-gradient-to-t from-white/70 via-white/10 to-transparent"></div> -->
-        <!-- <div class="relative z-10">
-          <h1 class="text-green-700 text-xl sm:text-2xl md:text-4xl font-bold mb-2">
-            स्मार्ट ग्रामपंचायत आव्हाणे बु
-          </h1>
-
-          <p class="text-gray-700 text-sm sm:text-base md:text-lg mb-3">
-            स्वच्छ • सुंदर • विकसित गाव
-          </p>
-
-          <button
-            routerLink="/about"
-            class="bg-[#ff9933] hover:bg-[#e68900] text-white px-5 py-2 md:px-7 md:py-3 rounded-full font-semibold shadow-md transition hover:-translate-y-1">
-            अधिक माहिती
-          </button>
-        </div> -->
-
+           [style.background-image]="'linear-gradient(rgba(15,23,42,0.7),rgba(15,23,42,0.7)), url(' + config?.homepage?.hero?.imageRight + ')'">
         <span class="inline-block brand-gradient-bg text-white px-4 py-1 rounded-full text-s font-bold mb-4 uppercase tracking-widest">
-          स्वागतम
+          {{config?.homepage?.hero?.welcomeText}}
         </span>
 
         <h2 class=" text-xl sm:text-2xl md:text-4xl font-black mb-6 text-white leading-tight">
-          स्मार्ट ग्रामपंचायत <span class="text-xl sm:text-2xl md:text-4xl">आव्हाणे बु</span> मध्ये आपले स्वागत आहे
+          {{config?.villageTitle}} <span class="text-xl sm:text-2xl md:text-4xl">{{config?.villageName}}</span> {{config?.homepage?.hero?.greetingText}}
         </h2>
 
         <p class="text-white/90 text-lg mb-8 max-w-xl">
-          स्वच्छ • सुंदर • विकसित गाव
+          {{config?.homepage?.hero?.tagline}}
         </p>
 
         <div class="flex flex-wrap justify-center md:justify-start gap-4">
-          <button routerLink="/services" class="brand-gradient-bg text-white px-8 py-4 rounded-lg font-bold hover:scale-105 transition-transform">
-            नागरिक सेवा पहा
+          <button [routerLink]="config?.homepage?.hero?.buttonRoute" class="brand-gradient-bg text-white px-8 py-4 rounded-lg font-bold hover:scale-105 transition-transform">
+            {{config?.homepage?.hero?.buttonText}}
           </button>
-
-          <!-- <button class="bg-white/10 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all">
-            माहिती पत्रक
-          </button> -->
         </div>
-
       </div>
-
     </div>
   </section>
 
   <section class="mb-16">
     <div class="text-center mb-10">
-      <h3 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">महत्वाच्या लिंक</h3>
+      <h3 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">{{config?.homepage?.importantLinksSection?.linkTitle}}</h3>
       <div class="h-1.5 w-64 brand-gradient-bg mx-auto rounded-full mb-6"></div>
-      <p class="text-slate-600 max-w-2xl mx-auto">गावातील नागरिकांसाठी उपलब्ध असलेल्या विविध श्रेणीतील महत्त्वाच्या सेवा आणि माहिती.</p>
+      <p class="text-slate-600 max-w-2xl mx-auto">{{config?.homepage?.importantLinksSection?.linkDesc}}</p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a routerLink="/schemes" class="service-card-hover group bg-white p-8 rounded-2xl border border-slate-100 flex flex-col items-center text-center shadow-lg" href="#">
-        <div class="w-16 h-16 bg-blue-50 text-primary-blue rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-gradient group-hover:text-white transition-all duration-300">
-          <span class="material-symbols-outlined text-4xl group-hover:text-white transition-colors duration-300">policy</span>
-        </div>
-        <h4 class="text-xl font-bold text-slate-900 mb-3">शासकीय योजना</h4>
-        <p class="text-slate-600 mb-6">केंद्र आणि राज्य शासनाच्या विविध लोककल्याणकारी योजनांची माहिती.</p>
-        <button class="w-full py-2 bg-slate-50 text-primary-blue font-bold rounded-lg border border-primary-blue group-hover:bg-brand-gradient group-hover:text-white group-hover:border-transparent transition-all">तपशील पहा </button>
-      </a>
-      <a routerLink="/development" class="service-card-hover group bg-white p-8 rounded-2xl border border-slate-100 flex flex-col items-center text-center shadow-lg" href="#">
-        <div class="w-16 h-16 bg-blue-50 text-primary-blue rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-gradient group-hover:text-white transition-all duration-300">
-          <span class="material-symbols-outlined text-4xl group-hover:text-white transition-colors duration-300">engineering</span>
-        </div>
-        <h4 class="text-xl font-bold text-slate-900 mb-3">विकासकामे</h4>
-        <p class=" text-slate-600 mb-6">गावात सुरू असलेली आणि नियोजित विकासकामांचा प्रगती अहवाल.</p>
-        <button class="w-full py-2 bg-slate-50 text-primary-blue font-bold rounded-lg border border-primary-blue group-hover:bg-brand-gradient group-hover:text-white group-hover:border-transparent transition-all">तपशील पहा </button>
-      </a>
-      <a routerLink="/notices" class="service-card-hover group bg-white p-8 rounded-2xl border border-slate-100 flex flex-col items-center text-center shadow-lg" href="#">
-        <div class="w-16 h-16 bg-blue-50 text-primary-blue rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-gradient group-hover:text-white transition-all duration-300">
-          <span class="material-symbols-outlined text-4xl group-hover:text-white transition-colors duration-300">campaign</span>
-        </div>
-        <h4 class="text-xl font-bold text-slate-900 mb-3">सूचना</h4>
-        <p class=" text-slate-600 mb-6">ग्रामपंचायतीकडून दिल्या जाणाऱ्या महत्त्वाच्या सूचना आणि जाहीर प्रकटन.</p>
+      <a *ngFor="let link of config?.homepage?.importantLinksSection?.importantLinks"
+         [routerLink]="link.route"
+         class="service-card-hover group bg-white p-8 rounded-2xl border border-slate-100 flex flex-col items-center text-center shadow-lg">
 
-        <button class="w-full py-2 bg-slate-50 text-primary-blue font-bold rounded-lg border border-primary-blue group-hover:bg-brand-gradient group-hover:text-white group-hover:border-transparent transition-all">तपशील पहा </button>
-      </a>
-      <a routerLink="/services" class="service-card-hover group bg-white p-8 rounded-2xl border border-slate-100 flex flex-col items-center text-center shadow-lg" href="#">
         <div class="w-16 h-16 bg-blue-50 text-primary-blue rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-gradient group-hover:text-white transition-all duration-300">
-          <span class="material-symbols-outlined text-4xl group-hover:text-white transition-colors duration-300">devices</span>
+          <span class="material-symbols-outlined text-4xl">
+            {{link.icon}}
+          </span>
         </div>
-        <h4 class="text-xl font-bold text-slate-900 mb-3">सेवा</h4>
-        <p class="text-slate-600 mb-6">विविध दाखले आणि प्रमाणपत्रांसाठी ऑनलाइन अर्ज करण्याची सुविधा.</p>
-        <button class="w-full py-2 bg-slate-50 text-primary-blue font-bold rounded-lg border border-primary-blue group-hover:bg-brand-gradient group-hover:text-white group-hover:border-transparent transition-all">तपशील पहा </button>
+        <h4 class="text-xl font-bold text-slate-900 mb-3">
+          {{link.title}}
+        </h4>
+        <p class="text-slate-600 mb-6">
+          {{link.desc}}
+        </p>
+        <div class="w-full py-2 bg-slate-50 text-primary-blue font-bold rounded-lg border border-primary-blue group-hover:bg-brand-gradient group-hover:text-white group-hover:border-transparent transition-all">{{config?.homepage?.importantLinksSection.buttonText}} </div>
       </a>
     </div>
   </section>
   <section class="mb-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-white pl-7 md:pl-7 rounded-2xl border border-slate-100 shadow-sm relative overflow-hidden">
     <div class="absolute top-0 left-0 w-1 h-full brand-gradient-bg"></div>
     <div class="order-2 md:order-1">
-      <div class="inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase">गावाचा परिचय</div>
-      <h3 class="text-3xl font-black text-slate-900 mb-6">आमचे गाव, आमचा अभिमान</h3>
+      <div class="inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase">{{config?.homepage?.villageIntro?.villageTag}}</div>
+      <h3 class="text-3xl font-black text-slate-900 mb-6">{{config?.homepage?.villageIntro?.title}}</h3>
       <p class="text-slate-600 text-lg leading-relaxed mb-6">
-        आमच्या गावाला समृद्ध ऐतिहासिक वारसा लाभला आहे. हे गाव शेवगांव तालुक्यातील एक प्रगत गाव असून, येथील सुसंस्कृत लोकजीवन आणि एकता हेच आमच्या विकासाचे गमक आहे. गेल्या काही दशकांत गावाने शेती, शिक्षण आणि तंत्रज्ञान क्षेत्रात मोठी प्रगती केली आहे.
+        {{config?.homepage?.villageIntro?.desc}}
       </p>
 
-      <button routerLink="/about" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all">अधिक माहिती पहा </button>
+      <button [routerLink]="config?.homepage?.villageIntro?.buttonRoute" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all">{{config?.homepage?.villageIntro?.buttonText}}</button>
     </div>
     <div class="order-1 md:order-2 rounded-r-xl overflow-hidden h-full md:h-full shadow-lg ring-4 ring-blue-50">
-      <img alt="Village Landscape" class="w-full h-full object-cover" src="assets/village/grampanchayat-office-avhane-bk.jpg" />
+      <img alt="Village Landscape" class="w-full h-full object-cover" [src]="config?.homepage?.villageIntro?.image" />
     </div>
   </section>
   <section class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-    <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-lg flex items-center gap-4 relative overflow-hidden">
-      <div class="absolute bottom-0 right-0 w-16 h-16 brand-gradient-bg opacity-5 -mb-8 -mr-8 rounded-full"></div>
-      <div class="bg-blue-50 p-2 lg:p-3 rounded-lg text-primary-blue">
-        <span class="material-symbols-outlined text-xl lg:text-3xl">groups</span>
+    <div *ngFor="let stat of config?.homepage?.stats">
+      <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-lg flex items-center gap-4 relative overflow-hidden">
+        <div class="absolute bottom-0 right-0 w-16 h-16 brand-gradient-bg opacity-5 -mb-8 -mr-8 rounded-full"></div>
+        <div class="bg-blue-50 p-2 lg:p-3 rounded-lg text-primary-blue">
+          <span class="material-symbols-outlined text-xl lg:text-3xl">{{stat.icon}}</span>
+        </div>
+        <div>
+          <p class="font-medium text-slate-500">{{stat.title}}</p>
+          <p class="text-2xl lg:text-3xl font-black text-slate-900">{{stat.value}}</p>
+        </div>
       </div>
-      <div>
-        <p class="font-medium text-slate-500">एकूण लोकसंख्या</p>
-        <p class="text-2xl lg:text-3xl font-black text-slate-900">५,४२०</p>
-      </div>
-    </div>
-    <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-lg flex items-center gap-4 relative overflow-hidden">
-      <div class="absolute bottom-0 right-0 w-16 h-16 brand-gradient-bg opacity-5 -mb-8 -mr-8 rounded-full"></div>
-      <div class="bg-blue-50 p-2 lg:p-3 rounded-lg text-primary-blue">
-        <span class="material-symbols-outlined text-xl lg:text-3xl">school</span>
-      </div>
-      <div>
-        <p class=" font-medium text-slate-500">साक्षरता दर</p>
-        <p class="text-2xl lg:text-3xl font-black text-slate-900">८८%</p>
-      </div>
-    </div>
-    <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-lg flex items-center gap-4 relative overflow-hidden">
-      <div class="absolute bottom-0 right-0 w-16 h-16 brand-gradient-bg opacity-5 -mb-8 -mr-8 rounded-full"></div>
-      <div class="bg-blue-50 p-2 lg:p-3 rounded-lg text-primary-blue">
-        <span class="material-symbols-outlined text-xl lg:text-3xl">landscape</span>
-      </div>
-      <div>
-        <p class=" font-medium text-slate-500">क्षेत्रफळ (हेक्टर)</p>
-        <p class="text-2xl lg:text-3xl font-black text-slate-900">१,२००</p>
-      </div>
-    </div>
-    <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-lg flex items-center gap-4 relative overflow-hidden">
-      <div class="absolute bottom-0 right-0 w-16 h-16 brand-gradient-bg opacity-5 -mb-8 -mr-8 rounded-full"></div>
-      <div class="bg-blue-50 p-2 lg:p-3 rounded-lg text-primary-blue">
-        <span class="material-symbols-outlined text-xl  lg:text-3xl">location_city</span>
-      </div>
-      <div>
-        <p class=" font-medium text-slate-500">गावातील प्रभाग</p>
-        <p class="text-2xl lg:text-3xl font-black text-slate-900">६</p>
-      </div>
+
     </div>
   </section>
   <section class="mb-16">
     <div class="flex items-center justify-between mb-8">
       <div>
-        <h3 class="text-3xl font-black text-slate-900">महत्त्वाचे पदाधिकारी</h3>
+        <h3 class="text-3xl font-black text-slate-900">{{config?.homepage?.membersSection?.memberTitle}}</h3>
         <div class="h-1.5 w-64 brand-gradient-bg mt-2 rounded-full"></div>
       </div>
-      <!-- <a class="text-primary-blue font-bold flex items-center gap-2 hover:underline group" href="#">
-                          सर्व सदस्य पहा <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
-      </a> -->
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-2xl border border-slate-100 p-6 text-center shadow-lg transition-shadow group relative overflow-hidden">
-        <div class="absolute top-0 inset-x-0 h-1.5 brand-gradient-bg "></div>
-        <div class="relative w-32 h-32 mx-auto mb-6">
-          <div class="absolute inset-0 brand-gradient-bg rounded-full animate-pulse opacity-10 scale-110 transition-transform"></div>
-          <img alt="Sarpanch" class="w-full h-full object-cover rounded-full border-4 border-white shadow-md relative z-10" src="assets/logo-icons/man-icon.png" />
-        </div>
-        <h4 class="text-xl font-black text-slate-900 mb-1">श्री. रामदास पांडू वाघमारे</h4>
-        <p class="text-primary-blue font-bold  mb-4 uppercase tracking-wide">सरपंच</p>
-        <p class="text-slate-600 mb-6">"गावाचा सर्वांगीण विकास आणि पारदर्शकता हेच माझे ध्येय आहे."</p>
-        <div class="flex justify-center gap-3">
-          <a class="hover:scale-105 brand-gradient-bg text-white px-6 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2"
-             href="tel:8605578381">
-            <span class="material-symbols-outlined text-sm">call</span> संपर्क करा
-          </a>
-          <!-- <a class="size-10 rounded-full bg-slate-50 flex items-center justify-center text-primary-blue hover:brand-gradient-bg hover:text-white transition-all border border-slate-200" href="#"><span class="material-symbols-outlined text-lg">call</span></a>
-          <a class="size-10 rounded-full bg-slate-50 flex items-center justify-center text-primary-blue hover:brand-gradient-bg hover:text-white transition-all border border-slate-200" href="#"><span class="material-symbols-outlined text-lg">mail</span></a> -->
-        </div>
-      </div>
-      <div class="bg-white rounded-2xl border border-slate-100 p-6 text-center shadow-lg transition-shadow group relative overflow-hidden">
-        <div class="absolute top-0 inset-x-0 h-1.5 brand-gradient-bg "></div>
-        <div class="relative w-32 h-32 mx-auto mb-6">
-          <div class="absolute inset-0 brand-gradient-bg rounded-full animate-pulse opacity-10 scale-110 transition-transform"></div>
-          <img alt="Upsarpanch" class="w-full h-full object-cover rounded-full border-4 border-white shadow-md relative z-10" src="assets/logo-icons/woman-icon.png" />
-        </div>
-        <h4 class="text-xl font-black text-slate-900 mb-1">श्रीमती. संगीता प्रतापराव कोळगे</h4>
-        <p class="text-primary-blue font-bold  mb-4 uppercase tracking-wide">उपसरपंच</p>
-        <p class="text-slate-600  mb-6">"महिला सक्षमीकरण आणि आरोग्य सेवा सुधारण्यासाठी आम्ही कटिबद्ध आहोत."</p>
-        <div class="flex justify-center gap-3">
-          <a class="hover:scale-105 brand-gradient-bg text-white px-6 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2"
-             href="tel:8605578381">
-            <span class="material-symbols-outlined text-sm">call</span> संपर्क करा
-          </a>
-
-
-          <!-- <a class="size-10 rounded-full bg-slate-50 flex items-center justify-center text-primary-blue hover:brand-gradient-bg hover:text-white transition-all border border-slate-200" href="#"><span class="material-symbols-outlined text-lg">call</span></a>
-          <a class="size-10 rounded-full bg-slate-50 flex items-center justify-center text-primary-blue hover:brand-gradient-bg hover:text-white transition-all border border-slate-200" href="#"><span class="material-symbols-outlined text-lg">mail</span></a> -->
-        </div>
-      </div>
-      <div class="bg-white rounded-2xl border border-slate-100 p-6 text-center shadow-lg transition-shadow group relative overflow-hidden">
-        <div class="absolute top-0 inset-x-0 h-1.5 brand-gradient-bg"></div>
-        <div class="relative w-32 h-32 mx-auto mb-6">
-          <div class="absolute inset-0 brand-gradient-bg rounded-full animate-pulse opacity-10 scale-110 transition-transform"></div>
-          <img alt="Gramsevak" class="w-full h-full object-cover rounded-full border-4 border-white shadow-md relative z-10" src="assets/logo-icons/man-icon.png" />
-        </div>
-        <h4 class="text-xl font-black text-slate-900 mb-1">श्री. अशोक श्रीपती नवले</h4>
-        <p class="text-primary-blue font-bold  mb-4 uppercase tracking-wide">ग्रा. पं. अधिकारी</p>
-        <p class="text-slate-600  mb-6">"डिजिटल सेवांद्वारे शासकीय योजनांचा लाभ प्रत्येक घरापर्यंत पोहोचवणे."</p>
-        <div class="flex justify-center gap-3">
-          <a class="hover:scale-105 brand-gradient-bg text-white px-6 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2"
-             href="tel:8605578381">
-            <span class="material-symbols-outlined text-sm">call</span> संपर्क करा
-          </a>
-          <!-- <a class="size-10 rounded-full bg-slate-50 flex items-center justify-center text-primary-blue hover:brand-gradient-bg hover:text-white transition-all border border-slate-200" href="#"><span class="material-symbols-outlined text-lg">call</span></a>
-          <a class="size-10 rounded-full bg-slate-50 flex items-center justify-center text-primary-blue hover:brand-gradient-bg hover:text-white transition-all border border-slate-200" href="#"><span class="material-symbols-outlined text-lg">mail</span></a> -->
+      <div *ngFor="let member of config?.homepage?.membersSection?.members">
+        <div class="bg-white rounded-2xl border border-slate-100 p-6 text-center shadow-lg transition-shadow group relative overflow-hidden">
+          <div class="absolute top-0 inset-x-0 h-1.5 brand-gradient-bg "></div>
+          <div class="relative w-32 h-32 mx-auto mb-6">
+            <div class="absolute inset-0 brand-gradient-bg rounded-full animate-pulse opacity-10 scale-110 transition-transform"></div>
+            <img alt="Sarpanch" class="w-full h-full object-cover rounded-full border-4 border-white shadow-md relative z-10" [src]="member.image" />
+          </div>
+          <h4 class="text-xl font-black text-slate-900 mb-1">{{member.name}}</h4>
+          <p class="text-primary-blue font-bold  mb-4 uppercase tracking-wide">{{member.role}}</p>
+          <p class="text-slate-600 mb-6">{{member.desc}}</p>
+          <div class="flex justify-center gap-3">
+            <a class="hover:scale-105 brand-gradient-bg text-white px-6 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2"
+               [href]="'tel:'+member.phone">
+              <span class="material-symbols-outlined text-sm">call</span> {{config?.homepage?.membersSection?.memberCallText}}
+            </a>
+          </div>
         </div>
       </div>
     </div>
     <div class="flex items-center justify-center pt-5">
-      <button routerLink="/members" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all">
-        सर्व पदाधिकारी पहा
+      <button [routerLink]="config?.homepage?.membersSection?.memberRoute" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all">
+        {{config?.homepage?.membersSection?.memberButtonText}}
       </button>
     </div>
   </section>
   <section class="mb-16 bg-slate-50 rounded-2xl bg-white border border-slate-100 overflow-hidden shadow-sm">
     <div class="grid grid-cols-1 md:grid-cols-2">
       <div class="p-8 md:p-12">
-        <div class="inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase">शिक्षण व संस्कार</div>
-        <h3 class="text-3xl font-black text-slate-900 mb-6">आमची जिल्हा परिषद शाळा</h3>
+        <div class="inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase">{{config?.homepage?.schoolSection?.tag}}</div>
+        <h3 class="text-3xl font-black text-slate-900 mb-6">{{config?.homepage?.schoolSection?.title}}</h3>
         <p class="text-slate-600 text-lg leading-relaxed mb-8">
-          गावातील जिल्हा परिषद प्राथमिक मराठी शाळा ही केवळ एक वास्तू नसून ज्ञानाचे पवित्र मंदिर आहे. आधुनिक संगणक कक्ष, प्रशस्त क्रीडांगण आणि अनुभवी शिक्षकांमुळे आमची मुले शैक्षणिक व क्रीडा क्षेत्रात नावलौकिक मिळवत आहेत. प्रत्येक मुलाला दर्जेदार शिक्षण मिळावे यासाठी आम्ही सदैव प्रयत्नशील आहोत.
+          {{config?.homepage?.schoolSection?.desc}}
         </p>
-        <button routerLink="/schools" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all">
-          शाळेबद्दल अधिक माहिती पहा
+        <button [routerLink]="config?.homepage?.schoolSection?.buttonRoute" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all">
+          {{config?.homepage?.schoolSection?.buttonText}}
         </button>
       </div>
       <div class="h-80 md:h-auto bg-slate-200 ring-l-4 ring-blue-50">
-        <img alt="Village School Building" class="w-full h-full object-cover" src="assets/school/zp-school.jpg" />
+        <img class="w-full h-full object-cover" [alt]="config?.homepage?.schoolSection?.title"
+             [src]="config?.homepage?.schoolSection?.image" />
       </div>
     </div>
   </section>
   <section class="mb-16">
     <div class="flex items-center justify-between mb-8">
       <div>
-        <h3 class="text-3xl font-black text-slate-900">आमच्या नागरिक सेवा</h3>
+        <h3 class="text-3xl font-black text-slate-900">{{config?.homepage?.servicesSection?.title}}</h3>
         <div class="h-1.5 w-64 brand-gradient-bg mt-2 rounded-full"></div>
       </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+
+
+      <div *ngFor="let service of config?.homepage?.servicesSection?.services"
+           class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+
         <div class="h-48 overflow-hidden bg-slate-100">
-          <img alt="Birth Certificate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="assets/services/birth-cert.jpg" />
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+               [src]="service.image"
+               [alt]="service.title">
         </div>
+
         <div class="p-5">
-          <h4 class="text-lg font-bold mb-2">जन्म प्रमाणपत्र</h4>
-          <p class=" text-slate-600 mb-4">नवीन जन्माची नोंदणी आणि डिजिटल प्रमाणपत्रासाठी अर्ज करा.</p>
-          <!-- <button class="w-full py-2 bg-slate-50 text-primary-blue font-bold roscale-110unded-lg border border-slate-200 group-hover:bg-brand-gradient group-hover:text-white group-hover:border-transparent transition-all">अर्ज करा</button> -->
+
+          <h4 class="text-lg font-bold mb-2">
+            {{service.title}}
+          </h4>
+
+          <p class="text-slate-600 mb-4">
+            {{service.desc}}
+          </p>
+
         </div>
+
       </div>
-      <div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
-        <div class="h-48 overflow-hidden bg-slate-100">
-          <img alt="Property Tax" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="assets/services/property-tax.png" />
-        </div>
-        <div class="p-5">
-          <h4 class="text-lg font-bold mb-2">मालमत्ता कर</h4>
-          <p class=" text-slate-600 mb-4">घरपट्टी आणि मालमत्ता कराचा भरणा करा व पावती मिळवा.</p>
-          <!-- <button class="w-full py-2 bg-slate-50 text-primary-blue font-bold rounded-lg border border-slate-200 group-hover:bg-brand-gradient group-hover:text-white group-hover:border-transparent transition-all">कर भरा</button> -->
-        </div>
-      </div>
-      <div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
-        <div class="h-48 overflow-hidden bg-slate-100">
-          <img alt="Water Supply" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="assets/services/water-supply.png" />
-        </div>
-        <div class="p-5">
-          <h4 class="text-lg font-bold mb-2">पाणी पुरवठा</h4>
-          <p class=" text-slate-600 mb-4">नवीन नळ जोडणीसाठी अर्ज आणि पाणीपट्टी भरणा उपलब्ध.</p>
-          <!-- <button class="w-full py-2 bg-slate-50 text-primary-blue font-bold rounded-lg border border-slate-200 group-hover:bg-brand-gradient group-hover:text-white group-hover:border-transparent transition-all">अधिक माहिती</button> -->
-        </div>
-      </div>
-      <div href="#" class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all">
-        <div class="h-48 overflow-hidden bg-slate-100">
-          <img alt="Documents" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="assets/services/certificates.jpg" />
-        </div>
-        <div class="p-5">
-          <h4 class="text-lg font-bold mb-2">विविध दाखले</h4>
-          <p class="text-slate-600 mb-4">उत्पन्न, रहिवासी आणि इतर महत्त्वाचे सरकारी दाखले मिळवण्यासाठी.</p>
-          <!-- <button class="w-full py-2 bg-slate-50 text-primary-blue font-bold rounded-lg border border-slate-200 group-hover:bg-brand-gradient group-hover:text-white group-hover:border-transparent transition-all">अर्ज करा</button> -->
-        </div>
-      </div>
+
     </div>
 
     <div class="flex items-center justify-center pt-5">
-      <!-- <a class="text-primary-blue font-bold flex items-center gap-2 hover:underline group" href="#">
-                          सर्व सदस्य पहा <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
-      </a> -->
-
-      <button routerLink="/services" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all">
-        सर्व सेवा पहा
+      <button [routerLink]="config?.homepage?.servicesSection?.buttonRoute" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all">
+        {{config?.homepage?.servicesSection?.buttonText}}
       </button>
     </div>
   </section>
@@ -351,12 +207,9 @@
     <div class="absolute top-0 right-0 w-64 h-64 brand-gradient-bg blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2 opacity-20"></div>
     <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
       <div class="">
-        <h3 class="text-3xl font-black mb-4 flex items-center gap-3"><span class="material-symbols-outlined text-primary-blue">notifications_active</span> महत्त्वाची सूचना : ग्रामसभा २०२६</h3>
-        <p class="text-slate-400 text-lg">पुढील महिन्याच्या १५ तारखेला सकाळी १० वाजता ग्रामपंचायतीच्या सभागृहात विशेष ग्रामसभेचे आयोजन करण्यात आले आहे. सर्व ग्रामस्थांनी उपस्थित राहावे.</p>
+        <h3 class="text-3xl font-black mb-4 flex items-center gap-3"><span class="material-symbols-outlined text-primary-blue">notifications_active</span>{{config?.homepage?.announcement?.title}}</h3>
+        <p class="text-slate-400 text-lg">{{config?.homepage?.announcement?.desc}}</p>
       </div>
-      <!-- <button class="flex min-w-[200px] items-center justify-center rounded-lg h-14 px-8 brand-gradient-bg text-white text-lg font-bold hover:scale-105 transition-transform shadow-lg shadow-blue-500/20">
-                          वेळापत्रक पहा
-                      </button> -->
     </div>
   </section>
 </main>

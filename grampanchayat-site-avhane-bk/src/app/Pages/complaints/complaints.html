@@ -2,10 +2,14 @@
 
   <div class="text-center mb-12">
 
-    <span class=" px-4 py-1 inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase tracking-widest">तक्रार</span>
-    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">तक्रार निवारण केंद्र</h2>
+    <span class=" px-4 py-1 inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase tracking-widest">
+      {{config?.complaintPage?.header?.badge}}
+    </span>
+    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">
+      {{config?.complaintPage?.header?.title}}
+    </h2>
     <div class="h-1.5 w-80 brand-gradient-bg rounded-full mb-6 mx-auto"></div>
-    <p class="text-slate-600 max-w-2xl mx-auto">नागरिकांच्या समस्यांचे त्वरित निवारण करण्यासाठी आमचा हा ऑनलाइन मंच समर्पित आहे. कृपया खालील फॉर्म काळजीपूर्वक भरा.</p>
+    <p class="text-slate-600 max-w-2xl mx-auto">{{config?.complaintPage?.header?.description}}</p>
 
   </div>
 
@@ -13,144 +17,131 @@
     <div class="lg:col-span-2">
       <div class="bg-white p-8 md:p-10 rounded-2xl border border-slate-100 shadow-card-warm">
         <h3 class="text-xl font-bold text-slate-900 mb-8 flex items-center gap-2">
-          <span class="material-symbols-outlined text-primary-blue">edit_note</span>
-          नवीन तक्रार नोंदवा
+          <span class="material-symbols-outlined text-primary-blue">
+            {{config?.complaintPage?.form.icon}}
+          </span>
+          {{config?.complaintPage?.form.title}}
         </h3>
         <form (ngSubmit)="submitComplaint()" class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label class="block text-sm font-bold text-slate-700 mb-2">तक्रारदाराचे नाव *</label>
+              <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.complaintPage?.form.fields.name.label}} <span class="text-red-500">*</span></label>
               <input [(ngModel)]="complaintForm.name"
-name="name" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" placeholder="पूर्ण नाव प्रविष्ट करा" required="" type="text" />
+                     name="name" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" [placeholder]="config?.complaintPage?.form.fields.name.placeholder" required="" type="text" />
             </div>
             <div>
-              <label class="block text-sm font-bold text-slate-700 mb-2">फोन नंबर *</label>
+              <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.complaintPage?.form.fields.mobile.label}} <span class="text-red-500">*</span></label>
               <input [(ngModel)]="complaintForm.mobile"
-name="mobile" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" placeholder="१० अंकी मोबाईल नंबर" required="" type="tel" />
+                     name="mobile" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" [placeholder]="config?.complaintPage?.form.fields.mobile.placeholder" required="" type="tel" />
             </div>
           </div>
           <div>
-            <label class="block text-sm font-bold text-slate-700 mb-2">ईमेल आयडी</label>
+            <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.complaintPage?.form.fields.email.label}} </label>
             <input [(ngModel)]="complaintForm.email"
-name="email" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" placeholder="example@mail.com" type="email" />
+                   name="email" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" [placeholder]="config?.complaintPage?.form.fields.email.placeholder" type="email" />
           </div>
           <div>
-            <label class="block text-sm font-bold text-slate-700 mb-2">आधार क्रमांक *</label>
+            <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.complaintPage?.form.fields.aadhaar.label}} <span class="text-red-500">*</span></label>
             <input [(ngModel)]="complaintForm.aadhaar"
-name="aadhaar" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" placeholder="पूर्ण आधार क्रमांक प्रविष्ट करा" required="" type="text" />
+                   name="aadhaar" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" [placeholder]="config?.complaintPage?.form.fields.aadhaar.placeholder" required="" type="text" />
           </div>
           <div>
-            <label class="block text-sm font-bold text-slate-700 mb-2">पत्ता *</label>
+            <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.complaintPage?.form.fields.address.label}} <span class="text-red-500">*</span></label>
 <textarea [(ngModel)]="complaintForm.address"
-name="address" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" placeholder="आपला पूर्ण पत्ता येथे लिहा..." required="" rows="3"></textarea>
+          name="address" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" [placeholder]="config?.complaintPage?.form.fields.address.placeholder" required="" rows="3"></textarea>
           </div>
           <div>
-            <label class="block text-sm font-bold text-slate-700 mb-2">तक्रारीचा विषय *</label>
+            <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.complaintPage?.form.fields.subject.label}} <span class="text-red-500">*</span></label>
             <select [(ngModel)]="complaintForm.subject"
-name="subject" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" required="">
-              <option disabled="" selected="" value="">विषय निवडा</option>
-              <option value="water">पाणी पुरवठा</option>
-              <option value="electricity">वीज समस्या</option>
-              <option value="road">रस्ते व खड्डे</option>
-              <option value="sanitation">स्वच्छता व सांडपाणी</option>
-              <option value="encroachment">अतिक्रमण</option>
-              <option value="other">इतर</option>
+                    name="subject" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" required="">
+              <option disabled value="">
+                {{config?.complaintPage?.form?.fields?.subject?.placeholder}}
+              </option>
+              <option *ngFor="let subject of config?.complaintPage?.form?.fields?.subject?.options"
+                      [value]="subject">
+                {{subject}}
+              </option>
             </select>
           </div>
           <div>
-            <label class="block text-sm font-bold text-slate-700 mb-2">तक्रारीचे सविस्तर वर्णन *</label>
+            <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.complaintPage?.form.fields.description.label}} <span class="text-red-500">*</span></label>
 <textarea [(ngModel)]="complaintForm.description"
-name="description" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" placeholder="आपल्या तक्रारीचे सविस्तर वर्णन येथे लिहा..." required="" rows="5"></textarea>
+          name="description" class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" [placeholder]="config?.complaintPage?.form.fields.description.placeholder" required="" rows="5"></textarea>
           </div>
           <div>
-            <label class="block text-sm font-bold text-slate-700 mb-2">पुराव्यासाठी फोटो अपलोड करा</label>
-            <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-primary-blue transition-colors cursor-pointer group">
+            <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.complaintPage?.form.fields.imageUpload.label}} </label>
+            <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-primary-blue transition-colors cursor-pointer group"
+                 (drop)="onDrop($event)"
+                 (dragover)="onDragOver($event)"
+                 (dragleave)="onDragLeave($event)">
               <div class="space-y-1 text-center">
-                <span class="material-symbols-outlined text-slate-400 text-4xl group-hover:text-primary-blue">image</span>
+                <span class="material-symbols-outlined text-slate-400 text-4xl group-hover:text-primary-blue">
+                  {{config?.complaintPage?.form.fields.imageUpload.icon}}
+                </span>
                 <div class="flex text-sm text-slate-600">
                   <label class="relative cursor-pointer bg-white rounded-md font-bold text-primary-blue hover:text-primary-green focus-within:outline-none">
-                    <span>फोटो निवडा</span>
-                    <input
-class="sr-only"
-type="file"
-accept="image/*"
-(change)="onFileSelected($event)">
+                    <span>
+                      {{config?.complaintPage?.form.fields.imageUpload.selectText}}
+                    </span>
+                    <input class="sr-only"
+                           type="file"
+                           accept="image/*"
+                           (change)="onFileSelected($event)">
                   </label>
-                  <p class="pl-1">किंवा येथे ड्रॅग आणि ड्रॉप करा</p>
+                  <p class="pl-1">
+                    {{config?.complaintPage?.form.fields.imageUpload.dragText}}
+                  </p>
                 </div>
-                <p class="text-xs text-slate-500">PNG, JPG, GIF कमाल ५ MB</p>
+                <p class="text-xs text-slate-500">
+                  {{config?.complaintPage?.form.fields.imageUpload.hint}}
+                </p>
               </div>
             </div>
-<div *ngIf="imagePreview" class="mt-4 text-center">
+            <div *ngIf="imagePreview" class="mt-4 text-center" (click)="$event.stopPropagation()">
+              <button class="text-center -top-12 right-0 text-xl font-bold"
+                      (click)="closeImage()" type="button">
+                ✕
+              </button>
+              <img [src]="imagePreview"
+                   class="h-40 mx-auto rounded-lg border shadow-md object-cover">
 
-<img
-[src]="imagePreview"
-class="h-40 mx-auto rounded-lg border shadow-md object-cover">
-
-<p class="text-xs text-gray-500 mt-2">
-निवडलेला फोटो
-</p>
-
-</div>
+              <p class="text-xs text-gray-500 mt-2">
+                {{config?.complaintPage?.form.fields.imageUpload.previewLabel}}
+              </p>
+            </div>
 
           </div>
           <div class="pt-4 text-center">
-            <button
-[disabled]="loading" class="w-full md:w-auto px-10 py-4 gradient-btn rounded-lg font-black text-lg shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all" type="submit">
-              {{ loading ? 'पाठवत आहे...' : 'तक्रार सादर करा' }}
+            <button [disabled]="loading" class="w-full md:w-auto px-10 py-4 gradient-btn rounded-lg font-black text-lg shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all" type="submit">
+              {{ loading ? config?.contactPage?.form?.submitButton?.loadingText : config?.contactPage?.form?.submitButton?.text }}
             </button>
 
             <div *ngIf="success"
-class="mt-4 p-3 bg-green-100 text-green-700 rounded-lg text-center">
+                 class="mt-4 p-3 bg-green-100 text-green-700 rounded-lg text-center">
 
-✅ तुमची तक्रार यशस्वीरित्या नोंदवली गेली.
+              ✅ {{config?.contactPage?.form?.successMessage}}
 
-</div>
+            </div>
 
-<div *ngIf="errorMessage"
-class="mt-4 p-3 rounded-lg bg-red-100 text-red-700 font-semibold text-center">
-⚠️ {{errorMessage}}
-</div>
+            <div *ngIf="errorMessage"
+                 class="mt-4 p-3 rounded-lg bg-red-100 text-red-700 font-semibold text-center">
+              ⚠️ {{errorMessage}}
+            </div>
           </div>
         </form>
       </div>
     </div>
     <div class="space-y-8">
-      <!-- <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-card-warm relative overflow-hidden">
-      <div class="absolute top-0 left-0 w-1.5 h-full brand-gradient-bg"></div>
-      <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-      <span class="material-symbols-outlined text-primary-blue">track_changes</span>
-                              तक्रारीची स्थिती तपासा
-                          </h3>
-      <p class="text-sm text-slate-600 mb-6">आपल्याला मिळालेला 'टोकन नंबर' खाली प्रविष्ट करून तक्रारीची सद्यस्थिती जाणून घ्या.</p>
-      <div class="space-y-4">
-      <div>
-      <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">टोकन नंबर</label>
-      <input class="w-full px-4 py-3 rounded-lg border-slate-200 form-input-focus font-mono" placeholder="उदा. GP-2024-XXXX" type="text"/>
-      </div>
-      <button class="w-full py-3 bg-slate-900 text-white font-bold rounded-lg hover:bg-slate-800 transition-colors">
-                                  स्थिती पहा
-                              </button>
-      </div>
-      </div> -->
       <div class=" bg-blue-100 p-8 rounded-2xl border border-blue-100    ">
         <h4 class="font-bold text-gray-700 mb-4 flex items-center gap-2">
-          <span class="material-symbols-outlined text-primary-blue">info</span>
-          महत्वाची माहिती
+          <span class="material-symbols-outlined text-primary-blue">{{config?.complaintPage.infoSection.icon}}</span>
+          {{config?.complaintPage.infoSection.title}}
         </h4>
         <ul class="space-y-4 text-slate-600">
 
-          <li class="flex gap-3">
+          <li *ngFor="let info of config?.complaintPage?.infoSection?.points" class="flex gap-3">
             <span class="size-1.5 rounded-full brand-gradient-bg mt-1.5 shrink-0"></span>
-            आपली तक्रार गोपनीय ठेवली जाईल.
-          </li>
-          <li class="flex gap-3">
-            <span class="size-1.5 rounded-full brand-gradient-bg mt-1.5 shrink-0"></span>
-            सामान्यतः ७ कार्य दिवसांच्या आत तक्रारीचे निवारण करण्याचा प्रयत्न केला जातो.
-          </li>
-          <li class="flex gap-3">
-            <span class="size-1.5 rounded-full brand-gradient-bg mt-1.5 shrink-0"></span>
-            अति-तातडीच्या समस्यांसाठी कृपया थेट कार्यालयाशी संपर्क साधा.
+            {{info}}
           </li>
         </ul>
       </div>
@@ -158,8 +149,8 @@ class="mt-4 p-3 rounded-lg bg-red-100 text-red-700 font-semibold text-center">
   </div>
 
   <div class="flex items-center justify-center pt-10">
-    <button routerLink="/home" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all" tabindex="0">
-      मुख्य पृष्ठावर जा
+    <button [routerLink]="config?.homepageRoute" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all" tabindex="0">
+      {{config?.backButtonSection.text}}
     </button>
   </div>
 </main>
