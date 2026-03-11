@@ -1,0 +1,1591 @@
+{
+  "villageTitle": "स्मार्ट ग्रामपंचायत",
+  "villageName": "आव्हाणे बु",
+  "type": "ग्रामपंचायत",
+  "year": "© 2026",
+  "homepageRoute": "/home",
+  "contact": {
+    "phone": "+९१ ९७६७ ०२ ८७०६",
+    "email": "avhanebu@gmail.com"
+  },
+  "contactInfo": {
+    "title": "स्मार्ट ग्रामपंचायत आव्हाणे बु",
+    "address": {
+      "title": "पत्ता",
+      "value": [ "आव्हाणे बु, ता. शेवगाव, जि. अहिल्यानगर,", "महाराष्ट्र – ४१४५०५ (भारत)" ],
+      "icon": "location_on"
+    },
+
+    "phone": {
+      "title": "फोन नंबर",
+      "value": "+९१ ९७६७ ०२ ८७०६",
+      "icon": "call"
+    },
+
+    "email": {
+      "title": "ईमेल",
+      "value": "avhanebu@gmail.com",
+      "icon": "mail"
+    },
+
+    "officeHours": {
+      "title": "कार्यालयीन वेळ",
+      "value": [ "सोमवार - शनिवार: सकाळी १० ते संध्याकाळी ५", "(रविवार आणि सरकारी सुट्ट्या बंद)" ],
+      "icon": "schedule"
+    }
+  },
+  "backButtonSection": {
+    "text": "मुख्य पृष्ठावर जा"
+  },
+
+  "header": {
+    "logos": [
+      "assets/avhanebk/logo-icons/logo1.png",
+      "assets/avhanebk/logo-icons/logo2.png",
+      "assets/avhanebk/logo-icons/logo.png"
+    ],
+
+    "menus": [
+      {
+        "title": "मुख्यपृष्ठ",
+        "route": "/"
+      },
+      {
+        "title": "अधिकारी/पदाधिकारी",
+        "route": "/members"
+      },
+      {
+        "title": "सेवा",
+        "route": "/services"
+      },
+      {
+        "title": "योजना",
+        "route": "/schemes"
+      },
+      {
+        "title": "विकासकामे",
+        "route": "/development"
+      },
+      {
+        "title": "शाळा",
+        "route": "/schools"
+      },
+      {
+        "title": "गॅलरी",
+        "route": "/gallery"
+      },
+      {
+        "title": "ग्रामपंचायत बद्दल",
+        "route": "/about"
+      },
+      {
+        "title": "सूचना",
+        "route": "/notices"
+      },
+      {
+        "title": "संपर्क",
+        "route": "/contact"
+      },
+      {
+        "title": "तक्रार विभाग",
+        "route": "/complaints"
+      }
+    ]
+  },
+
+  "footer": {
+    "address": "आव्हाणे बु, ता. शेवगाव, जि. अहिल्यानगर, महाराष्ट्र – ४१४५०५ (भारत) विभाग - नाशिक विभाग",
+    "icon": "home",
+    "locationTitle": "आमचे स्थान",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120499.68090491484!2d74.9958636967562!3d19.299100548018576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb5d300e31350f%3A0x7eac114549a0defd!2sAwhane%20Bk.%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1771696603284!5m2!1sen!2sus",
+    "usefulLinkTitle": "उपयुक्त लिंक",
+    "usefulLinks": [
+      {
+        "title": "मुख्य पृष्ठ",
+        "route": "/home"
+      },
+      {
+        "title": "ग्रामपंचायत बद्दल",
+        "route": "/about"
+      },
+      {
+        "title": "सेवा",
+        "route": "/services"
+      },
+      {
+        "title": "गॅलरी",
+        "route": "/gallery"
+      },
+      {
+        "title": "संपर्क",
+        "route": "/contact"
+      }
+    ],
+    "socialLinkTitle": "फॉलो करा:",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/share/1DKV8TDVpp/",
+      "twitter": "https://x.com/",
+      "instagram": "https://instagram.com/grampanchyatavhanebk",
+      "youtube": "https://youtube.com/"
+    },
+
+    "copyrightTitle": "सर्व हक्क राखीव.",
+    "developer": "Abhijeet"
+  },
+
+  "homepage": {
+    "homeNoticeType": "🏆 सन्मानाची बातमी : ",
+    "homeNotice": "माझी वसुंधरा अभियान - ०५ सन २०२४-२५ अंतर्गत आव्हाणे बुद्रुक ग्रामपंचायतीला नाशिक विभागामध्ये प्रथम बक्षीस.",
+    "hero": {
+      "imageLeft": "assets/avhanebk/village/temple.jpg",
+      "imageRight": "assets/avhanebk/village/nature1.jpg",
+      "welcomeText": "स्वागतम",
+      "title": "स्मार्ट ग्रामपंचायत",
+      "villageName": "आव्हाणे बु",
+      "greetingText": "मध्ये आपले स्वागत आहे",
+      "tagline": "स्वच्छ • सुंदर • विकसित गाव",
+      "buttonText": "नागरिक सेवा पहा",
+      "buttonRoute": "/services"
+    },
+
+    "importantLinksSection": {
+      "linkTitle": "महत्वाच्या लिंक",
+      "linkDesc": "गावातील नागरिकांसाठी उपलब्ध असलेल्या विविध श्रेणीतील महत्त्वाच्या सेवा आणि माहिती.",
+      "buttonText": "तपशील पहा",
+      "importantLinks": [
+        {
+          "title": "शासकीय योजना",
+          "desc": "केंद्र आणि राज्य शासनाच्या विविध लोककल्याणकारी योजनांची माहिती.",
+          "icon": "policy",
+          "route": "/schemes"
+        },
+        {
+          "title": "विकासकामे",
+          "desc": "गावात सुरू असलेली आणि नियोजित विकासकामांचा प्रगती अहवाल.",
+          "icon": "engineering",
+          "route": "/development"
+        },
+        {
+          "title": "सूचना",
+          "desc": "ग्रामपंचायतीकडून दिल्या जाणाऱ्या महत्त्वाच्या सूचना.",
+          "icon": "campaign",
+          "route": "/notices"
+        },
+        {
+          "title": "सेवा",
+          "desc": "विविध दाखले आणि प्रमाणपत्रांसाठी ऑनलाइन अर्ज.",
+          "icon": "devices",
+          "route": "/services"
+        }
+      ]
+    },
+
+    "villageIntro": {
+      "villageTag": "गावाचा परिचय",
+      "title": "आमचे गाव, आमचा अभिमान",
+      "desc": "आमच्या गावाला समृद्ध ऐतिहासिक वारसा लाभला आहे. हे गाव शेवगांव तालुक्यातील एक प्रगत गाव असून, येथील सुसंस्कृत लोकजीवन आणि एकता हेच आमच्या विकासाचे गमक आहे. गेल्या काही दशकांत गावाने शेती, शिक्षण आणि तंत्रज्ञान क्षेत्रात मोठी प्रगती केली आहे.",
+      "image": "assets/avhanebk/village/grampanchayat-office-avhane-bk.jpg",
+      "buttonText": "अधिक माहिती पहा",
+      "buttonRoute": "/about"
+    },
+
+    "stats": [
+      {
+        "title": "एकूण लोकसंख्या",
+        "value": "४,००० +",
+        "icon": "groups"
+      },
+      {
+        "title": "साक्षरता दर",
+        "value": "७५%",
+        "icon": "school"
+      },
+      {
+        "title": "क्षेत्रफळ (हेक्टर)",
+        "value": "१,२७१",
+        "icon": "landscape"
+      },
+      {
+        "title": "गावातील प्रभाग",
+        "value": "६",
+        "icon": "location_city"
+      }
+    ],
+    "membersSection": {
+      "memberTitle": "महत्त्वाचे पदाधिकारी",
+      "memberButtonText": "सर्व पदाधिकारी पहा",
+      "memberRoute": "/members",
+      "memberCallText": "संपर्क करा",
+      "members": [
+        {
+          "name": "श्री. रामदास पांडू वाघमारे",
+          "role": "सरपंच",
+          "desc": "गावाचा सर्वांगीण विकास आणि पारदर्शकता हेच माझे ध्येय आहे.",
+          "phone": "8605578381",
+          "image": "assets/avhanebk/logo-icons/man-icon.png"
+        },
+        {
+          "name": "श्रीमती. संगीता प्रतापराव कोळगे",
+          "role": "उपसरपंच",
+          "desc": "महिला सक्षमीकरण आणि आरोग्य सेवा सुधारण्यासाठी आम्ही कटिबद्ध आहोत.",
+          "phone": "8605578381",
+          "image": "assets/avhanebk/logo-icons/woman-icon.png"
+        },
+        {
+          "name": "श्री. अशोक श्रीपती नवले",
+          "role": "ग्रा. पं. अधिकारी",
+          "desc": "डिजिटल सेवांद्वारे शासकीय योजनांचा लाभ प्रत्येक घरापर्यंत पोहोचवणे.",
+          "phone": "9767028706",
+          "image": "assets/avhanebk/logo-icons/man-icon.png"
+        }
+      ]
+    },
+
+    "schoolSection": {
+      "tag": "शिक्षण व संस्कार",
+      "title": "आमची जिल्हा परिषद शाळा",
+      "desc": "गावातील जिल्हा परिषद प्राथमिक मराठी शाळा ही केवळ एक वास्तू नसून ज्ञानाचे पवित्र मंदिर आहे. आधुनिक संगणक कक्ष, प्रशस्त क्रीडांगण आणि अनुभवी शिक्षकांमुळे आमची मुले शैक्षणिक व क्रीडा क्षेत्रात नावलौकिक मिळवत आहेत. प्रत्येक मुलाला दर्जेदार शिक्षण मिळावे यासाठी आम्ही सदैव प्रयत्नशील आहोत.",
+      "buttonText": "शाळेबद्दल अधिक माहिती पहा",
+      "buttonRoute": "/schools",
+      "image": "assets/avhanebk/school/zp-school.jpg"
+    },
+    "servicesSection": {
+      "title": "आमच्या नागरिक सेवा",
+      "buttonText": "सर्व सेवा पहा",
+      "buttonRoute": "/services",
+
+      "services": [
+        {
+          "title": "जन्म प्रमाणपत्र",
+          "desc": "नवीन जन्माची नोंदणी आणि डिजिटल प्रमाणपत्रासाठी अर्ज करा.",
+          "image": "assets/avhanebk/services/birth-cert.jpg"
+        },
+        {
+          "title": "मालमत्ता कर",
+          "desc": "घरपट्टी आणि मालमत्ता कराचा भरणा करा व पावती मिळवा.",
+          "image": "assets/avhanebk/services/property-tax.png"
+        },
+        {
+          "title": "पाणी पुरवठा",
+          "desc": "नवीन नळ जोडणीसाठी अर्ज आणि पाणीपट्टी भरणा उपलब्ध.",
+          "image": "assets/avhanebk/services/water-supply.png"
+        },
+        {
+          "title": "विविध दाखले",
+          "desc": "उत्पन्न, रहिवासी आणि इतर महत्त्वाचे सरकारी दाखले मिळवण्यासाठी.",
+          "image": "assets/avhanebk/services/certificates.jpg"
+        }
+      ]
+    },
+
+    "announcement": {
+      "title": "महत्त्वाची सूचना : ग्रामसभा २०२६",
+      "desc": "पुढील महिन्याच्या १५ तारखेला सकाळी १० वाजता ग्रामपंचायतीच्या सभागृहात विशेष ग्रामसभेचे आयोजन करण्यात आले आहे. सर्व ग्रामस्थांनी उपस्थित राहावे."
+    }
+
+  },
+  "membersPage": {
+
+    "header": {
+      "tag": "आमची टीम",
+      "title": "ग्रामपंचायत अधिकारी आणि पदाधिकारी",
+      "desc": "गावाच्या प्रगतीसाठी आणि विकासासाठी समर्पित असलेले आमचे सन्माननीय लोकप्रतिनिधी आणि शासकीय अधिकारी."
+    },
+
+    "mainOfficersTitle": "मुख्य पदाधिकारी",
+    "callButtonText": "संपर्क करा",
+
+    "mainOfficers": [
+      {
+        "name": "श्री. रामदास पांडू वाघमारे",
+        "role": "सरपंच",
+        "desc": "गावाचा सर्वांगीण विकास आणि पारदर्शकता हेच माझे मुख्य ध्येय आहे. आपण सर्व मिळून आपल्या गावाला आदर्श गाव बनवूया.",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      },
+      {
+        "name": "श्रीमती. संगीता प्रतापराव कोळगे",
+        "role": "उपसरपंच",
+        "desc": "महिला सक्षमीकरण, आरोग्य आणि बालविकास या विषयांवर माझे विशेष लक्ष राहील. प्रत्येक घरापर्यंत शासकीय योजना पोहचवू.",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/woman-icon.png"
+      },
+      {
+        "name": "श्री. अशोक श्रीपती नवले",
+        "role": "ग्रामपंचायत अधिकारी",
+        "desc": "डिजिटल सेवांद्वारे शासकीय योजनांचा लाभ प्रत्येक ग्रामस्थापर्यंत पारदर्शकपणे पोहोचवण्यासाठी आमचे प्रशासन कटिबद्ध आहे.",
+        "phone": "9767028706",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      }
+    ],
+
+    "membersTitle": "ग्रामपंचायत सदस्य",
+
+    "members": [
+      {
+        "name": "श्री. संतराम कारभारी दिंडे",
+        "role": "सदस्य",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      },
+      {
+        "name": "सौ. प्रियांका अमोल कवडे",
+        "role": "सदस्य",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/woman-icon.png"
+      },
+      {
+        "name": "सौ. जयश्री नवनाथ तागड",
+        "role": "सदस्य",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/woman-icon.png"
+      },
+      {
+        "name": "सौ. रुपाली संजय नांगरे",
+        "role": "सदस्य",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/woman-icon.png"
+      },
+      {
+        "name": "श्री. सुधाकर रामभाऊ चोथे",
+        "role": "सदस्य",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      },
+      {
+        "name": "श्री. अजमुद्दिन रहीमभाई पठाण",
+        "role": "सदस्य",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      },
+      {
+        "name": "सौ. स्वाती अनिल साळकर",
+        "role": "सदस्य",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/woman-icon.png"
+      },
+      {
+        "name": "श्री. विनायक सुधाकर कळमकर",
+        "role": "सदस्य",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      },
+      {
+        "name": "सौ. अश्विनी गणेश खैरे",
+        "role": "सदस्य",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/woman-icon.png"
+      },
+      {
+        "name": "सौ. आशा शिवाजी रसाळ",
+        "role": "सदस्य",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/woman-icon.png"
+      }
+    ],
+
+    "staffTitle": "प्रशासकीय कर्मचारी",
+
+    "staff": [
+      {
+        "name": "श्री. भारत काकासाहेब कोळगे",
+        "role": "ग्रा.प. लिपिक",
+        "desc": "जबाबदारी: पाणीपुरवठा आणि कर वसुली विभाग",
+        "phone": "7588004276",
+        "phoneDisplay": "+९१ ७५८८००४२७६",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      },
+      {
+        "name": "श्री. नानासाहेब मारुती खैरे",
+        "role": "ग्रा.प. कर्मचारी",
+        "desc": "जबाबदारी: ग्रा.प. कर्मचारी",
+        "phone": "8605578381",
+        "phoneDisplay": "+९१ ८६०५५७८३८१",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      },
+      {
+        "name": "श्री. गणेश नवनाथ डूरे",
+        "role": "पाणी पुरवठा कर्मचारी",
+        "desc": "जबाबदारी: पाणी पुरवठा कर्मचारी",
+        "phone": "8605578381",
+        "phoneDisplay": "+९१ ८६०५५७८३८१",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      },
+      {
+        "name": "श्री. योगेश मदन चोथे",
+        "role": "संगणक परिचालक",
+        "desc": "जबाबदारी: आपले सरकार सेवा केंद्र आणि डिजिटल प्रमाणपत्रे",
+        "phone": "8605578381",
+        "phoneDisplay": "+९१ ८६०५५७८३८१",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      },
+      {
+        "name": "श्री अस्लम वजीरभाई पठाण",
+        "role": "ग्राम रोजगार सहाय्यक",
+        "desc": "जबाबदारी: ग्राम रोजगार सहाय्यक",
+        "phone": "8605578381",
+        "phoneDisplay": "+९१ ८६०५५७८३८१",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      }
+    ],
+
+    "CommitteeTitle": "ग्रामपंचायत समिती",
+    "Committee": [
+      {
+        "title": "समिती 1",
+        "description": "या समिती मार्फत हे काम केले जाते 1",
+        "members": [
+          "समिती सदस्य 1",
+          "समिती सदस्य 2"
+        ]
+      },
+      {
+        "title": "समिती 2",
+        "description": "या समिती मार्फत हे काम केले जाते 2",
+        "members": [
+          "समिती सदस्य 3",
+          "समिती सदस्य 4"
+        ]
+      },
+      {
+        "title": "समिती 3",
+        "description": "या समिती मार्फत हे काम केले जाते 3",
+        "members": [
+          "समिती सदस्य 5",
+          "समिती सदस्य 6"
+        ]
+      },
+      {
+        "title": "समिती 4",
+        "description": "या समिती मार्फत हे काम केले जाते 4",
+        "members": [
+          "समिती सदस्य 7",
+          "समिती सदस्य 8"
+        ]
+      }
+
+    ],
+
+    "complaintSection": {
+      "title": "आपल्या काही तक्रारी किंवा सूचना आहेत?",
+      "desc": "थेट ग्रामपंचायतीला ऑनलाइन तक्रार निवारण प्रणालीद्वारे कळवा. आम्ही आपल्या समस्या सोडवण्यासाठी तत्पर आहोत.",
+      "buttonText": "तक्रार नोंदवा",
+      "route": "/complaints"
+    }
+
+  },
+  "servicesPage": {
+    "header": {
+      "badge": "आमच्या सेवा",
+      "title": "सर्व नागरिक सेवा",
+      "description": "आपल्या सर्व गरजांसाठी पारदर्शक आणि जलद सरकारी सेवा आता उपलब्ध."
+    },
+
+    "services": [
+      {
+        "title": "जन्म प्रमाणपत्र",
+        "icon": "child_care",
+        "image": "assets/avhanebk/services/birth-cert.jpg",
+        "department": "विभाग: नागरिक सेवा",
+        "description": "जन्म झाल्यानंतर २१ दिवसांच्या आत नोंद करणे आवश्यक आहे.",
+        "documentTitle": "आवश्यक कागदपत्रे:",
+        "showDocuments": true,
+        "documents": [
+          "बाळाचा जन्म नोंद अर्ज",
+          "रुग्णालयाचा दाखला किंवा प्रसूती प्रमाणपत्र",
+          "पालकांचे ओळखपत्र (आधार कार्ड / पॅन कार्ड)",
+          "राहत्या पत्त्याचा पुरावा (वीज बिल / रेशन कार्ड)"
+        ],
+        "button": null
+      },
+      {
+        "title": "मालमत्ता कर",
+        "icon": "home_work",
+        "image": "assets/avhanebk/services/property-tax.png",
+        "department": "विभाग: कर विभाग",
+        "description": "घरपट्टी आणि मालमत्ता कराचा भरणा करा व पावती मिळवा.",
+        "documentTitle": "आवश्यक कागदपत्रे:",
+        "showDocuments": true,
+        "documents": [
+          "मालमत्तेचा हक्कपत्र / सातबारा",
+          "मागील कर पावती (जर असेल तर)",
+          "ओळखपत्र (आधार / पॅन)"
+        ],
+        "button": null
+      },
+
+      {
+        "title": "पाणी पुरवठा",
+        "icon": "water_drop",
+        "image": "assets/avhanebk/services/water-supply.png",
+        "department": "विभाग: ग्रामविकास",
+        "description": "नवीन नळ जोडणीसाठी अर्ज आणि पाणीपट्टी भरणा उपलब्ध.",
+        "documentTitle": "आवश्यक कागदपत्रे:",
+        "showDocuments": true,
+        "documents": [
+          "मालकी हक्काचा दाखला / मालमत्ता कर पावती",
+          "घराचा नकाशा किंवा ठिकाणाचे फोटो",
+          "अर्जदाराचे ओळखपत्र (आधार / पॅन)",
+          "शेजाऱ्यांची संमती पत्र (जर आवश्यक असेल तर)"
+        ],
+        "button": null
+      },
+
+      {
+        "title": "विवाह नोंदणी",
+        "icon": "favorite",
+        "image": "assets/avhanebk/services/marriage-cert.jpg",
+        "department": "विभाग: नागरिक सेवा",
+        "description": "विवाह नोंदणी प्रमाणपत्रासाठी अधिकृत अर्ज करा.",
+        "showDocuments": true,
+        "documentTitle": "आवश्यक कागदपत्रे:",
+        "documents": [
+          "वधू-वरांचे आधार कार्ड",
+          "वयाचा पुरावा (शाळा सोडल्याचा दाखला/जन्म दाखला)",
+          "रहिवासी पुरावा",
+          "विवाहाचे आमंत्रण पत्र",
+          "लग्नाचे फोटो",
+          "२ पासपोर्ट आकाराचे फोटो",
+          "साक्षीदारांची (३) कागदपत्रे"
+        ],
+        "button": null
+      },
+
+      {
+        "title": "मृत्यू प्रमाणपत्र",
+        "icon": "sentiment_sad",
+        "image": "assets/avhanebk/services/death-cert.png",
+        "department": "विभाग: नागरिक सेवा",
+        "description": "मृत्यूची नोंदणी आणि प्रमाणपत्र मिळवण्यासाठी अर्ज प्रक्रिया.",
+        "documentTitle": "आवश्यक कागदपत्रे:",
+        "showDocuments": true,
+        "documents": [
+          "मृत व्यक्तीचा आधार कार्ड / ओळखपत्र",
+          "मृत्यूची तारीख आणि ठिकाणाची माहिती",
+          "रुग्णालयाचा किंवा डॉक्टरचा मृत्यू प्रमाणपत्र",
+          "अर्जदाराचे ओळखपत्र",
+          "हमीपत्र",
+          "रेशन कार्ड"
+        ],
+        "button": null
+      },
+
+      {
+        "title": "विविध दाखले",
+        "icon": "description",
+        "image": "assets/avhanebk/services/certificates.jpg",
+        "department": "विभाग: नागरिक सेवा",
+        "description": "उत्पन्न, रहिवासी आणि इतर सरकारी दाखले मिळवण्यासाठी 'आपले सरकार' सेवा केंद्राला भेट द्या.",
+        "documentTitle": "महत्त्वाचे सरकारी प्रमाणपत्र आणि दाखले:",
+        "showDocuments": true,
+        "documents": [
+          "आधार कार्ड",
+          "पॅन कार्ड",
+          "मतदान कार्ड",
+          "रहिवासी दाखला",
+          "उत्पन्न दाखला",
+          "सातबारा आणि आठ अ उतारे"
+        ],
+        "button": null
+      },
+
+      {
+        "title": "तक्रार निवारण",
+        "icon": "forum",
+        "image": "assets/avhanebk/services/complaint.jpg",
+        "department": "विभाग: नागरिक सेवा",
+        "description": "गावातील समस्यांबाबत आपली तक्रार ऑनलाईन नोंदवा आणि पाठपुरावा करा.",
+        "showDocuments": false,
+        "documents": [],
+        "button": {
+          "text": "तक्रार नोंदवा",
+          "route": "/complaints",
+          "icon": "send"
+        }
+      }
+
+    ],
+
+    "helpSection": {
+      "title": "काही मदत हवी आहे का?",
+      "description": "जर आपल्याला काही अडचणी येत असतील तर कृपया आमच्याशी संपर्क साधा.",
+      "buttonText": "आमच्याशी संपर्क साधा",
+      "buttonRoute": "/contact"
+    }
+  },
+
+  "schemesPage": {
+    "header": {
+      "badge": "आमच्या योजना",
+      "title": "शासकीय योजना",
+      "description": "केंद्र आणि राज्य शासनामार्फत राबविण्यात येणाऱ्या विविध लोककल्याणकारी योजनांची माहिती."
+    },
+
+    "schemes": [
+      {
+        "icon": "agriculture",
+        "department": "कृषी विभाग",
+        "government": "केंद्र सरकार",
+        "title": "प्रधानमंत्री किसान सन्मान निधी (PM-KISAN)",
+        "description": "या योजनेअंतर्गत पात्र शेतकरी कुटुंबांना वर्षाला ६,००० रुपयांची आर्थिक मदत थेट बँक खात्यात दिली जाते. ही रक्कम २,००० रुपयांच्या तीन हप्त्यांमध्ये जमा केली जाते.",
+        "documentsTitle": "आवश्यक कागदपत्रे:",
+        "documents": [
+          "आधार कार्ड",
+          "बँक खाते पासबुक",
+          "सातबारा उतारा (7/12)",
+          "८-अ उतारा",
+          "मोबाईल नंबर",
+          "पासपोर्ट आकाराचा फोटो"
+        ]
+      },
+
+      {
+        "icon": "home",
+        "department": "गृहनिर्माण",
+        "government": "केंद्र सरकार",
+        "title": "प्रधानमंत्री आवास योजना (ग्रामीण)",
+        "description": "ग्रामिण भागातील बेघर आणि कच्च्या घरात राहणाऱ्या कुटुंबांना पक्के घर बांधण्यासाठी आर्थिक मदत दिली जाते. यामध्ये स्वच्छ भारत मिशन अंतर्गत शौचालयासाठी अतिरिक्त निधी मिळतो.",
+        "documents": [
+          "आधार कार्ड",
+          "MGNREGA जॉब कार्ड",
+          "बँक खाते पासबुक",
+          "संमती पत्र",
+          "स्वच्छ भारत मिशन (SBM) नंबर",
+          "पासपोर्ट आकाराचा फोटो",
+          "उत्पन्न/जात प्रमाणपत्र"
+        ]
+      },
+      {
+        "icon": "female",
+        "department": "महिला कल्याण",
+        "government": "राज्य सरकार",
+        "title": "मुख्यमंत्री माझी लाडकी बहीण योजना",
+        "description": "महाराष्ट्र राज्यातील महिलांना आर्थिक स्वावलंबनासाठी दरमहा १५०० रुपयांची आर्थिक मदत. महिलांच्या आरोग्य आणि पोषणासाठी ही योजना महत्त्वाची आहे.",
+        "documents": [
+          "आधार कार्ड",
+          "अधिवास/रहिवासी प्रमाणपत्र",
+          "उत्पन्नाचा दाखला",
+          "रेशन कार्ड किंवा मतदार ओळखपत्र",
+          "बँक खाते पासबुक",
+          "पासपोर्ट आकाराचा फोटो",
+          "जन्म दाखला / शाळा सोडल्याचा दाखला",
+          "हमीपत्र"
+        ]
+      },
+
+      {
+        "icon": "water_drop",
+        "department": "पाणी पुरवठा",
+        "government": "केंद्र सरकार",
+        "title": "जल जीवन मिशन (नळ योजना)",
+        "description": "जल जीवन मिशन ही केंद्र सरकारची एक प्रमुख योजना आहे, ज्याचे उद्दिष्ट ग्रामीण भारतातील प्रत्येक घराला नळाद्वारे वैयक्तिक घरगुती नळ जोडणी (FHTC) द्वारे पुरेसे आणि स्वच्छ पिण्याचे पाणी उपलब्ध करून देणे हे आहे. या मिशन अंतर्गत ग्रामीण भागात दरडोई प्रतिदिन ५५ लिटर पाणी पुरवण्याचे लक्ष्य आहे.",
+        "documents": [
+          "आधार कार्ड",
+          "रेशन कार्ड",
+          "अधिवास/रहिवासी प्रमाणपत्र",
+          "बँक खाते पासबुक",
+          "पासपोर्ट आकाराचा फोटो"
+        ]
+      },
+
+      {
+        "icon": "home",
+        "department": "स्वच्छता विभाग",
+        "government": "केंद्र सरकार",
+        "title": "स्वच्छ भारत मिशन - शौचालय योजना",
+        "description": "या योजने अंतर्गत ए.पी.एल. –अल्पभुधारक,भूमीहीन शेतमजूर,एस.सी,एस.टी,महिला कुटूंबप्रमुख,अपंग . बी.पी.एल. – एस.सी,एस.टी, खुला लाभार्थ्याला प्रति शौचालय १२००० रूपये दिले जातात.",
+        "documents": [
+          "आधार कार्ड",
+          "रेशन कार्ड किंवा रहिवासी प्रमाणपत्र",
+          "बँक खाते पासबुक",
+          "पासपोर्ट आकाराचा फोटो",
+          "मोबाइल नंबर",
+          "स्वयं-घोषणापत्र"
+        ]
+      },
+
+      {
+        "icon": "garden_cart",
+        "department": "नियोजन विभाग",
+        "government": "केंद्र सरकार",
+        "title": "रोजगार हमी योजना (मनरेगा - MGNREGA)",
+        "description": "महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार हमी योजने अंतर्गत (मनरेगा - MGNREGA) महाराष्ट्रात ग्रामीण कुटुंबांना एका आर्थिक वर्षात १०० दिवसांच्या अकुशल मजुरीची कायदेशीर हमी देते. हे काम ग्रामपंचायतीमार्फत उपलब्ध करून दिले जाते.",
+        "documents": [
+          "आधार कार्ड",
+          "रेशन कार्ड",
+          "बँक किंवा पोस्ट ऑफिस खाते पासबुक",
+          "राहत्या पत्त्याचा पुरावा",
+          "पासपोर्ट आकाराचे दोन फोटो",
+          "मोबाईल नंबर"
+        ]
+      },
+
+      {
+        "icon": "elderly",
+        "department": "सामाजिक न्याय विभाग",
+        "government": "केंद्र सरकार",
+        "title": "वृद्धापकाळ पेन्शन योजना",
+        "description": "या योजने अंतर्गत दारिद्र्यरेषेखालील (BPL) ६० वर्षे किंवा त्याहून अधिक वयाच्या ज्येष्ठ नागरिकांना मासिक आर्थिक मदत पुरवतात. यात ६०-७९ वर्षे वयोगटासाठी २००-१००० रुपयांची आणि ८० वर्षांवरील वृद्धांना ५००-१२०० रुपयांची केंद्र/राज्य सरकारकडून पेन्शन मिळते.",
+        "documents": [
+          "आधार कार्ड",
+          "वयाचा पुरावा",
+          "रहिवासी प्रमाणपत्र",
+          "उत्पन्नाचा दाखला",
+          "बँक किंवा पोस्ट ऑफिस खाते पासबुक",
+          "हयातीचा दाखला",
+          "पासपोर्ट आकाराचा फोटो"
+        ]
+      },
+
+      {
+        "icon": "elderly_woman",
+        "department": "सामाजिक न्याय विभाग",
+        "government": "केंद्र सरकार",
+        "title": "राष्ट्रीय विधवा निवृत्ती वेतन योजना",
+        "description": "या योजने अंतर्गत महाराष्ट्रात विधवा महिलांसाठी इंदिरा गांधी राष्ट्रीय विधवा निवृत्ती वेतन योजना आणि संजय गांधी निराधार योजना यांद्वारे आर्थिक मदत दिली जाते. बीपीएल (BPL) कुटुंबातील ४० ते ७९ वर्षे वयोगटातील विधवांना दरमहा १५०० रुपयांची (३०० केंद्र + १२०० राज्य) मदत मिळते.",
+        "documents": [
+          "विधवा पेन्शन अर्ज",
+          "पतीचा मृत्यू दाखला",
+          "आधार कार्ड",
+          "रेशन कार्ड",
+          "BPL दाखला",
+          "वयाचा पुरावा",
+          "बँक खाते पासबुक",
+          "रहिवासी दाखला",
+          "पासपोर्ट आकाराचे फोटो"
+        ]
+      },
+
+      {
+        "icon": "accessible",
+        "department": "समाज कल्याण विभाग",
+        "government": "केंद्र सरकार",
+        "title": "दिव्यांग (अपंग) पेन्शन योजना",
+        "description": "महाराष्ट्र शासनाच्या दिव्यांग (अपंग) पेन्शन योजनेअंतर्गत, पात्र दिव्यांग व्यक्तींना त्यांच्या उदरनिर्वाहासाठी दरमहा ६०० ते १५०० रुपयांची (योजनेनुसार) आर्थिक सहाय्य दिले जाते. १८ ते ५९ वयोगटातील ४०% पेक्षा जास्त दिव्यांगत्व असलेल्या व्यक्ती या योजनेसाठी पात्र आहेत, ज्या थेट बँक खात्यात (DBT) जमा होतात",
+        "documents": [
+          "अपंगत्वाचे प्रमाणपत्र",
+          "आधार कार्ड",
+          "उत्पन्नाचा दाखला",
+          "रहिवासी प्रमाणपत्र",
+          "वयाचा पुरावा",
+          "बँक खाते पासबुक",
+          "पासपोर्ट आकाराचे फोटो"
+        ]
+      }
+
+    ],
+
+    "helpSection": {
+      "title": "कोणती योजना आपल्यासाठी योग्य आहे?",
+      "description": "जर आपल्याला योजना निवडण्यात किंवा अर्ज करण्यात अडचण येत असेल, तर आमच्या ग्रामपंचायतीच्या 'योजना मार्गदर्शन' कक्षाला भेट द्या."
+    }
+  },
+
+  "developmentPage": {
+    "header": {
+      "badge": "कार्य अहवाल",
+      "title": "गावातील विकासकामे",
+      "description": "आमच्या ग्रामपंचायतीने हाती घेतलेल्या विविध विकास प्रकल्पांची माहिती आणि सद्यस्थिती. पारदर्शकता आणि प्रगती हेच आमचे ब्रीदवाक्य."
+    },
+
+    "developments": [
+      {
+        "title": "हरित ऊर्जा चळवळ (बायोगॅस प्रकल्प)",
+        "image": "assets/avhanebk/development/biogas-project.jpeg",
+        "status": "सुरू आहे",
+        "statusColor": "brand-gradient-bg",
+        "description": "गावामध्ये सध्या ५० ते १०० पेक्षा अधिक सक्रिय बायोगॅस युनिट्स कार्यरत आहेत. गावातील घरगुती कचरा, शेणखत आणि जैविक अवशेषांचा उपयोग करून तयार होणारी ही स्वच्छ ऊर्जा गावाला ऊर्जास्वावलंबनाच्या दिशेने घेऊन जात आहे.",
+        "progressTitle": "प्रगती",
+        "progressPercent": 75,
+        "progress": "७५%",
+        "budgetLabel": "नियोजित बजेट",
+        "budget": "₹ २५,००,०००",
+        "completionLabel": "अपेक्षित पूर्णता",
+        "completionDate": "डिसेंबर २०२६"
+      },
+
+      {
+        "title": "जि. प. शाळा नूतनीकरण",
+        "image": "assets/avhanebk/development/zp-school.jpg",
+        "status": "पूर्ण झाले",
+        "statusColor": "bg-primary-green",
+        "description": "जिल्हा परिषद शाळेची नवीन इमारत आणि संगणक प्रयोगशाळा बांधण्याचे काम यशस्वीरित्या पूर्ण झाले आहे.",
+        "progressTitle": "प्रगती",
+        "progressPercent": 100,
+        "progress": "१००%",
+        "budgetLabel": "एकूण खर्च",
+        "budget": "₹ १५,५०,०००",
+        "completionLabel": "पूर्ण झाल्याचा दिनांक",
+        "completionDate": "डिसेंबर २०२५"
+      },
+
+      {
+        "title": "मुख्य रस्ता डांबरीकरण",
+        "image": "assets/avhanebk/development/village-road.png",
+        "status": "सुरू आहे",
+        "statusColor": "brand-gradient-bg",
+        "description": "गावातील मुख्य चौकातून जाणारे अंतर्गत रस्ते आणि डांबरीकरणाचे काम सध्या प्रगतीपथावर आहे.",
+        "progressTitle": "प्रगती",
+        "progressPercent": 40,
+        "progress": "४०%",
+        "budgetLabel": "नियोजित बजेट",
+        "budget": "₹ ८,००,०००",
+        "completionLabel": "अपेक्षित पूर्णता",
+        "completionDate": "ऑगस्ट २०२६"
+      }
+    ],
+
+    "complaintSection": {
+      "title": "आपल्या काही तक्रारी किंवा सूचना आहेत?",
+      "description": "गावातील विकासकामांबाबत आपल्या काही सूचना किंवा तक्रारी असल्यास कृपया आम्हाला कळवा. आपले मत आमच्यासाठी महत्त्वाचे आहे.",
+      "buttonText": "तक्रार नोंदवा",
+      "route": "/complaints"
+    }
+  },
+
+  "schoolsPage": {
+    "hero": {
+      "badge": "माझी शाळा, सुंदर शाळा",
+      "title": "आमची जिल्हा परिषद प्राथमिक शाळा",
+      "description": "आपल्या ग्रामपंचायतींतर्गत असलेल्या सर्व शाळांची माहिती एकाच ठिकाणी.",
+      "backgroundImage": "assets/avhanebk/school/ZPSchool.png"
+    },
+
+    "schoolSelector": {
+      "title": "तुमची शाळा निवडा",
+      "icon": "ads_click",
+      "teacherTitle": "आमचे मार्गदर्शक शिक्षक",
+      "teacherDesc": "मधील तज्ज्ञ शिक्षक वृंद"
+    },
+
+    "schoolStats": [
+      {
+        "icon": "groups",
+        "label": "एकूण विद्यार्थी",
+        "field": "totalStudents",
+        "suffix": "+"
+      },
+      {
+        "icon": "person_4",
+        "label": "अनुभवी शिक्षक",
+        "field": "teachersCount"
+      },
+      {
+        "icon": "home",
+        "label": "वर्गखोल्या",
+        "field": "classrooms"
+      },
+      {
+        "icon": "menu_book",
+        "label": "ग्रंथालय पुस्तके",
+        "field": "libraryBooks",
+        "suffix": "+"
+      }
+    ],
+
+    "schools": [
+      {
+        "id": 1,
+        "name": "जि. प. प्रा. शाळा, आव्हाणे बु",
+        "location": "आव्हाणे बु",
+        "totalStudents": "२००",
+        "teachersCount": "१२",
+        "classrooms": "८",
+        "libraryBooks": "१५००",
+        "teachers": [
+          {
+            "name": "श्री. विनायक पाटील 1",
+            "role": "मुख्याध्यापक",
+            "quote": "शिक्षण हाच विकासाचा खरा पाया आहे.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          },
+          {
+            "name": "सौ. अंजली शिंदे 1",
+            "role": "वरिष्ठ शिक्षिका",
+            "quote": "प्रत्येक मूल हे खास असते.",
+            "image": "assets/avhanebk/logo-icons/woman-icon.png"
+          },
+          {
+            "name": "श्री. विनायक पाटील 1",
+            "role": "क्रीडा शिक्षक",
+            "quote": "खेळातूनच शिस्त आणि जिद्द निर्माण होते.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          },
+          {
+            "name": "श्री. विनायक पाटील 1",
+            "role": "भाषा शिक्षक",
+            "quote": "वाचाल तर वाचाल.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "जि. प. प्रा. शाळा, तागडवस्ती",
+        "location": "तागडवस्ती",
+        "totalStudents": "१५०",
+        "teachersCount": "८",
+        "classrooms": "८",
+        "libraryBooks": "१२००",
+        "teachers": [
+          {
+            "name": "श्री. विनायक पाटील 2",
+            "role": "मुख्याध्यापक",
+            "quote": "शिक्षण हाच विकासाचा खरा पाया आहे.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          },
+          {
+            "name": "सौ. अंजली शिंदे 2",
+            "role": "वरिष्ठ शिक्षिका",
+            "quote": "प्रत्येक मूल हे खास असते.",
+            "image": "assets/avhanebk/logo-icons/woman-icon.png"
+          },
+          {
+            "name": "श्री. विनायक पाटील 2",
+            "role": "क्रीडा शिक्षक",
+            "quote": "खेळातूनच शिस्त आणि जिद्द निर्माण होते.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          },
+          {
+            "name": "श्री. विनायक पाटील 2",
+            "role": "भाषा शिक्षक",
+            "quote": "वाचाल तर वाचाल.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "जि. प. प्रा. शाळा, गणेशवाडी",
+        "location": "गणेशवाडी",
+        "totalStudents": "१००",
+        "teachersCount": "६",
+        "classrooms": "६",
+        "libraryBooks": "१०००",
+        "teachers": [
+          {
+            "name": "श्री. विनायक पाटील 3",
+            "role": "मुख्याध्यापक",
+            "quote": "शिक्षण हाच विकासाचा खरा पाया आहे.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          },
+          {
+            "name": "सौ. अंजली शिंदे 3",
+            "role": "वरिष्ठ शिक्षिका",
+            "quote": "प्रत्येक मूल हे खास असते.",
+            "image": "assets/avhanebk/logo-icons/woman-icon.png"
+          },
+          {
+            "name": "श्री. विनायक पाटील 3",
+            "role": "क्रीडा शिक्षक",
+            "quote": "खेळातूनच शिस्त आणि जिद्द निर्माण होते.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          },
+          {
+            "name": "श्री. विनायक पाटील 3",
+            "role": "भाषा शिक्षक",
+            "quote": "वाचाल तर वाचाल.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "जि. प. प्रा. शाळा, दिंडेवाडी",
+        "location": "गणेशवाडी",
+        "totalStudents": "८०",
+        "teachersCount": "७",
+        "classrooms": "८",
+        "libraryBooks": "१३००",
+        "teachers": [
+          {
+            "name": "श्री. विनायक पाटील 4",
+            "role": "मुख्याध्यापक",
+            "quote": "शिक्षण हाच विकासाचा खरा पाया आहे.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          },
+          {
+            "name": "सौ. अंजली शिंदे 4",
+            "role": "वरिष्ठ शिक्षिका",
+            "quote": "प्रत्येक मूल हे खास असते.",
+            "image": "assets/avhanebk/logo-icons/woman-icon.png"
+          },
+          {
+            "name": "श्री. विनायक पाटील 4",
+            "role": "क्रीडा शिक्षक",
+            "quote": "खेळातूनच शिस्त आणि जिद्द निर्माण होते.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          },
+          {
+            "name": "श्री. विनायक पाटील 4",
+            "role": "भाषा शिक्षक",
+            "quote": "वाचाल तर वाचाल.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "श्री. गजानन माध्य. विद्यालय, आव्हाणे बु",
+        "location": "आव्हाणे बु",
+        "totalStudents": "८०",
+        "teachersCount": "७",
+        "classrooms": "८",
+        "libraryBooks": "१३००",
+        "teachers": [
+          {
+            "name": "श्री. विनायक पाटील 5",
+            "role": "मुख्याध्यापक",
+            "quote": "शिक्षण हाच विकासाचा खरा पाया आहे.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          },
+          {
+            "name": "सौ. अंजली शिंदे 5",
+            "role": "वरिष्ठ शिक्षिका",
+            "quote": "प्रत्येक मूल हे खास असते.",
+            "image": "assets/avhanebk/logo-icons/woman-icon.png"
+          },
+          {
+            "name": "श्री. विनायक पाटील 5",
+            "role": "क्रीडा शिक्षक",
+            "quote": "खेळातूनच शिस्त आणि जिद्द निर्माण होते.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          },
+          {
+            "name": "श्री. विनायक पाटील 5",
+            "role": "भाषा शिक्षक",
+            "quote": "वाचाल तर वाचाल.",
+            "image": "assets/avhanebk/logo-icons/man-icon.png"
+          }
+        ]
+      }
+    ],
+    "facilityTitle": "शाळेतील सोयी-सुविधा",
+    "facilityDescription": "आम्ही आमच्या विद्यार्थ्यांना सर्वोत्तम शैक्षणिक वातावरण आणि आधुनिक सुविधा पुरवण्यासाठी सदैव कार्यरत आहोत.",
+    "facilities": [
+      {
+        "icon": "laptop_mac",
+        "title": "ई-लर्निंग लॅब",
+        "description": "आधुनिक संगणक कक्ष आणि प्रोजेक्टरच्या साहाय्याने विद्यार्थ्यांना डिजिटल शिक्षण दिले जाते."
+      },
+      {
+        "icon": "sports_soccer",
+        "title": "क्रीडांगण",
+        "description": "विविध खेळांसाठी प्रशस्त मैदान आणि क्रीडा साहित्याची उपलब्धता, ज्यामुळे शारीरिक विकास होतो."
+      },
+      {
+        "icon": "restaurant",
+        "title": "माध्यान्ह भोजन",
+        "description": "स्वच्छ आणि पौष्टिक आहार दररोज विद्यार्थ्यांना शासनाच्या नियमानुसार दिला जातो."
+      }
+    ],
+
+    "galleryTitle": "शाळा गॅलरी",
+    "gallery": [
+      {
+        "image": "assets/avhanebk/school/gathering.jpg",
+        "title": "वार्षिक स्नेहसंमेलन"
+      },
+      {
+        "image": "assets/avhanebk/school/tree-plantation.jpg",
+        "title": "वृक्षारोपण कार्यक्रम"
+      },
+      {
+        "image": "assets/avhanebk/school/ganpati-visarjan.jpg",
+        "title": "गणेश विसर्जन"
+      },
+      {
+        "image": "assets/avhanebk/school/rangoli-competition1.jpg",
+        "title": "रांगोळी स्पर्धा"
+      },
+      {
+        "image": "assets/avhanebk/school/rangoli-competition2.jpg",
+        "title": "रांगोळी स्पर्धा"
+      },
+      {
+        "image": "assets/avhanebk/school/rangoli-competition3.jpg",
+        "title": "रांगोळी स्पर्धा"
+      },
+      {
+        "image": "assets/avhanebk/school/school-talent1.jpg",
+        "title": "विविध गुणदर्शन"
+      },
+      {
+        "image": "assets/avhanebk/school/school-talent2.jpg",
+        "title": "विविध गुणदर्शन"
+      },
+      {
+        "image": "assets/avhanebk/school/school-talent3.jpg",
+        "title": "विविध गुणदर्शन"
+      },
+      {
+        "image": "assets/avhanebk/school/school-talent4.jpg",
+        "title": "विविध गुणदर्शन"
+      },
+      {
+        "image": "assets/avhanebk/school/school-talent5.jpg",
+        "title": "विविध गुणदर्शन"
+      },
+      {
+        "image": "assets/avhanebk/school/diwali-celebration.jpg",
+        "title": "दिवाळी उत्सव"
+      },
+      {
+        "image": "assets/avhanebk/school/school-sport1.jpg",
+        "title": "क्रीडा स्पर्धा"
+      },
+      {
+        "image": "assets/avhanebk/school/school-sport2.jpg",
+        "title": "क्रीडा स्पर्धा"
+      },
+      {
+        "image": "assets/avhanebk/school/school-sport3.jpg",
+        "title": "क्रीडा स्पर्धा"
+      },
+      {
+        "image": "assets/avhanebk/school/school-sport4.jpg",
+        "title": "क्रीडा स्पर्धा"
+      },
+      {
+        "image": "assets/avhanebk/school/school-sport5.jpg",
+        "title": "क्रीडा स्पर्धा"
+      },
+      {
+        "image": "assets/avhanebk/school/school-sport6.jpg",
+        "title": "क्रीडा स्पर्धा"
+      },
+      {
+        "image": "assets/avhanebk/school/highschool1.jpg",
+        "title": "क्रीडा स्पर्धा"
+      },
+      {
+        "image": "assets/avhanebk/school/highschool2.jpg",
+        "title": "शिस्त, संस्कार आणि शिक्षण"
+      },
+      {
+        "image": "assets/avhanebk/school/highschool3.jpg",
+        "title": "शिस्त, संस्कार आणि शिक्षण"
+      },
+      {
+        "image": "assets/avhanebk/school/highschool4.jpg",
+        "title": "शिस्त, संस्कार आणि शिक्षण"
+      },
+      {
+        "image": "assets/avhanebk/school/highschool5.jpg",
+        "title": "शिस्त, संस्कार आणि शिक्षण"
+      },
+      {
+        "image": "assets/avhanebk/school/highschool6.jpg",
+        "title": "शिस्त, संस्कार आणि शिक्षण"
+      }
+    ],
+
+    "donationSection": {
+      "title": "शाळेच्या प्रगतीत आपला सहभाग नोंदवा",
+      "description": "शाळेच्या विकासासाठी आपण देणगी किंवा शैक्षणिक साहित्य स्वरूपात मदत करू शकता. आपल्या मदतीने उद्याचे भविष्य अधिक उज्ज्वल होईल.",
+      "buttonText": "संपर्क साधा",
+      "route": "/contact"
+    }
+  },
+
+  "galleryPage": {
+    "header": {
+      "title": "फोटो गॅलरी",
+      "description": "गावातील विविध उपक्रम, उत्सव आणि विकासकामांची क्षणचित्रे."
+    },
+
+    "gallery": [
+      {
+        "image": "assets/avhanebk/village/gram-sabha.jpg",
+        "title": "मासिक ग्रामसभा आयोजन"
+      },
+      {
+        "image": "assets/avhanebk/village/village-road.png",
+        "title": "नवीन रस्ता डांबरीकरण प्रगतीपथवर"
+      },
+      {
+        "image": "assets/avhanebk/village/school-gathering.jpg",
+        "title": "शालेय स्नेहसंमेलन आणि बक्षीस वितरण"
+      },
+      {
+        "image": "assets/avhanebk/village/tree-plantation.jpg",
+        "title": "वृक्षारोपण मोहीम - हरित गाव"
+      },
+      {
+        "image": "assets/avhanebk/village/health-checkup.jpg",
+        "title": "मोफत आरोग्य तपासणी शिबिर"
+      },
+      {
+        "image": "assets/avhanebk/village/nursery.jpg",
+        "title": "ग्रामपंचायत रोपवाटिका"
+      },
+      {
+        "image": "assets/avhanebk/village/bachat-gat.jpg",
+        "title": "महिला बचत गट मेळावा"
+      },
+      {
+        "image": "assets/avhanebk/village/swachata-abhiyan.jpg",
+        "title": "स्वच्छता अभियान - सुंदर गाव"
+      },
+      {
+        "image": "assets/avhanebk/village/biogas-project.jpg",
+        "title": "बायोगॅस प्रकल्प"
+      },
+      {
+        "image": "assets/avhanebk/village/shivjayanti.jpg",
+        "title": "शिवजयंती उत्सव"
+      },
+      {
+        "image": "assets/avhanebk/village/solar-pump-project.jpg",
+        "title": "सोलर पंप प्रकल्प"
+      },
+      {
+        "image": "assets/avhanebk/village/tree-plantation2.jpg",
+        "title": "वृक्षारोपण मोहीम - हरित गाव"
+      },
+      {
+        "image": "assets/avhanebk/village/health-advice.jpg",
+        "title": "जेष्ठ नागरिक आरोग्य समुपदेशन"
+      },
+      {
+        "image": "assets/avhanebk/village/ganpati-visarjan.jpg",
+        "title": "पर्यावरणपूरक गणेश विसर्जन"
+      },
+      {
+        "image": "assets/avhanebk/village/water-harvesting.jpg",
+        "title": "पाणी आडवा पाणी जिरवा मोहीम"
+      }
+    ]
+  },
+
+  "aboutPage": {
+    "header": {
+      "badge": "आदर्श आणि स्मार्ट गाव",
+      "title": "आमची ग्रामपंचायत",
+      "description": "लोकसहभाग, आधुनिक तंत्रज्ञान आणि पर्यावरण संवर्धनातून साकारलेल प्रगत गावं."
+    },
+
+    "history": {
+      "title": "ऐतिहासिक वारसा",
+      "icon": "history_edu",
+      "paragraphs": [
+        "आव्हाणे बु हे अहिल्यानगर जिल्ह्यातील शेवगाव तालुक्यात वसलेले एक प्रगत आणि ऐतिहासिक गाव आहे. आव्हाणे गावाचा इतिहास पेशवे काळापासून प्रसिद्ध आहे. स्वातंत्र्योत्तर काळात, १९५६ मध्ये ग्रामपंचायतीची अधिकृत स्थापना झाली आणि तेव्हापासून गावाने स्वावलंबनाच्या दिशेने पाऊले उचलली.",
+        "गावातील स्वयंभु निद्रीस्त गणपती मंदिर आणि इतर जुनी मंदिरे आजही आमच्या समृद्ध संस्कृतीची साक्ष देतात. गेल्या सहा दशकांत, लोकसहभागातून गावाने रस्ते, वीज आणि जलसंधारणाच्या क्षेत्रात उल्लेखनीय कार्य केले आहे."
+      ],
+      "images": [
+        "assets/avhanebk/village/temple.jpg",
+        "assets/avhanebk/village/grampanchayat-office-avhane-bk.jpg"
+      ]
+    },
+
+    "statistics": {
+      "title": "ग्रामपंचायत सांख्यिकी माहिती",
+      "icon": "analytics",
+
+      "progress": [
+        {
+          "label": "साक्षरता दर",
+          "progressPercent": 75,
+          "progress": "७५%"
+        },
+        {
+          "label": "सेवा उपलब्धता",
+          "progressPercent": 95,
+          "progress": "९५%"
+        }
+      ],
+
+      "stats": [
+        {
+          "label": "स्थापना",
+          "value": "१९५६"
+        },
+        {
+          "label": "प्रभाग",
+          "value": "६"
+        },
+        {
+          "label": "सदस्य",
+          "value": "१२"
+        },
+        {
+          "label": "लोकसंख्या",
+          "value": "४,०००+"
+        },
+        {
+          "label": "क्षेत्रफळ",
+          "value": "१,२७१"
+        },
+        {
+          "label": "शाळा/अंगणवाडी",
+          "value": "१०"
+        }
+      ]
+    },
+
+    "awardsSection": {
+      "icon": "workspace_premium",
+      "title": "प्रमुख पुरस्कार",
+      "awards": [
+        {
+          "icon": "emoji_events",
+          "title": "माझी वसुंधरा अभियान - ०५",
+          "description": "सन २०२४-२५ अंतर्गत आव्हाणे बुद्रुक ग्रामपंचायतीला नाशिक विभागामध्ये प्रथम बक्षीस"
+        },
+        {
+          "icon": "emoji_events",
+          "title": "स्मार्ट व्हिलेज अवॉर्ड",
+          "description": "२०२१ - डिजिटल सेवा आणि ई-गव्हर्नन्ससाठी सन्मान."
+        },
+        {
+          "icon": "emoji_events",
+          "title": "निर्मल ग्राम पुरस्कार",
+          "description": "२०१५ - स्वच्छता मोहिमेसाठी केंद्र शासनाकडून प्राप्त."
+        }
+      ]
+    },
+
+    "mission": {
+      "title": "आमचे ध्येय",
+      "description": "आमचे गाव तंत्रज्ञानाने सुसज्ज, स्वच्छ, हरित आणि समृद्ध बनवणे, जेणेकरून प्रत्येक नागरिकाचे जीवन सुखकर होईल.",
+      "icon": "check_circle",
+      "points": [
+        "१००% सौर ऊर्जेचा वापर",
+        "कचरा मुक्त आणि प्लास्टिक मुक्त गाव",
+        "प्रत्येक घराला शुद्ध नळ पाणी"
+      ]
+    },
+    "quickLinkTitle": "महत्वाच्या लिंक",
+
+    "quickLinks": [
+      {
+        "title": "पदाधिकारी यादी",
+        "route": "/members",
+        "icon": "arrow_forward"
+      },
+      {
+        "title": "ग्रामपंचायत वृत्तांत",
+        "route": "/notices",
+        "icon": "arrow_forward"
+      },
+      {
+        "title": "विकास निधी अहवाल",
+        "route": "/development",
+        "icon": "arrow_forward"
+      }
+    ],
+    "officialsTitle": "महत्त्वाचे पदाधिकारी",
+    "officials": [
+      {
+        "name": "श्री. रामदास पांडू वाघमारे",
+        "role": "सरपंच",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/man-icon.png",
+        "icon": "verified",
+        "callButtonText": "संपर्क करा"
+      },
+      {
+        "name": "श्रीमती. संगीता प्रतापराव कोळगे",
+        "role": "उपसरपंच",
+        "phone": "8605578381",
+        "image": "assets/avhanebk/logo-icons/woman-icon.png",
+        "icon": "verified",
+        "callButtonText": "संपर्क करा"
+      },
+      {
+        "name": "श्री. अशोक श्रीपती नवले",
+        "role": "ग्रामपंचायत अधिकारी",
+        "phone": "9767028706",
+        "image": "assets/avhanebk/logo-icons/man-icon.png",
+        "icon": "verified",
+        "callButtonText": "संपर्क करा"
+      }
+    ]
+  },
+
+  "noticePage": {
+    "header": {
+      "badge": "अधिकृत घोषणा",
+      "title": "जाहीर सूचना",
+      "description": "ग्रामपंचायतीद्वारे वेळोवेळी निर्गमित करण्यात येणाऱ्या महत्त्वाच्या सूचना, निविदा आणि सार्वजनिक घोषणांची अधिकृत माहिती येथे उपलब्ध आहे."
+    },
+
+    "notices": [
+      {
+        "month": "फेब्रूवारी",
+        "day": "२२",
+        "year": "२०२६",
+        "category": "आरोग्य",
+        "time": "",
+        "title": "मोफत आरोग्य तपासणी शिबिर आयोजन",
+        "description": "येत्या रविवारी प्राथमिक आरोग्य केंद्रात सर्व वयोगटातील नागरिकांसाठी मोफत आरोग्य तपासणी आणि औषध वाटप शिबिराचे आयोजन करण्यात आले आहे.",
+        "pdf": ""
+      },
+      {
+        "month": "जानेवारी",
+        "day": "२८",
+        "year": "२०२६",
+        "category": "निविदा",
+        "time": "",
+        "title": "गावांतर्गत सौर पथदिवे बसवणे - ई-निविदा सूचना",
+        "description": "मुख्य चौक आणि अंतर्गत रस्त्यांवर सौर पथदिवे बसवण्याच्या कामासाठी अनुभवी कंत्राटदारांकडून ई-निविदा मागवण्यात येत आहेत.",
+        "pdf": ""
+      },
+      {
+        "month": "सप्टेंबर",
+        "day": "१५",
+        "year": "२०२५",
+        "category": "कृषी",
+        "time": "",
+        "title": "पीक विमा योजना २०२५-२६ नोंदणी आवाहन",
+        "description": "खरीप हंगामातील पिकांच्या विम्यासाठी नोंदणी करण्याची अंतिम मुदत जवळ येत असून, शेतकऱ्यांनी आपले अर्ज लवकर सादर करावेत.",
+        "pdf": ""
+      }
+    ]
+  },
+
+  "contactPage": {
+    "header": {
+      "badge": "संपर्क",
+      "title": "आमच्याशी संपर्क साधा"
+    },
+
+    "form": {
+      "title": "आम्हाला संदेश पाठवा",
+
+      "fields": {
+        "name": {
+          "label": "पूर्ण नाव",
+          "placeholder": "तुमचे नाव प्रविष्ट करा"
+        },
+        "mobile": {
+          "label": "मोबाईल नंबर",
+          "placeholder": "१० अंकी मोबाईल नंबर"
+        },
+        "email": {
+          "label": "ईमेल पत्ता",
+          "placeholder": "example@mail.com"
+        },
+        "subject": {
+          "label": "विषय",
+          "options": [
+            "सामान्य चौकशी",
+            "दाखल्यासाठी विचारणा",
+            "योजनेबद्दल माहिती",
+            "इतर"
+          ]
+        },
+        "message": {
+          "label": "तुमचा संदेश",
+          "placeholder": "येथे लिहा..."
+        }
+      },
+
+      "submitButton": {
+        "text": "संदेश पाठवा",
+        "loadingText": "पाठवत आहे..."
+      },
+
+      "successMessage": "तुमचा संदेश यशस्वीरित्या पाठवला गेला.",
+      "formErrorMessage": "कृपया सर्व आवश्यक माहिती भरा",
+      "sendErrorMessage": "संदेश पाठवताना त्रुटी आली"
+    },
+
+    "map": {
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120499.68090491484!2d74.9958636967562!3d19.299100548018576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb5d300e31350f%3A0x7eac114549a0defd!2sAwhane%20Bk.%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1771713161687!5m2!1sen!2sus"
+    }
+  },
+
+  "complaintPage": {
+    "header": {
+      "badge": "तक्रार",
+      "title": "तक्रार निवारण केंद्र",
+      "description": "नागरिकांच्या समस्यांचे त्वरित निवारण करण्यासाठी आमचा हा ऑनलाइन मंच समर्पित आहे. कृपया खालील फॉर्म काळजीपूर्वक भरा."
+    },
+
+    "form": {
+      "title": "नवीन तक्रार नोंदवा",
+      "icon": "edit_note",
+      "fields": {
+        "name": {
+          "label": "तक्रारदाराचे नाव",
+          "placeholder": "पूर्ण नाव प्रविष्ट करा",
+          "required": true
+        },
+
+        "mobile": {
+          "label": "फोन नंबर",
+          "placeholder": "१० अंकी मोबाईल नंबर",
+          "required": true
+        },
+
+        "email": {
+          "label": "ईमेल आयडी",
+          "placeholder": "example@mail.com",
+          "required": false
+        },
+
+        "aadhaar": {
+          "label": "आधार क्रमांक",
+          "placeholder": "पूर्ण आधार क्रमांक प्रविष्ट करा",
+          "required": true
+        },
+
+        "address": {
+          "label": "पत्ता",
+          "placeholder": "आपला पूर्ण पत्ता येथे लिहा...",
+          "required": true
+        },
+
+        "subject": {
+          "label": "तक्रारीचा विषय",
+          "placeholder": "विषय निवडा",
+          "required": true,
+
+          "options": [
+            "पाणी पुरवठा",
+            "वीज समस्या",
+            "रस्ते व खड्डे",
+            "स्वच्छता व सांडपाणी",
+            "अतिक्रमण",
+            "इतर"
+          ]
+        },
+
+        "description": {
+          "label": "तक्रारीचे सविस्तर वर्णन",
+          "placeholder": "आपल्या तक्रारीचे सविस्तर वर्णन येथे लिहा..."
+        },
+
+        "imageUpload": {
+          "label": "पुराव्यासाठी फोटो अपलोड करा",
+          "selectText": "फोटो निवडा",
+          "dragText": "किंवा येथे ड्रॅग आणि ड्रॉप करा",
+          "hint": "PNG, JPG, GIF कमाल ५ MB",
+          "previewLabel": "निवडलेला फोटो",
+          "icon": "image"
+        }
+      },
+
+      "submitButton": {
+        "text": "तक्रार सादर करा",
+        "loadingText": "पाठवत आहे..."
+      },
+
+      "successMessage": "तुमची तक्रार यशस्वीरित्या नोंदवली गेली.",
+      "formErrorMessage": "कृपया सर्व आवश्यक माहिती भरा",
+      "sendErrorMessage": "तक्रार सादर करताना त्रुटी आली"
+    },
+
+    "infoSection": {
+      "title": "महत्वाची माहिती",
+      "icon": "info",
+      "points": [
+        "आपली तक्रार गोपनीय ठेवली जाईल.",
+        "सामान्यतः ७ कार्य दिवसांच्या आत तक्रारीचे निवारण करण्याचा प्रयत्न केला जातो.",
+        "अति-तातडीच्या समस्यांसाठी कृपया थेट कार्यालयाशी संपर्क साधा."
+      ]
+    }
+  }
+
+}

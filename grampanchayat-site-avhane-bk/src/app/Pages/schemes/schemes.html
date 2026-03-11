@@ -1,341 +1,36 @@
 <main class="max-w-[1400px]  mx-auto px-4 py-6">
   <div class="mb-12 text-center">
-    <span class="inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase tracking-widest">आमच्या योजना</span>
-    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">शासकीय योजना</h2>
+    <span class="inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase tracking-widest">{{config?.schemesPage?.header?.badge}}</span>
+    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">{{config?.schemesPage?.header?.title}}</h2>
     <div class="h-1.5 w-64 brand-gradient-bg rounded-full mb-6 mx-auto"></div>
-    <p class="text-slate-600 text-lg max-w-3xl mx-auto">केंद्र आणि राज्य शासनामार्फत राबविण्यात येणाऱ्या विविध लोककल्याणकारी योजनांची माहिती.</p>
+    <p class="text-slate-600 text-lg max-w-3xl mx-auto">{{config?.schemesPage?.header?.description}}</p>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-    <div class="scheme-card flex flex-col h-full relative overflow-hidden">
+    <div *ngFor="let scheme of config?.schemesPage?.schemes" class="scheme-card flex flex-col h-full relative overflow-hidden">
       <div class="absolute top-0 right-0 w-32 h-32 brand-gradient-bg opacity-[0.03] -mr-16 -mt-16 rounded-full"></div>
       <div class="flex flex-col md:flex-row gap-6 flex-grow">
         <div class="shrink-0">
           <div class="w-14 h-14 bg-blue-50 text-primary-blue rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl">agriculture</span>
+            <span class="material-symbols-outlined text-4xl">{{scheme.icon}}</span>
           </div>
         </div>
         <div class="flex-grow">
           <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="px-3 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wider">कृषी विभाग</span>
-            <span class="px-3 py-0.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider">केंद्र सरकार</span>
+            <span class="px-3 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wider">{{scheme.department}}</span>
+            <span class="px-3 py-0.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider">{{scheme.government}}</span>
           </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">प्रधानमंत्री किसान सन्मान निधी (PM-KISAN)</h4>
+          <h4 class="text-xl font-bold text-slate-900 mb-2">{{scheme.title}}</h4>
           <p class="text-slate-600  mb-6 leading-relaxed">
-            या योजनेअंतर्गत पात्र शेतकरी कुटुंबांना वर्षाला ६,००० रुपयांची आर्थिक मदत थेट बँक खात्यात दिली जाते. ही रक्कम २,००० रुपयांच्या तीन हप्त्यांमध्ये जमा केली जाते.
-          </p>
-          <!-- <div class="flex flex-wrap gap-4 items-center">
-          <button class="action-btn px-6 py-2.5 rounded-lg font-bold ">तपशील पहा</button>
-          <button class="outline-gradient-btn group">
-          <div class="btn-inner"><span>अर्ज करा</span></div>
-          </button>
-          </div> -->
-        </div>
-      </div>
-      <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-        <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-        <ul class="list-disc list-inside  text-gray-700 space-y-1">
-          <li>आधार कार्ड</li>
-          <li>बँक खाते पासबुक</li>
-          <li>सातबारा उतारा (7/12)</li>
-          <li>८-अ उतारा</li>
-          <li>मोबाईल नंबर</li>
-          <li>पासपोर्ट आकाराचा फोटो</li>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="scheme-card flex flex-col h-full relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-32 h-32 brand-gradient-bg opacity-[0.03] -mr-16 -mt-16 rounded-full"></div>
-      <div class="flex flex-col md:flex-row gap-6 flex-grow">
-        <div class="shrink-0">
-          <div class="w-14 h-14 bg-blue-50 text-primary-blue rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl">home</span>
-          </div>
-        </div>
-        <div class="flex-grow">
-          <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="px-3 py-0.5 bg-orange-100 text-orange-700 text-xs font-bold rounded-full uppercase tracking-wider">गृहनिर्माण</span>
-            <span class="px-3 py-0.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider">केंद्र सरकार</span>
-          </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">प्रधानमंत्री आवास योजना (ग्रामीण)</h4>
-          <p class="text-slate-600  mb-6 leading-relaxed">
-            ग्रामिण भागातील बेघर आणि कच्च्या घरात राहणाऱ्या कुटुंबांना पक्के घर बांधण्यासाठी आर्थिक मदत दिली जाते. यामध्ये स्वच्छ भारत मिशन अंतर्गत शौचालयासाठी अतिरिक्त निधी मिळतो.
+            {{scheme.description}}
           </p>
         </div>
       </div>
       <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-        <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
+        <h4 class=" font-semibold text-blue-800 mb-2">{{scheme.documentsTitle}}</h4>
         <ul class="list-disc list-inside  text-gray-700 space-y-1">
-          <li>आधार कार्ड</li>
-          <li>MGNREGA जॉब कार्ड</li>
-          <li>बँक खाते पासबुक</li>
-          <li>संमती पत्र</li>
-          <li>स्वच्छ भारत मिशन (SBM) नंबर</li>
-          <li>पासपोर्ट आकाराचा फोटो</li>
-          <li>उत्पन्न/जात प्रमाणपत्र</li>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="scheme-card flex flex-col h-full relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-32 h-32 brand-gradient-bg opacity-[0.03] -mr-16 -mt-16 rounded-full"></div>
-      <div class="flex flex-col md:flex-row gap-6 flex-grow">
-        <div class="shrink-0">
-          <div class="w-14 h-14 bg-blue-50 text-primary-blue rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl">female</span>
-          </div>
-        </div>
-        <div class="flex-grow">
-          <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="px-3 py-0.5 bg-pink-100 text-pink-700 text-xs font-bold rounded-full uppercase tracking-wider">महिला कल्याण</span>
-            <span class="px-3 py-0.5 bg-purple-100 text-purple-700 text-xs font-bold rounded-full uppercase tracking-wider">राज्य सरकार</span>
-          </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">मुख्यमंत्री माझी लाडकी बहीण योजना</h4>
-          <p class="text-slate-600  mb-6 leading-relaxed">
-            महाराष्ट्र राज्यातील महिलांना आर्थिक स्वावलंबनासाठी दरमहा १५०० रुपयांची आर्थिक मदत. महिलांच्या आरोग्य आणि पोषणासाठी ही योजना महत्त्वाची आहे.
-          </p>
-        </div>
-      </div>
-      <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-        <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-        <ul class="list-disc list-inside  text-gray-700 space-y-1">
-          <li>आधार कार्ड</li>
-          <li>अधिवास/रहिवासी प्रमाणपत्र</li>
-          <li>उत्पन्नाचा दाखला</li>
-          <li>रेशन कार्ड किंवा मतदार ओळखपत्र</li>
-          <li>बँक खाते पासबुक</li>
-          <li>पासपोर्ट आकाराचा फोटो</li>
-          <li>जन्म दाखला / शाळा सोडल्याचा दाखला</li>
-          <li>हमीपत्र</li>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="scheme-card flex flex-col h-full relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-32 h-32 brand-gradient-bg opacity-[0.03] -mr-16 -mt-16 rounded-full"></div>
-      <div class="flex flex-col md:flex-row gap-6 flex-grow">
-        <div class="shrink-0">
-          <div class="w-14 h-14 bg-blue-50 text-primary-blue rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl">water_drop</span>
-          </div>
-        </div>
-        <div class="flex-grow">
-          <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="px-3 py-0.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider">पाणी पुरवठा</span>
-            <span class="px-3 py-0.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider">केंद्र सरकार</span>
-          </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">जल जीवन मिशन (नळ योजना)</h4>
-          <p class="text-slate-600  mb-6 leading-relaxed">
-            जल जीवन मिशन ही केंद्र सरकारची एक प्रमुख योजना आहे, ज्याचे उद्दिष्ट ग्रामीण भारतातील प्रत्येक घराला नळाद्वारे वैयक्तिक घरगुती नळ जोडणी (FHTC) द्वारे पुरेसे आणि स्वच्छ पिण्याचे पाणी उपलब्ध करून देणे हे आहे. या मिशन अंतर्गत ग्रामीण भागात दरडोई प्रतिदिन ५५ लिटर पाणी पुरवण्याचे लक्ष्य आहे.
-          </p>
-        </div>
-      </div>
-      <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-        <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-        <ul class="list-disc list-inside  text-gray-700 space-y-1">
-          <li>आधार कार्ड</li>
-          <li>रेशन कार्ड</li>
-          <li>अधिवास/रहिवासी प्रमाणपत्र</li>
-          <li>बँक खाते पासबुक</li>
-          <li>पासपोर्ट आकाराचा फोटो</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="scheme-card flex flex-col h-full relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-32 h-32 brand-gradient-bg opacity-[0.03] -mr-16 -mt-16 rounded-full"></div>
-      <div class="flex flex-col md:flex-row gap-6 flex-grow">
-        <div class="shrink-0">
-          <div class="w-14 h-14 bg-blue-50 text-primary-blue rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl">home</span>
-          </div>
-        </div>
-        <div class="flex-grow">
-          <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="px-3 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wider">स्वच्छता विभाग</span>
-            <span class="px-3 py-0.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider">केंद्र सरकार</span>
-          </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">स्वच्छ भारत मिशन - शौचालय योजना</h4>
-          <p class="text-slate-600  mb-6 leading-relaxed">
-            या योजने अंतर्गत ए.पी.एल. –अल्पभुधारक,भूमीहीन शेतमजूर,एस.सी,एस.टी,महिला कुटूंबप्रमुख,अपंग . बी.पी.एल. – एस.सी,एस.टी, खुला लाभार्थ्याला प्रति शौचालय १२००० रूपये दिले जातात.
-          </p>
-          <!-- <div class="flex flex-wrap gap-4 items-center">
-          <button class="action-btn px-6 py-2.5 rounded-lg font-bold ">तपशील पहा</button>
-          <button class="outline-gradient-btn group">
-          <div class="btn-inner"><span>अर्ज करा</span></div>
-          </button>
-          </div> -->
-        </div>
-      </div>
-      <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-        <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-        <ul class="list-disc list-inside  text-gray-700 space-y-1">
-          <li>आधार कार्ड</li>
-          <li>रेशन कार्ड किंवा रहिवासी प्रमाणपत्र</li>
-          <li>बँक खाते पासबुक</li>
-          <li>पासपोर्ट आकाराचा फोटो</li>
-          <li>मोबाइल नंबर</li>
-          <li>स्वयं-घोषणापत्र</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="scheme-card flex flex-col h-full relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-32 h-32 brand-gradient-bg opacity-[0.03] -mr-16 -mt-16 rounded-full"></div>
-      <div class="flex flex-col md:flex-row gap-6 flex-grow">
-        <div class="shrink-0">
-          <div class="w-14 h-14 bg-blue-50 text-primary-blue rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl">garden_cart</span>
-          </div>
-        </div>
-        <div class="flex-grow">
-          <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="px-3 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wider">नियोजन विभाग</span>
-            <span class="px-3 py-0.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider">केंद्र सरकार</span>
-          </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">रोजगार हमी योजना (मनरेगा - MGNREGA)</h4>
-          <p class="text-slate-600  mb-6 leading-relaxed">
-            महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार हमी योजने अंतर्गत (मनरेगा - MGNREGA) महाराष्ट्रात ग्रामीण कुटुंबांना एका आर्थिक वर्षात १०० दिवसांच्या अकुशल मजुरीची कायदेशीर हमी देते. हे काम ग्रामपंचायतीमार्फत उपलब्ध करून दिले जाते.
-          </p>
-          <!-- <div class="flex flex-wrap gap-4 items-center">
-          <button class="action-btn px-6 py-2.5 rounded-lg font-bold ">तपशील पहा</button>
-          <button class="outline-gradient-btn group">
-          <div class="btn-inner"><span>अर्ज करा</span></div>
-          </button>
-          </div> -->
-        </div>
-      </div>
-      <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-        <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-        <ul class="list-disc list-inside  text-gray-700 space-y-1">
-          <li>आधार कार्ड</li>
-          <li>रेशन कार्ड</li>
-          <li>बँक किंवा पोस्ट ऑफिस खाते पासबुक</li>
-          <li>राहत्या पत्त्याचा पुरावा (वीज बिल / रेशन कार्ड)</li>
-          <li>पासपोर्ट आकाराचे दोन फोटो</li>
-          <li>मोबाईल नंबर</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="scheme-card flex flex-col h-full relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-32 h-32 brand-gradient-bg opacity-[0.03] -mr-16 -mt-16 rounded-full"></div>
-      <div class="flex flex-col md:flex-row gap-6 flex-grow">
-        <div class="shrink-0">
-          <div class="w-14 h-14 bg-blue-50 text-primary-blue rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl">elderly</span>
-          </div>
-        </div>
-        <div class="flex-grow">
-          <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="px-3 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wider">सामाजिक न्याय विभाग</span>
-            <span class="px-3 py-0.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider">केंद्र सरकार</span>
-          </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">वृद्धापकाळ पेन्शन योजना</h4>
-          <p class="text-slate-600  mb-6 leading-relaxed">
-            या योजने अंतर्गत दारिद्र्यरेषेखालील (BPL) ६० वर्षे किंवा त्याहून अधिक वयाच्या ज्येष्ठ नागरिकांना मासिक आर्थिक मदत पुरवतात. यात ६०-७९ वर्षे वयोगटासाठी २००-१००० रुपयांची आणि ८० वर्षांवरील वृद्धांना ५००-१२०० रुपयांची केंद्र/राज्य सरकारकडून पेन्शन मिळते.
-          </p>
-          <!-- <div class="flex flex-wrap gap-4 items-center">
-          <button class="action-btn px-6 py-2.5 rounded-lg font-bold ">तपशील पहा</button>
-          <button class="outline-gradient-btn group">
-          <div class="btn-inner"><span>अर्ज करा</span></div>
-          </button>
-          </div> -->
-        </div>
-      </div>
-      <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-        <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-        <ul class="list-disc list-inside  text-gray-700 space-y-1">
-          <li>आधार कार्ड</li>
-          <li>वयाचा पुरावा</li>
-          <li>रहिवासी प्रमाणपत्र </li>
-          <li>उत्पन्नाचा दाखला</li>
-          <li>बँक किंवा पोस्ट ऑफिस खाते पासबुक</li>
-          <li>हयातीचा दाखला</li>
-          <li>पासपोर्ट आकाराचा फोटो </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="scheme-card flex flex-col h-full relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-32 h-32 brand-gradient-bg opacity-[0.03] -mr-16 -mt-16 rounded-full"></div>
-      <div class="flex flex-col md:flex-row gap-6 flex-grow">
-        <div class="shrink-0">
-          <div class="w-14 h-14 bg-blue-50 text-primary-blue rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl">elderly_woman</span>
-          </div>
-        </div>
-        <div class="flex-grow">
-          <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="px-3 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wider">सामाजिक न्याय विभाग</span>
-            <span class="px-3 py-0.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider">केंद्र सरकार</span>
-          </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">राष्ट्रीय विधवा निवृत्ती वेतन योजना</h4>
-          <p class="text-slate-600  mb-6 leading-relaxed">
-            या योजने अंतर्गत महाराष्ट्रात विधवा महिलांसाठी इंदिरा गांधी राष्ट्रीय विधवा निवृत्ती वेतन योजना आणि संजय गांधी निराधार योजना यांद्वारे आर्थिक मदत दिली जाते. बीपीएल (BPL) कुटुंबातील ४० ते ७९ वर्षे वयोगटातील विधवांना दरमहा १५०० रुपयांची (३०० केंद्र + १२०० राज्य) मदत मिळते.
-          </p>
-          <!-- <div class="flex flex-wrap gap-4 items-center">
-          <button class="action-btn px-6 py-2.5 rounded-lg font-bold ">तपशील पहा</button>
-          <button class="outline-gradient-btn group">
-          <div class="btn-inner"><span>अर्ज करा</span></div>
-          </button>
-          </div> -->
-        </div>
-      </div>
-      <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-        <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-        <ul class="list-disc list-inside  text-gray-700 space-y-1">
-          <li>विधवा पेन्शन अर्जाचा नमुना</li>
-          <li>पतीचा मृत्यू दाखला</li>
-          <li>आधार कार्ड</li>
-          <li>रेशन कार्ड</li>
-          <li>दारिद्र्यरेषेखालील (BPL) दाखला/यादीतील नाव</li>
-          <li>वयाचा पुरावा</li>
-          <li>बँक खाते पासबुक</li>
-          <li>रहिवासी दाखला</li>
-          <li>पासपोर्ट आकाराचे फोटो</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="scheme-card flex flex-col h-full relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-32 h-32 brand-gradient-bg opacity-[0.03] -mr-16 -mt-16 rounded-full"></div>
-      <div class="flex flex-col md:flex-row gap-6 flex-grow">
-        <div class="shrink-0">
-          <div class="w-14 h-14 bg-blue-50 text-primary-blue rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-4xl">accessible</span>
-          </div>
-        </div>
-        <div class="flex-grow">
-          <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="px-3 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wider"> समाज कल्याण विभाग</span>
-            <span class="px-3 py-0.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wider">केंद्र सरकार</span>
-          </div>
-          <h4 class="text-xl font-bold text-slate-900 mb-2">दिव्यांग (अपंग) पेन्शन योजना</h4>
-          <p class="text-slate-600  mb-6 leading-relaxed">
-            महाराष्ट्र शासनाच्या दिव्यांग (अपंग) पेन्शन योजनेअंतर्गत, पात्र दिव्यांग व्यक्तींना त्यांच्या उदरनिर्वाहासाठी दरमहा ६०० ते १५०० रुपयांची (योजनेनुसार) आर्थिक सहाय्य दिले जाते. १८ ते ५९ वयोगटातील ४०% पेक्षा जास्त दिव्यांगत्व असलेल्या व्यक्ती या योजनेसाठी पात्र आहेत, ज्या थेट बँक खात्यात (DBT) जमा होतात
-          </p>
-          <!-- <div class="flex flex-wrap gap-4 items-center">
-          <button class="action-btn px-6 py-2.5 rounded-lg font-bold ">तपशील पहा</button>
-          <button class="outline-gradient-btn group">
-          <div class="btn-inner"><span>अर्ज करा</span></div>
-          </button>
-          </div> -->
-        </div>
-      </div>
-      <div class="bg-blue-100 rounded-lg p-3 border border-blue-100">
-        <h4 class=" font-semibold text-blue-800 mb-2">आवश्यक कागदपत्रे:</h4>
-        <ul class="list-disc list-inside  text-gray-700 space-y-1">
-          <li>अपंगत्वाचे प्रमाणपत्र</li>
-          <li>आधार कार्ड</li>
-          <li>उत्पन्नाचा दाखला</li>
-          <li>रहिवासी/अधिवास प्रमाणपत्र</li>
-          <li>वयाचा पुरावा</li>
-          <li>बँक खाते पासबुक</li>
-          <li>पासपोर्ट आकाराचे फोटो</li>
+          <li *ngFor="let document of scheme.documents">
+            {{document}}
+          </li>
         </ul>
       </div>
     </div>
@@ -345,18 +40,15 @@
     <div class="absolute top-0 right-0 w-64 h-64 brand-gradient-bg blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2 opacity-20"></div>
     <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
       <div class="">
-        <h3 class="text-3xl font-black mb-4 flex items-center gap-3">कोणती योजना आपल्यासाठी योग्य आहे?</h3>
-        <p class="text-slate-400 text-lg">जर आपल्याला योजना निवडण्यात किंवा अर्ज करण्यात अडचण येत असेल, तर आमच्या ग्रामपंचायतीच्या 'योजना मार्गदर्शन' कक्षाला भेट द्या.</p>
+        <h3 class="text-3xl font-black mb-4 flex items-center gap-3">{{config?.schemesPage?.helpSection?.title}}</h3>
+        <p class="text-slate-400 text-lg">{{config?.schemesPage?.helpSection?.description}}</p>
       </div>
-      <!-- <button class="flex min-w-[200px] brand-gradient-bg hover:scale-105 items-center justify-center rounded-lg h-14 px-8 action-btn text-white text-lg font-bold">
-                          मार्गदर्शन मिळवा
-                      </button> -->
     </div>
   </section>
 
   <div class="flex items-center justify-center pt-10">
-    <button routerLink="/home" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all" tabindex="0">
-      मुख्य पृष्ठावर जा
+    <button [routerLink]="config?.homepageRoute" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all" tabindex="0">
+      {{config?.backButtonSection?.text}}
     </button>
   </div>
 </main>

@@ -1,82 +1,84 @@
 <main class="max-w-[1400px] mx-auto px-4 py-6">
   <div class="text-center mb-12">
 
-    <span class=" px-4 py-1 inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase tracking-widest">संपर्क</span>
-    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">आमच्याशी संपर्क साधा</h2>
+    <span class=" px-4 py-1 inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase tracking-widest">
+      {{config?.contactPage?.header?.badge}}
+    </span>
+    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-4">
+      {{config?.contactPage?.header?.title}}
+    </h2>
     <div class="h-1.5 w-80 brand-gradient-bg rounded-full mb-6 mx-auto"></div>
   </div>
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
     <div class="lg:col-span-7">
       <div class="bg-white p-8 md:p-10 rounded-2xl shadow-card-warm border border-slate-100">
-        <h3 class="text-2xl font-bold text-slate-900 mb-8">आम्हाला संदेश पाठवा</h3>
+        <h3 class="text-2xl font-bold text-slate-900 mb-8">{{config?.contactPage?.form?.title}}</h3>
         <form (ngSubmit)="submitContact()" class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label class="block text-sm font-bold text-slate-700 mb-2">पूर्ण नाव (Full Name)</label>
+              <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.contactPage?.form?.fields?.name?.label}} <span class="text-red-500">*</span></label>
               <input [(ngModel)]="contactForm.name"
-name="name" 
-required 
-class=" w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none " 
-placeholder="तुमचे नाव प्रविष्ट करा" 
-type="text" />
+                     name="name"
+                     required
+                     class=" w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none "
+                     [placeholder]="config?.contactPage?.form?.fields?.name?.placeholder"
+                     type="text" />
             </div>
             <div>
-              <label class="block text-sm font-bold text-slate-700 mb-2">मोबाईल नंबर (Mobile Number)</label>
+              <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.contactPage?.form?.fields?.mobile?.label}} <span class="text-red-500">*</span></label>
               <input [(ngModel)]="contactForm.mobile"
-name="mobile"
- required 
- class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none " 
- placeholder="+९१" 
- type="tel" />
+                     name="mobile"
+                     required
+                     class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none "
+                     [placeholder]="config?.contactPage?.form?.fields?.mobile?.placeholder"
+                     type="tel" />
             </div>
           </div>
           <div>
-            <label class="block text-sm font-bold text-slate-700 mb-2">ईमेल पत्ता (Email - Optional)</label>
+            <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.contactPage?.form?.fields?.email?.label}}</label>
             <input [(ngModel)]="contactForm.email"
-name="email" 
-class=" w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" 
-placeholder="example@mail.com" 
-type="email" />
+                   name="email"
+                   class=" w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none"
+                   [placeholder]="config?.contactPage?.form?.fields?.email?.placeholder"
+                   type="email" />
           </div>
           <div>
-            <label class="block text-sm font-bold text-slate-700 mb-2">विषय (Subject)</label>
+            <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.contactPage?.form?.fields?.subject?.label}} <span class="text-red-500">*</span></label>
             <select [(ngModel)]="contactForm.subject"
-name="subject" 
-required class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" 
-type="input">
-              <option selected>सामान्य चौकशी</option>
-              <!-- <option>तक्रार नोंदवा</option> -->
-              <option>दाखल्यासाठी विचारणा</option>
-              <option>योजनेबद्दल माहिती</option>
-              <option>इतर</option>
+                    name="subject"
+                    required class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none"
+                    type="input">
+
+              <option selected="" *ngFor="let subject of config?.contactPage?.form?.fields?.subject?.options">
+                {{subject}}
+              </option>
             </select>
           </div>
           <div>
-            <label class="block text-sm font-bold text-slate-700 mb-2">तुमचा संदेश (Your Message)</label>
+            <label class="block text-sm font-bold text-slate-700 mb-2">{{config?.contactPage?.form?.fields?.message?.label}} <span class="text-red-500">*</span></label>
 <textarea [(ngModel)]="contactForm.message"
-name="message"
- required 
- class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none" 
- placeholder="येथे लिहा..." 
- rows="5"></textarea>
+          name="message"
+          required
+          class="w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:ring-2 focus:ring-primary-blue focus:border-green-600 focus:outline-none"
+          [placeholder]="config?.contactPage?.form?.fields?.message?.placeholder"
+          rows="5"></textarea>
           </div>
           <div class="text-center">
-            <button
-type="submit"
-[disabled]="loading"
-class="brand-gradient-bg w-full md:w-auto px-10 py-4 text-white font-black text-lg rounded-lg shadow-lg">
+            <button type="submit"
+                    [disabled]="loading"
+                    class="brand-gradient-bg w-full md:w-auto px-10 py-4 text-white font-black text-lg rounded-lg shadow-lg">
 
-{{ loading ? 'पाठवत आहे...' : 'संदेश पाठवा' }}
+              {{ loading ? config?.contactPage?.form?.submitButton?.loadingText : config?.contactPage?.form?.submitButton?.text }}
 
-</button>
-<div *ngIf="success"
-class="mt-4 p-3 rounded-lg bg-green-100 text-green-700 font-semibold text-center">
-✅ तुमचा संदेश यशस्वीरित्या पाठवला गेला.
-</div>
-<div *ngIf="errorMessage"
-class="mt-4 p-3 rounded-lg bg-red-100 text-red-700 font-semibold text-center">
-⚠️ {{errorMessage}}
-</div>
+            </button>
+            <div *ngIf="success"
+                 class="mt-4 p-3 rounded-lg bg-green-100 text-green-700 font-semibold text-center">
+              ✅ {{config?.contactPage?.form?.successMessage}}
+            </div>
+            <div *ngIf="errorMessage"
+                 class="mt-4 p-3 rounded-lg bg-red-100 text-red-700 font-semibold text-center">
+              ⚠️ {{errorMessage}}
+            </div>
           </div>
 
         </form>
@@ -85,69 +87,63 @@ class="mt-4 p-3 rounded-lg bg-red-100 text-red-700 font-semibold text-center">
     <div class="lg:col-span-5 space-y-8">
       <div class="bg-white p-8 rounded-2xl shadow-card-warm border border-slate-100 space-y-8">
         <div class="text-center">
-           <h3 class="text-2xl font-bold">स्मार्ट ग्रामपंचायत आव्हाणे बु</h3>
+          <h3 class="text-2xl font-bold">
+            {{config?.contactInfo.title}}
+          </h3>
           <div class="h-1.5 w-64 brand-gradient-bg mx-auto rounded-full"></div>
         </div>
         <div class="flex items-start gap-5">
           <div class="contact-icon-bg shrink-0">
-            <span class="material-symbols-outlined">location_on</span>
+            <span class="material-symbols-outlined">
+              {{config?.contactInfo.address.icon}}
+            </span>
           </div>
           <div>
-            <h4 class="font-bold text-slate-900 text-lg">पत्ता</h4>
-            <p class="text-slate-600 leading-relaxed">आव्हाणे बु, ता. शेवगाव, जि. अहिल्यानगर,<br>महाराष्ट्र – ४१४५०५ (भारत)</p>
+            <h4 class="font-bold text-slate-900 text-lg">
+              {{config?.contactInfo.address.title}}
+            </h4>
+            <p *ngFor="let address of config?.contactInfo?.address?.value" class="text-slate-600 leading-relaxed">{{address}}</p>
           </div>
         </div>
         <div class="flex items-start gap-5">
           <div class="contact-icon-bg shrink-0">
-            <span class="material-symbols-outlined">call</span>
+            <span class="material-symbols-outlined">{{config?.contactInfo.phone.icon}}</span>
           </div>
           <div>
-            <h4 class="font-bold text-slate-900 text-lg">फोन नंबर</h4>
-            <p class="text-slate-600">+९१ ९७६७ ०२ ८७०६</p>
+            <h4 class="font-bold text-slate-900 text-lg">{{config?.contactInfo.phone.title}}</h4>
+            <p class="text-slate-600">{{config?.contactInfo.phone.value}}</p>
           </div>
         </div>
         <div class="flex items-start gap-5">
           <div class="contact-icon-bg shrink-0">
-            <span class="material-symbols-outlined">mail</span>
+            <span class="material-symbols-outlined">{{config?.contactInfo.email.icon}}</span>
           </div>
           <div>
-            <h4 class="font-bold text-slate-900 text-lg">ईमेल</h4>
-            <p class="text-slate-600">avhanebu@gmail.com</p>
+            <h4 class="font-bold text-slate-900 text-lg">{{config?.contactInfo.email.title}}</h4>
+            <p class="text-slate-600">{{config?.contactInfo.email.value}}</p>
           </div>
         </div>
         <div class="flex items-start gap-5">
           <div class="contact-icon-bg shrink-0">
-            <span class="material-symbols-outlined">schedule</span>
+            <span class="material-symbols-outlined">{{config?.contactInfo.officeHours.icon}}</span>
           </div>
           <div>
-            <h4 class="font-bold text-slate-900 text-lg">कार्यालयीन वेळ</h4>
-            <p class="text-slate-600">सोमवार - शनिवार: सकाळी १० ते संध्याकाळी ५<br />(रविवार आणि सरकारी सुट्ट्या बंद)</p>
+            <h4 class="font-bold text-slate-900 text-lg">{{config?.contactInfo.officeHours.title}}</h4>
+            <p *ngFor="let hoursInfo of config?.contactInfo?.officeHours?.value" class="text-slate-600">{{hoursInfo}}</p>
           </div>
         </div>
       </div>
       <div class="bg-white p-3 rounded-2xl shadow-card-warm border border-slate-100 h-[350px] relative overflow-hidden">
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120499.68090491484!2d74.9958636967562!3d19.299100548018576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb5d300e31350f%3A0x7eac114549a0defd!2sAwhane%20Bk.%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1771713161687!5m2!1sen!2sus"
+        <iframe [src]="safeMapUrl"
                 width="100%" height="100%" style="border:0;"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
-  <!-- <section class="mt-20 bg-white p-10 rounded-2xl shadow-card-warm border border-slate-100 text-center relative overflow-hidden">
-    <div class="absolute top-0 left-0 w-full h-1 brand-gradient-bg"></div>
-    <h3 class="text-2xl font-bold text-slate-900 mb-4">आपणास तातडीने मदत हवी आहे का?</h3>
-    <p class="text-slate-600 max-w-2xl mx-auto mb-8">कोणत्याही आपत्कालीन परिस्थितीसाठी किंवा तक्रार निवारणासाठी आमच्या टोल-फ्री क्रमांकावर संपर्क साधू शकता. ग्रामपंचायत सदैव तुमच्या सेवेत तत्पर आहे.</p>
-    <div class="flex justify-center gap-4 flex-wrap">
-      <div class="bg-slate-50 px-6 py-4 rounded-xl border border-slate-100 flex items-center gap-3">
-        <span class="material-symbols-outlined text-primary-blue">support_agent</span>
-        <span class="font-black text-xl text-slate-900">१८००-१२३-४५६७</span>
-      </div>
-    </div>
-  </section> -->
-
   <div class="flex items-center justify-center pt-10">
-    <button routerLink="/home" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all" tabindex="0">
-      मुख्य पृष्ठावर जा
+    <button [routerLink]="config?.homepageRoute" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all" tabindex="0">
+      {{config?.backButtonSection.text}}
     </button>
   </div>
 </main>

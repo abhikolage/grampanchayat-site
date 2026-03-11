@@ -1,101 +1,32 @@
 <main class="max-w-[1200px] mx-auto px-4 py-6">
 
   <div class="text-center mb-10">
-    <span class="inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase tracking-widest">अधिकृत घोषणा</span>
-    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-6">जाहीर सूचना</h2>
+    <span class="inline-block bg-blue-100 text-primary-blue px-4 py-1 rounded-full text-s font-bold mb-4 uppercase tracking-widest">
+      {{config?.noticePage?.header?.badge}}
+    </span>
+    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-6">{{config?.noticePage?.header?.title}}</h2>
     <div class="h-1.5 w-40 brand-gradient-bg mx-auto rounded-full mb-8"></div>
-    <p class="text-slate-600 max-w-2xl mx-auto text-lg">ग्रामपंचायतीद्वारे वेळोवेळी निर्गमित करण्यात येणाऱ्या महत्त्वाच्या सूचना, निविदा आणि सार्वजनिक घोषणांची अधिकृत माहिती येथे उपलब्ध आहे.</p>
+    <p class="text-slate-600 max-w-2xl mx-auto text-lg">{{config?.noticePage?.header?.description}}</p>
   </div>
   <div class="space-y-6">
-    <div class="notice-card flex flex-col md:flex-row gap-6 items-start">
+    <div *ngFor="let notice of config?.noticePage?.notices" class="notice-card flex flex-col md:flex-row gap-6 items-start">
       <div class="flex-shrink-0 brand-gradient-bg text-white px-4 py-3 rounded-lg text-center min-w-[100px] shadow-md">
-        <p class="text-ms font-bold uppercase tracking-wider opacity-90">एप्रिल</p>
-        <p class="text-3xl font-black">१५</p>
-        <p class="text-ms font-bold">२०२६</p>
+        <p class="text-ms font-bold uppercase tracking-wider opacity-90">{{notice.month}}</p>
+        <p class="text-3xl font-black">{{notice.day}}</p>
+        <p class="text-ms font-bold">{{notice.year}}</p>
       </div>
       <div class="flex-grow">
         <div class="flex flex-wrap items-center gap-3 mb-2">
-          <span class="text-[14px] font-bold px-2 py-0.5 rounded bg-blue-50 text-primary-blue border border-blue-100 uppercase">ग्रामसभा</span>
-          <span class="text-s text-slate-400 font-medium">वेळ: सकाळी १०:०० वाजता</span>
+          <span class="text-[14px] font-bold px-2 py-0.5 rounded bg-blue-50 text-primary-blue border border-blue-100 uppercase">{{notice.category}}</span>
         </div>
-        <h3 class="text-xl font-bold text-slate-900 mb-2">विशेष ग्रामसभा २०२६ - सूचना आणि विषयपत्रिका</h3>
-        <p class="text-slate-600 mb-4 leading-relaxed">गावातील रस्ते विकास आणि पाणीपुरवठा योजनेबाबत चर्चा करण्यासाठी विशेष ग्रामसभेचे आयोजन करण्यात आले आहे. सर्व ग्रामस्थांची उपस्थिती अनिवार्य आहे.</p>
-        <!-- <a class="inline-flex items-center gap-2 brand-gradient-bg text-white px-4 py-2 rounded-lg font-bold text-sm hover:shadow-lg transition-all" href="#">
-          <span class="material-symbols-outlined text-lg">picture_as_pdf</span>
-          विषयपत्रिका डाउनलोड करा (PDF)
-        </a> -->
-      </div>
-    </div>
-    <div class="notice-card flex flex-col md:flex-row gap-6 items-start">
-      <div class="flex-shrink-0 brand-gradient-bg text-white px-4 py-3 rounded-lg text-center min-w-[100px] shadow-md">
-        <p class="text-ms font-bold uppercase tracking-wider opacity-90">फेब्रूवारी</p>
-        <p class="text-3xl font-black">२२</p>
-        <p class="text-ms font-bold">२०२६</p>
-      </div>
-      <div class="flex-grow">
-        <div class="flex flex-wrap items-center gap-3 mb-2">
-          <span class="text-[14px] font-bold px-2 py-0.5 rounded bg-green-50 text-primary-green border border-green-100 uppercase">आरोग्य</span>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900 mb-2">मोफत आरोग्य तपासणी शिबिर आयोजन</h3>
-        <p class="text-slate-600 mb-4 leading-relaxed">येत्या रविवारी प्राथमिक आरोग्य केंद्रात सर्व वयोगटातील नागरिकांसाठी मोफत आरोग्य तपासणी आणि औषध वाटप शिबिराचे आयोजन करण्यात आले आहे.</p>
-        <!-- <a class="inline-flex items-center gap-2 brand-gradient-bg text-white px-4 py-2 rounded-lg font-bold text-sm hover:shadow-lg transition-all" href="#">
-          <span class="material-symbols-outlined text-lg">picture_as_pdf</span>
-          तपशीलवार माहिती डाउनलोड करा (PDF)
-        </a> -->
-      </div>
-    </div>
-    <div class="notice-card flex flex-col md:flex-row gap-6 items-start">
-      <div class="flex-shrink-0 brand-gradient-bg text-white px-4 py-3 rounded-lg text-center min-w-[100px] shadow-md">
-        <p class="text-ms font-bold uppercase tracking-wider opacity-90">जानेवारी</p>
-        <p class="text-3xl font-black">२८</p>
-        <p class="text-ms font-bold">२०२६</p>
-      </div>
-      <div class="flex-grow">
-        <div class="flex flex-wrap items-center gap-3 mb-2">
-          <span class="text-[14px] font-bold px-2 py-0.5 rounded bg-red-50 text-red-600 border border-red-100 uppercase">निविदा</span>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900 mb-2">गावांतर्गत सौर पथदिवे बसवणे - ई-निविदा सूचना</h3>
-        <p class="text-slate-600 mb-4 leading-relaxed">मुख्य चौक आणि अंतर्गत रस्त्यांवर सौर पथदिवे बसवण्याच्या कामासाठी अनुभवी कंत्राटदारांकडून ई-निविदा मागवण्यात येत आहेत.</p>
-        <!-- <a class="inline-flex items-center gap-2 brand-gradient-bg text-white px-4 py-2 rounded-lg font-bold text-sm hover:shadow-lg transition-all" href="#">
-          <span class="material-symbols-outlined text-lg">picture_as_pdf</span>
-          निविदा संच डाउनलोड करा (PDF)
-        </a> -->
-      </div>
-    </div>
-    <div class="notice-card flex flex-col md:flex-row gap-6 items-start">
-      <div class="flex-shrink-0 brand-gradient-bg text-white px-4 py-3 rounded-lg text-center min-w-[100px] shadow-md">
-        <p class="text-ms font-bold uppercase tracking-wider opacity-90">सप्टेंबर</p>
-        <p class="text-3xl font-black">१५</p>
-        <p class="text-ms font-bold">२०२५</p>
-      </div>
-      <div class="flex-grow">
-        <div class="flex flex-wrap items-center gap-3 mb-2">
-          <span class="text-[14px] font-bold px-2 py-0.5 rounded bg-blue-50 text-primary-blue border border-blue-100 uppercase">कृषी</span>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900 mb-2">पीक विमा योजना २०२५-२६ नोंदणी आवाहन</h3>
-        <p class="text-slate-600 mb-4 leading-relaxed">खरीप हंगामातील पिकांच्या विम्यासाठी नोंदणी करण्याची अंतिम मुदत जवळ येत असून, शेतकऱ्यांनी आपले अर्ज लवकर सादर करावेत.</p>
-        <!-- <a class="inline-flex items-center gap-2 brand-gradient-bg text-white px-4 py-2 rounded-lg font-bold text-sm hover:shadow-lg transition-all" href="#">
-          <span class="material-symbols-outlined text-lg">picture_as_pdf</span>
-          मार्गदर्शिका डाउनलोड करा (PDF)
-        </a> -->
+        <h3 class="text-xl font-bold text-slate-900 mb-2">{{notice.title}}</h3>
+        <p class="text-slate-600 mb-4 leading-relaxed">{{notice.description}}</p>
       </div>
     </div>
   </div>
-  <!-- <div class="mt-12 flex justify-center gap-2">
-    <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 hover:brand-gradient-bg hover:text-white transition-all shadow-sm">
-      <span class="material-symbols-outlined">chevron_left</span>
-    </button>
-    <button class="w-10 h-10 flex items-center justify-center rounded-lg brand-gradient-bg text-white font-bold shadow-md">१</button>
-    <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 hover:brand-gradient-bg hover:text-white transition-all shadow-sm">२</button>
-    <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 hover:brand-gradient-bg hover:text-white transition-all shadow-sm">३</button>
-    <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 hover:brand-gradient-bg hover:text-white transition-all shadow-sm">
-      <span class="material-symbols-outlined">chevron_right</span>
-    </button>
-  </div> -->
-
   <div class="flex items-center justify-center pt-10">
-    <button routerLink="/home" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all" tabindex="0">
-      मुख्य पृष्ठावर जा
+    <button [routerLink]="config?.homepageRoute" class="flex items-center justify-center hover:scale-105 rounded-lg h-12 px-8 brand-gradient-bg text-white text-md font-bold hover:shadow-lg hover:opacity-90 transition-all" tabindex="0">
+      {{config?.backButtonSection?.text}}
     </button>
   </div>
 </main>
