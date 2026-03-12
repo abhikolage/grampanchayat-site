@@ -1,15 +1,15 @@
 <div class="sticky top-0 z-50">
-  <div class="bg-brand-gradient text-white py-2 px-4 md:px-8 xl:px-20 flex justify-between items-center font-medium text-xs sm:text-sm md:text-base">
+  <div class="bg-brand-gradient text-white py-2 px-4 md:px-4 xl:px-4 flex justify-between items-center font-medium text-xs sm:text-sm md:text-base">
     <div class="flex items-center gap-4">
       <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">{{config?.contactInfo?.phone.icon}}</span> {{config?.contactInfo?.phone.value}}</span>
       <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">{{config?.contactInfo?.email.icon}}</span> {{config?.contactInfo?.email.value}}</span>
     </div>
   </div>
-  <header class="bg-white shadow-lg z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 px-4 md:px-8 xl:px-20 py-3">
-    <div class="max-w-[1700px] mx-auto flex flex-col xl:flex-row items-center justify-between gap-4">
+  <header class="bg-white shadow-lg z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 px-4  py-3">
+    <div class="mx-auto flex flex-col xl:flex-row items-center justify-between px-2 gap-4">
       <div class="flex items-center justify-between w-full xl:w-auto shrink-0">
         <a href="#" [routerLink]="config?.homepageRoute" class="flex items-center gap-3">
-          <div class="flex gap-x-4 2xl:gap-x-6">
+          <div class="flex gap-x-4">
             <img *ngFor="let logo of config?.header?.logos"
                  [src]="logo"
                  class="gp-icon">
@@ -51,7 +51,8 @@
          class="nav-link"
          [routerLink]="menu.route"
          routerLinkActive="active"
-         (click)="toggleMenu()">
+         (click)="toggleMenu()"
+         [routerLinkActiveOptions]="menu.route === '/' ? { exact: true } : { exact: false }">
 
         {{menu.title}}
 
