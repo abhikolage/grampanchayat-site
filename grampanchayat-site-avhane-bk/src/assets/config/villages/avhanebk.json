@@ -135,7 +135,7 @@
 
   "homepage": {
     "homeNoticeType": "🏆 सन्मानाची बातमी : ",
-    "homeNotice": "माझी वसुंधरा अभियान - ०५ सन २०२४-२५ अंतर्गत आव्हाणे बुद्रुक ग्रामपंचायतीला नाशिक विभागामध्ये प्रथम बक्षीस.",
+    "homeNotice": "माझी वसुंधरा अभियान - ४.० आणि ५.० अंतर्गत आव्हाणे बुद्रुक ग्रामपंचायतीला नाशिक विभागामध्ये प्रथम क्रमांकाचे बक्षीस.",
     "hero": {
       "imageLeft": "assets/avhanebk/village/temple.jpg",
       "imageRight": "assets/avhanebk/village/nature1.jpg",
@@ -192,12 +192,12 @@
     "stats": [
       {
         "title": "एकूण लोकसंख्या",
-        "value": "४,००० +",
+        "value": "३,०८७",
         "icon": "groups"
       },
       {
         "title": "साक्षरता दर",
-        "value": "७५%",
+        "value": "७२%",
         "icon": "school"
       },
       {
@@ -207,7 +207,7 @@
       },
       {
         "title": "गावातील प्रभाग",
-        "value": "६",
+        "value": "४",
         "icon": "location_city"
       }
     ],
@@ -261,14 +261,14 @@
           "image": "assets/avhanebk/services/birth-cert.jpg"
         },
         {
-          "title": "मालमत्ता कर",
-          "desc": "घरपट्टी आणि मालमत्ता कराचा भरणा करा व पावती मिळवा.",
-          "image": "assets/avhanebk/services/property-tax.png"
+          "title": "विवाह नोंदणी",
+          "desc": "विवाह नोंदणी प्रमाणपत्रासाठी अधिकृत अर्ज करा.",
+          "image": "assets/avhanebk/services/marriage-cert.jpg"
         },
         {
-          "title": "पाणी पुरवठा",
-          "desc": "नवीन नळ जोडणीसाठी अर्ज आणि पाणीपट्टी भरणा उपलब्ध.",
-          "image": "assets/avhanebk/services/water-supply.png"
+          "title": "मृत्यू प्रमाणपत्र",
+          "desc": "मृत्यूची नोंदणी आणि प्रमाणपत्र मिळवण्यासाठी अर्ज प्रक्रिया.",
+          "image": "assets/avhanebk/services/death-cert.png"
         },
         {
           "title": "विविध दाखले",
@@ -280,7 +280,7 @@
 
     "announcement": {
       "title": "महत्त्वाची सूचना : ग्रामसभा २०२६",
-      "desc": "पुढील महिन्याच्या १५ तारखेला सकाळी १० वाजता ग्रामपंचायतीच्या सभागृहात विशेष ग्रामसभेचे आयोजन करण्यात आले आहे. सर्व ग्रामस्थांनी उपस्थित राहावे."
+      "desc": "ग्रामपंचायतीच्या सभागृहात विशेष ग्रामसभेचे आयोजन करण्यात आले आहे. सर्व ग्रामस्थांनी उपस्थित राहावे."
     }
 
   },
@@ -384,7 +384,7 @@
       }
     ],
 
-    "staffTitle": "प्रशासकीय कर्मचारी",
+    "staffTitle": "प्रशासकीय ग्रामपंचायत कर्मचारी",
 
     "staff": [
       {
@@ -423,6 +423,27 @@
         "name": "श्री अस्लम वजीरभाई पठाण",
         "role": "ग्राम रोजगार सहाय्यक",
         "desc": "जबाबदारी: ग्राम रोजगार सहाय्यक",
+        "phone": "8605578381",
+        "phoneDisplay": "+९१ ८६०५५७८३८१",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      }
+    ],
+
+    "medicalStaffTitle": "प्रशासकीय आरोग्य कर्मचारी",
+
+    "medicalStaff": [
+      {
+        "name": "श्री. भारत काकासाहेब कोळगे",
+        "role": "ग्रा.प. लिपिक",
+        "desc": "जबाबदारी: पाणीपुरवठा आणि कर वसुली विभाग",
+        "phone": "7588004276",
+        "phoneDisplay": "+९१ ७५८८००४२७६",
+        "image": "assets/avhanebk/logo-icons/man-icon.png"
+      },
+      {
+        "name": "श्री. नानासाहेब मारुती खैरे",
+        "role": "ग्रा.प. कर्मचारी",
+        "desc": "जबाबदारी: ग्रा.प. कर्मचारी",
         "phone": "8605578381",
         "phoneDisplay": "+९१ ८६०५५७८३८१",
         "image": "assets/avhanebk/logo-icons/man-icon.png"
@@ -495,42 +516,8 @@
           "रुग्णालयाचा दाखला किंवा प्रसूती प्रमाणपत्र",
           "पालकांचे ओळखपत्र (आधार कार्ड / पॅन कार्ड)",
           "राहत्या पत्त्याचा पुरावा (वीज बिल / रेशन कार्ड)"
-        ],
-        "button": null
+        ]
       },
-      {
-        "title": "मालमत्ता कर",
-        "icon": "home_work",
-        "image": "assets/avhanebk/services/property-tax.png",
-        "department": "विभाग: कर विभाग",
-        "description": "घरपट्टी आणि मालमत्ता कराचा भरणा करा व पावती मिळवा.",
-        "documentTitle": "आवश्यक कागदपत्रे:",
-        "showDocuments": true,
-        "documents": [
-          "मालमत्तेचा हक्कपत्र / सातबारा",
-          "मागील कर पावती (जर असेल तर)",
-          "ओळखपत्र (आधार / पॅन)"
-        ],
-        "button": null
-      },
-
-      {
-        "title": "पाणी पुरवठा",
-        "icon": "water_drop",
-        "image": "assets/avhanebk/services/water-supply.png",
-        "department": "विभाग: ग्रामविकास",
-        "description": "नवीन नळ जोडणीसाठी अर्ज आणि पाणीपट्टी भरणा उपलब्ध.",
-        "documentTitle": "आवश्यक कागदपत्रे:",
-        "showDocuments": true,
-        "documents": [
-          "मालकी हक्काचा दाखला / मालमत्ता कर पावती",
-          "घराचा नकाशा किंवा ठिकाणाचे फोटो",
-          "अर्जदाराचे ओळखपत्र (आधार / पॅन)",
-          "शेजाऱ्यांची संमती पत्र (जर आवश्यक असेल तर)"
-        ],
-        "button": null
-      },
-
       {
         "title": "विवाह नोंदणी",
         "icon": "favorite",
@@ -547,8 +534,7 @@
           "लग्नाचे फोटो",
           "२ पासपोर्ट आकाराचे फोटो",
           "साक्षीदारांची (३) कागदपत्रे"
-        ],
-        "button": null
+        ]
       },
 
       {
@@ -566,10 +552,58 @@
           "अर्जदाराचे ओळखपत्र",
           "हमीपत्र",
           "रेशन कार्ड"
-        ],
-        "button": null
+        ]
       },
-
+      {
+        "title": "दारिद्र्य रेषेखालील दाखला",
+        "icon": "home_work",
+        "image": "assets/avhanebk/services/certificates.jpg",
+        "department": "विभाग: नागरिक सेवा",
+        "description": "शासनाने निश्चित केलेल्या निकषांनुसार एखादे कुटुंब गरीबी रेषेखाली येते हे प्रमाणित करणारा अधिकृत दाखला आहे.",
+        "documentTitle": "आवश्यक कागदपत्रे:",
+        "showDocuments": true,
+        "documents": [
+          "अर्जदाराचा अर्ज",
+          "आधार कार्ड",
+          "राशन कार्ड",
+          "रहिवासी दाखला",
+          "उत्पन्न दाखला",
+          "कुटुंबातील सदस्यांची माहिती",
+          "पासपोर्ट साइज फोटो"
+        ]
+      },
+      {
+        "title": "नमुना ८ उतारा",
+        "icon": "home_work",
+        "image": "assets/avhanebk/services/certificates.jpg",
+        "department": "विभाग: नागरिक सेवा",
+        "description": "संबंधित घर क्रमांक, मालकाचे नाव आणि त्या घरात राहणाऱ्या कुटुंबातील सदस्यांची माहिती नमूद केलेली असते",
+        "documentTitle": "आवश्यक कागदपत्रे:",
+        "showDocuments": true,
+        "documents": [
+          "अर्जदाराचा अर्ज",
+          "आधार कार्ड",
+          "राशन कार्ड / कुटुंब माहिती",
+          "घर क्रमांक / मालमत्तेची माहिती"
+        ]
+      },
+      {
+        "title": "निराधार असल्याचा दाखला",
+        "icon": "water_drop",
+        "image": "assets/avhanebk/services/certificates.jpg",
+        "department": "विभाग: नागरिक सेवा",
+        "description": "संबंधित व्यक्ती आर्थिकदृष्ट्या दुर्बल असून तिला आधार देणारा कोणी नाही हे प्रमाणित करणारा अधिकृत दाखला आहे",
+        "documentTitle": "आवश्यक कागदपत्रे:",
+        "showDocuments": true,
+        "documents": [
+          "अर्जदाराचा अर्ज",
+          "आधार कार्ड",
+          "रहिवासी पुरावा",
+          "उत्पन्न दाखला",
+          "राशन कार्ड",
+          "पासपोर्ट साइज फोटो"
+        ]
+      },
       {
         "title": "विविध दाखले",
         "icon": "description",
@@ -585,23 +619,7 @@
           "रहिवासी दाखला",
           "उत्पन्न दाखला",
           "सातबारा आणि आठ अ उतारे"
-        ],
-        "button": null
-      },
-
-      {
-        "title": "तक्रार निवारण",
-        "icon": "forum",
-        "image": "assets/avhanebk/services/complaint.jpg",
-        "department": "विभाग: नागरिक सेवा",
-        "description": "गावातील समस्यांबाबत आपली तक्रार ऑनलाईन नोंदवा आणि पाठपुरावा करा.",
-        "showDocuments": false,
-        "documents": [],
-        "button": {
-          "text": "तक्रार नोंदवा",
-          "route": "/complaints",
-          "icon": "send"
-        }
+        ]
       }
 
     ],
@@ -818,7 +836,20 @@
         "completionLabel": "पूर्ण झाल्याचा दिनांक",
         "completionDate": "डिसेंबर २०२५"
       },
-
+      {
+        "title": "ग्रामपंचायत शॉपिंग सेंटर (व्यापारी संकुल)",
+        "image": "assets/avhanebk/development/shopping-center.jpg",
+        "status": "पूर्ण झाले",
+        "statusColor": "brand-gradient-bg",
+        "description": "गावातील नागरिकांना विविध वस्तू व सेवा एकाच ठिकाणी उपलब्ध व्हाव्यात आणि स्थानिक व्यापाऱ्यांना व्यवसायासाठी जागा मिळावी या उद्देशाने ग्रामपंचायतीकडून शॉपिंग सेंटर उभारण्यात आले आहे.",
+        "progressTitle": "प्रगती",
+        "progressPercent": 100,
+        "progress": "१००%",
+        "budgetLabel": "एकूण खर्च",
+        "budget": "₹ ३०,००,०००",
+        "completionLabel": "पूर्ण झाल्याचा दिनांक",
+        "completionDate": "ऑगस्ट २०२४"
+      },
       {
         "title": "मुख्य रस्ता डांबरीकरण",
         "image": "assets/avhanebk/development/village-road.png",
@@ -1196,6 +1227,34 @@
 
     "gallery": [
       {
+        "image": "assets/avhanebk/village/news1.jpg",
+        "title": "वृत्तपत्रातील विशेष बातमी"
+      },
+      {
+        "image": "assets/avhanebk/village/news2.jpg",
+        "title": "वृत्तपत्रातील विशेष बातमी"
+      },
+      {
+        "image": "assets/avhanebk/village/news3.jpg",
+        "title": "वृत्तपत्रातील विशेष बातमी"
+      },
+      {
+        "image": "assets/avhanebk/village/news4.jpg",
+        "title": "वृत्तपत्रातील विशेष बातमी"
+      },
+      {
+        "image": "assets/avhanebk/village/news5.jpg",
+        "title": "वृत्तपत्रातील विशेष बातमी"
+      },
+      {
+        "image": "assets/avhanebk/village/news6.jpg",
+        "title": "वृत्तपत्रातील विशेष बातमी"
+      },
+      {
+        "image": "assets/avhanebk/village/news7.jpg",
+        "title": "वृत्तपत्रातील विशेष बातमी"
+      },
+      {
         "image": "assets/avhanebk/village/gram-sabha.jpg",
         "title": "मासिक ग्रामसभा आयोजन"
       },
@@ -1218,10 +1277,6 @@
       {
         "image": "assets/avhanebk/village/nursery.jpg",
         "title": "ग्रामपंचायत रोपवाटिका"
-      },
-      {
-        "image": "assets/avhanebk/village/bachat-gat.jpg",
-        "title": "महिला बचत गट मेळावा"
       },
       {
         "image": "assets/avhanebk/village/swachata-abhiyan.jpg",
@@ -1286,7 +1341,7 @@
         {
           "label": "साक्षरता दर",
           "progressPercent": 75,
-          "progress": "७५%"
+          "progress": "७२%"
         },
         {
           "label": "सेवा उपलब्धता",
@@ -1302,7 +1357,7 @@
         },
         {
           "label": "प्रभाग",
-          "value": "६"
+          "value": "४"
         },
         {
           "label": "सदस्य",
@@ -1310,7 +1365,7 @@
         },
         {
           "label": "लोकसंख्या",
-          "value": "४,०००+"
+          "value": "३,०८७"
         },
         {
           "label": "क्षेत्रफळ",
@@ -1329,18 +1384,23 @@
       "awards": [
         {
           "icon": "emoji_events",
-          "title": "माझी वसुंधरा अभियान - ०५",
-          "description": "सन २०२४-२५ अंतर्गत आव्हाणे बुद्रुक ग्रामपंचायतीला नाशिक विभागामध्ये प्रथम बक्षीस"
+          "title": "माझी वसुंधरा अभियान - ५.०",
+          "description": "माझी वसुंधरा अभियान ५.० अंतर्गत आव्हाणे बुद्रुक ग्रामपंचायतीला नाशिक विभागामध्ये प्रथम बक्षीस"
         },
         {
           "icon": "emoji_events",
-          "title": "स्मार्ट व्हिलेज अवॉर्ड",
-          "description": "२०२१ - डिजिटल सेवा आणि ई-गव्हर्नन्ससाठी सन्मान."
+          "title": "माझी वसुंधरा अभियान - ४.०",
+          "description": "माझी वसुंधरा अभियान ४.० अंतर्गत आव्हाणे बुद्रुक ग्रामपंचायतीला नाशिक विभागामध्ये प्रथम बक्षीस"
+        },
+        {
+          "icon": "emoji_events",
+          "title": "स्मार्ट ग्राम पुरस्कार",
+          "description": "डिजिटल सेवा आणि ई-गव्हर्नन्ससाठी सन्मान."
         },
         {
           "icon": "emoji_events",
           "title": "निर्मल ग्राम पुरस्कार",
-          "description": "२०१५ - स्वच्छता मोहिमेसाठी केंद्र शासनाकडून प्राप्त."
+          "description": "स्वच्छता मोहिमेसाठी केंद्र शासनाकडून प्राप्त."
         }
       ]
     },

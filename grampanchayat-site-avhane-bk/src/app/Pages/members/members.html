@@ -64,7 +64,35 @@
           <div>
             <h4 class="text-xl font-bold text-slate-900">{{staff.name}}</h4>
             <p class="text-primary-blue font-bold  mb-2">{{staff.role}}</p>
-            <p class="text-slate-500 ">{{staff.desc}}</p>
+            <!--<p class="text-slate-500 ">{{staff.desc}}</p>-->
+            <div class="mt-3 flex items-center gap-3">
+              <a [href]="'tel:'+staff.phone" class="">
+                <span class="text-sm font-bold text-slate-700 bg-slate-100 px-3 py-1 rounded-full flex items-center gap-1 border border-slate-200 hover:bg-brand-gradient hover:text-white">
+                  <span class="material-symbols-outlined text-sm">call</span> {{staff.phoneDisplay}}
+                </span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mb-16">
+    <h3 class="text-2xl font-black text-slate-900 mb-10 flex items-center gap-3">
+      <span class="w-2 h-8 brand-gradient-bg rounded-full"></span>
+      {{config?.membersPage?.medicalStaffTitle}}
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div *ngFor="let staff of config?.membersPage?.medicalStaff">
+        <div class="officer-card bg-white p-6 rounded-2xl border border-slate-100 shadow-card-warm flex items-center gap-6 border-l-4 border-l-primary-green">
+          <div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden shadow-md">
+            <img alt="Staff" class="w-full h-full object-cover" [src]="staff.image" />
+          </div>
+          <div>
+            <h4 class="text-xl font-bold text-slate-900">{{staff.name}}</h4>
+            <p class="text-primary-blue font-bold  mb-2">{{staff.role}}</p>
+            <!--<p class="text-slate-500 ">{{staff.desc}}</p>-->
             <div class="mt-3 flex items-center gap-3">
               <a [href]="'tel:'+staff.phone" class="">
                 <span class="text-sm font-bold text-slate-700 bg-slate-100 px-3 py-1 rounded-full flex items-center gap-1 border border-slate-200 hover:bg-brand-gradient hover:text-white">
