@@ -2,6 +2,7 @@
   "villageTitle": "स्मार्ट ग्रामपंचायत",
   "villageName": "आव्हाणे बु",
   "type": "ग्रामपंचायत",
+  "icon": "assets/avhanebk/logo-icons/logo.png",
   "year": "© 2026",
   "homepageRoute": "/home",
   "contact": {
@@ -556,7 +557,7 @@
       },
       {
         "title": "दारिद्र्य रेषेखालील दाखला",
-        "icon": "home_work",
+        "icon": "description",
         "image": "assets/avhanebk/services/certificates.jpg",
         "department": "विभाग: नागरिक सेवा",
         "description": "शासनाने निश्चित केलेल्या निकषांनुसार एखादे कुटुंब गरीबी रेषेखाली येते हे प्रमाणित करणारा अधिकृत दाखला आहे.",
@@ -574,7 +575,7 @@
       },
       {
         "title": "नमुना ८ उतारा",
-        "icon": "home_work",
+        "icon": "description",
         "image": "assets/avhanebk/services/certificates.jpg",
         "department": "विभाग: नागरिक सेवा",
         "description": "संबंधित घर क्रमांक, मालकाचे नाव आणि त्या घरात राहणाऱ्या कुटुंबातील सदस्यांची माहिती नमूद केलेली असते",
@@ -589,7 +590,7 @@
       },
       {
         "title": "निराधार असल्याचा दाखला",
-        "icon": "water_drop",
+        "icon": "description",
         "image": "assets/avhanebk/services/certificates.jpg",
         "department": "विभाग: नागरिक सेवा",
         "description": "संबंधित व्यक्ती आर्थिकदृष्ट्या दुर्बल असून तिला आधार देणारा कोणी नाही हे प्रमाणित करणारा अधिकृत दाखला आहे",

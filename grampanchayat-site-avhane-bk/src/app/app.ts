@@ -18,5 +18,6 @@ export class App {
 
 async ngOnInit(){
   await this.configService.loadConfig();
+  this.configService.setFavicon();
 }
 }
