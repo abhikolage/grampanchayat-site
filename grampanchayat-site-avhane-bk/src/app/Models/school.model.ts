@@ -3,6 +3,8 @@ export interface Teacher {
   role: string;
   quote: string;
   image: string;
+  phone: string;
+  phoneDisplay: string;
 }
 
 export interface School {
