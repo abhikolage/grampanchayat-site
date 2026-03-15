@@ -16,4 +16,5 @@ export interface School {
   classrooms: string;
   libraryBooks: string;
   teachers: Teacher[];
+  callButtonText: string;
 }

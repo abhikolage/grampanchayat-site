@@ -1014,6 +1014,7 @@
         "teachersCount": "४",
         "classrooms": "६",
         "libraryBooks": "१५००",
+        "callButtonText": "संपर्क करा",
         "teachers": [
           {
             "name": "श्रीमती. माया हरिभाऊ बागडे",
@@ -1053,6 +1054,7 @@
         "teachersCount": "२",
         "classrooms": "४",
         "libraryBooks": "१२००",
+        "callButtonText": "संपर्क करा",
         "teachers": [
           {
             "name": "श्रीमती. विजया जिजाभाऊ खाटीक",
@@ -1078,6 +1080,7 @@
         "teachersCount": "२",
         "classrooms": "४",
         "libraryBooks": "१०००",
+        "callButtonText": "संपर्क करा",
         "teachers": [
           {
             "name": "श्रीमती. संगिता रामभाऊ शेरकर",
@@ -1103,6 +1106,7 @@
         "teachersCount": "२",
         "classrooms": "४",
         "libraryBooks": "१३००",
+        "callButtonText": "संपर्क करा",
         "teachers": [
           {
             "name": "श्री. अमोल अशोक शेवाळे",
@@ -1128,6 +1132,7 @@
         "teachersCount": "७",
         "classrooms": "८",
         "libraryBooks": "१३००",
+        "callButtonText": "संपर्क करा",
         "teachers": [
           {
             "name": "श्री. विनायक पाटील 5",
