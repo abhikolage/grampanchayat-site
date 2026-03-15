@@ -930,10 +930,24 @@
       },
       {
         "title": " मुख्य आणि अंतर्गत रस्त्यावर पथदिवे",
-        "image": "assets/avhanebk/development/village-road.png",
+        "image": "assets/avhanebk/development/street-lamp.png",
         "status": "पूर्ण झाले",
         "statusColor": "brand-gradient-bg",
         "description": "गावातील मुख्य आणि अंतर्गत रस्त्यावर पथदिवे बसवण्याचे काम यशस्वीरित्या पूर्ण झाले आहे.",
+        "progressTitle": "प्रगती",
+        "progressPercent": 100,
+        "progress": "१००%",
+        "budgetLabel": "एकूण खर्च",
+        "budget": "₹ २,००,०००",
+        "completionLabel": "पूर्ण झाल्याचा दिनांक",
+        "completionDate": "डिसेंबर २०२५"
+      },
+      {
+        "title": "मुक्त व्यायामशाळा",
+        "image": "assets/avhanebk/development/open-gym.png",
+        "status": "पूर्ण झाले",
+        "statusColor": "brand-gradient-bg",
+        "description": "ग्रामस्थांच्या आरोग्यदायी जीवनशैलीसाठी गावात उभारलेली मुक्त व्यायामशाळेचे काम यशस्वीरित्या पूर्ण झाले आहे.",
         "progressTitle": "प्रगती",
         "progressPercent": 100,
         "progress": "१००%",
@@ -971,8 +985,7 @@
       {
         "icon": "groups",
         "label": "एकूण विद्यार्थी",
-        "field": "totalStudents",
-        "suffix": "+"
+        "field": "totalStudents"
       },
       {
         "icon": "person_4",
@@ -997,34 +1010,38 @@
         "id": 1,
         "name": "जि. प. प्रा. शाळा, आव्हाणे बु",
         "location": "आव्हाणे बु",
-        "totalStudents": "२००",
-        "teachersCount": "१२",
-        "classrooms": "८",
+        "totalStudents": "१०१",
+        "teachersCount": "४",
+        "classrooms": "६",
         "libraryBooks": "१५००",
         "teachers": [
           {
-            "name": "श्री. विनायक पाटील 1",
+            "name": "श्रीमती. माया हरिभाऊ बागडे",
             "role": "मुख्याध्यापक",
-            "quote": "शिक्षण हाच विकासाचा खरा पाया आहे.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "image": "assets/avhanebk/logo-icons/woman-icon.png",
+            "phoneDisplay": "+९१ ९४२३७५६८९८",
+            "phone": "9423756898"
           },
           {
-            "name": "सौ. अंजली शिंदे 1",
-            "role": "वरिष्ठ शिक्षिका",
-            "quote": "प्रत्येक मूल हे खास असते.",
-            "image": "assets/avhanebk/logo-icons/woman-icon.png"
+            "name": "श्रीमती. निर्मला उत्तम खोसे",
+            "role": "सहशिक्षक",
+            "image": "assets/avhanebk/logo-icons/woman-icon.png",
+            "phoneDisplay": "+९१ ९७६३०२१४१४",
+            "phone": "9763021414"
           },
           {
-            "name": "श्री. विनायक पाटील 1",
-            "role": "क्रीडा शिक्षक",
-            "quote": "खेळातूनच शिस्त आणि जिद्द निर्माण होते.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "name": "श्रीमती. नीता मच्छिंद्र नांगरे ",
+            "role": "सहशिक्षक",
+            "image": "assets/avhanebk/logo-icons/woman-icon.png",
+            "phoneDisplay": "+९१ ९४०४०९३७२०",
+            "phone": "9404093720"
           },
           {
-            "name": "श्री. विनायक पाटील 1",
-            "role": "भाषा शिक्षक",
-            "quote": "वाचाल तर वाचाल.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "name": "श्री. रामेश्वर नानासाहेब जाधव",
+            "role": "सहशिक्षक",
+            "image": "assets/avhanebk/logo-icons/man-icon.png",
+            "phoneDisplay": "+९१ ९८२२८९४०२१",
+            "phone": "9822894021"
           }
         ]
       },
@@ -1032,34 +1049,24 @@
         "id": 2,
         "name": "जि. प. प्रा. शाळा, तागडवस्ती",
         "location": "तागडवस्ती",
-        "totalStudents": "१५०",
-        "teachersCount": "८",
-        "classrooms": "८",
+        "totalStudents": "२१",
+        "teachersCount": "२",
+        "classrooms": "४",
         "libraryBooks": "१२००",
         "teachers": [
           {
-            "name": "श्री. विनायक पाटील 2",
+            "name": "श्रीमती. विजया जिजाभाऊ खाटीक",
             "role": "मुख्याध्यापक",
-            "quote": "शिक्षण हाच विकासाचा खरा पाया आहे.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "image": "assets/avhanebk/logo-icons/woman-icon.png",
+            "phoneDisplay": "+९१ ९४२१४४५३४४",
+            "phone": "9921445344"
           },
           {
-            "name": "सौ. अंजली शिंदे 2",
-            "role": "वरिष्ठ शिक्षिका",
-            "quote": "प्रत्येक मूल हे खास असते.",
-            "image": "assets/avhanebk/logo-icons/woman-icon.png"
-          },
-          {
-            "name": "श्री. विनायक पाटील 2",
-            "role": "क्रीडा शिक्षक",
-            "quote": "खेळातूनच शिस्त आणि जिद्द निर्माण होते.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
-          },
-          {
-            "name": "श्री. विनायक पाटील 2",
-            "role": "भाषा शिक्षक",
-            "quote": "वाचाल तर वाचाल.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "name": "श्री. पोपट एकनाथ भवार",
+            "role": "सहशिक्षक",
+            "image": "assets/avhanebk/logo-icons/man-icon.png",
+            "phoneDisplay": "+९१ ९३५६३०८००६",
+            "phone": "9356308006"
           }
         ]
       },
@@ -1067,69 +1074,49 @@
         "id": 3,
         "name": "जि. प. प्रा. शाळा, गणेशवाडी",
         "location": "गणेशवाडी",
-        "totalStudents": "१००",
-        "teachersCount": "६",
-        "classrooms": "६",
+        "totalStudents": "२२",
+        "teachersCount": "२",
+        "classrooms": "४",
         "libraryBooks": "१०००",
         "teachers": [
           {
-            "name": "श्री. विनायक पाटील 3",
+            "name": "श्रीमती. संगिता रामभाऊ शेरकर",
             "role": "मुख्याध्यापक",
-            "quote": "शिक्षण हाच विकासाचा खरा पाया आहे.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "image": "assets/avhanebk/logo-icons/woman-icon.png",
+            "phoneDisplay": "+९१ ९४२२८७९९३१",
+            "phone": "9422879931"
           },
           {
-            "name": "सौ. अंजली शिंदे 3",
-            "role": "वरिष्ठ शिक्षिका",
-            "quote": "प्रत्येक मूल हे खास असते.",
-            "image": "assets/avhanebk/logo-icons/woman-icon.png"
-          },
-          {
-            "name": "श्री. विनायक पाटील 3",
-            "role": "क्रीडा शिक्षक",
-            "quote": "खेळातूनच शिस्त आणि जिद्द निर्माण होते.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
-          },
-          {
-            "name": "श्री. विनायक पाटील 3",
-            "role": "भाषा शिक्षक",
-            "quote": "वाचाल तर वाचाल.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "name": "श्रीमती. वंदना विनोदराव तिखे",
+            "role": "सहशिक्षक",
+            "image": "assets/avhanebk/logo-icons/woman-icon.png",
+            "phoneDisplay": "+९१ ९१३०४७३२८९",
+            "phone": "9130473289"
           }
         ]
       },
       {
         "id": 4,
         "name": "जि. प. प्रा. शाळा, दिंडेवाडी",
-        "location": "गणेशवाडी",
-        "totalStudents": "८०",
-        "teachersCount": "७",
-        "classrooms": "८",
+        "location": "दिंडेवाडी",
+        "totalStudents": "४३",
+        "teachersCount": "२",
+        "classrooms": "४",
         "libraryBooks": "१३००",
         "teachers": [
           {
-            "name": "श्री. विनायक पाटील 4",
+            "name": "श्री. अमोल अशोक शेवाळे",
             "role": "मुख्याध्यापक",
-            "quote": "शिक्षण हाच विकासाचा खरा पाया आहे.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "image": "assets/avhanebk/logo-icons/man-icon.png",
+            "phoneDisplay": "+९१ ९१३०००४५८६",
+            "phone": "9130004586"
           },
           {
-            "name": "सौ. अंजली शिंदे 4",
-            "role": "वरिष्ठ शिक्षिका",
-            "quote": "प्रत्येक मूल हे खास असते.",
-            "image": "assets/avhanebk/logo-icons/woman-icon.png"
-          },
-          {
-            "name": "श्री. विनायक पाटील 4",
-            "role": "क्रीडा शिक्षक",
-            "quote": "खेळातूनच शिस्त आणि जिद्द निर्माण होते.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
-          },
-          {
-            "name": "श्री. विनायक पाटील 4",
-            "role": "भाषा शिक्षक",
-            "quote": "वाचाल तर वाचाल.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "name": "श्री. श्रीकांत संभाजी मुरदारे",
+            "role": "सहशिक्षक",
+            "image": "assets/avhanebk/logo-icons/man-icon.png",
+            "phoneDisplay": "+९१ ९९७०१८६३८०",
+            "phone": "9970186380"
           }
         ]
       },
@@ -1191,6 +1178,10 @@
 
     "galleryTitle": "शाळा गॅलरी",
     "gallery": [
+      {
+        "image": "assets/avhanebk/school/zp-school.jpg",
+        "title": "शाळेची नवीन इमारत"
+      },
       {
         "image": "assets/avhanebk/school/gathering.jpg",
         "title": "वार्षिक स्नेहसंमेलन"
