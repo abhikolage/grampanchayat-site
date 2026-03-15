@@ -112,7 +112,7 @@
       <h3 class="text-3xl font-black text-slate-900">{{config?.schoolsPage?.galleryTitle}}</h3>
       <div class="h-1.5 w-40 brand-gradient-bg mx-auto rounded-full mb-6"></div>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
       <div *ngFor="let galleryItem of config?.schoolsPage?.gallery" (click)="openImage(galleryItem.image)" class="relative group overflow-hidden rounded-xl h-48 shadow-card-warm border-2 border-transparent hover:border-primary-blue transition-all">
         <img [alt]="galleryItem.title" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" [src]="galleryItem.image" />
         <div class="absolute inset-0 brand-gradient-bg/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
