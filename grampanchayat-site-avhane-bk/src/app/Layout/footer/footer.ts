@@ -24,7 +24,7 @@ constructor(
 ngOnInit() {
 this.config = this.configService.getConfig();
 this.safeMapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-      this.config.footer.mapEmbed
+      this.config.footer.mapEmbedUrl
     );
 }
 }

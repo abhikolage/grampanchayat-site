@@ -40,7 +40,7 @@ export class Contact {
 
     this.config = this.configService.getConfig();
     this.safeMapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-      this.config.contactPage.map.embedUrl
+      this.config.contactPage.mapEmbedUrl
     );
 
   }

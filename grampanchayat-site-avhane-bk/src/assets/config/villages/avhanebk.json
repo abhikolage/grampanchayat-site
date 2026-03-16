@@ -98,7 +98,7 @@
     "address": "आव्हाणे बु, ता. शेवगाव, जि. अहिल्यानगर, महाराष्ट्र – ४१४५०५ (भारत) विभाग - नाशिक विभाग",
     "icon": "home",
     "locationTitle": "आमचे स्थान",
-    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30125.438548714494!2d75.12491874553407!3d19.296285154285172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb5d003ebad9c7%3A0x9b1ec3f82eccbca4!2sGrampanchayat%20Office%20Avhane%20Bk!5e0!3m2!1sen!2sin!4v1773584442960!5m2!1sen!2sin",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d50552.153631364796!2d75.11176283019431!3d19.29929440500105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb5d300e31350f%3A0x7eac114549a0defd!2sAwhane%20Bk.%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1773659107926!5m2!1sen!2sin",
     "usefulLinkTitle": "उपयुक्त लिंक",
     "usefulLinks": [
       {
@@ -1625,9 +1625,7 @@
       "sendErrorMessage": "संदेश पाठवताना त्रुटी आली"
     },
 
-    "map": {
-      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30125.438548714494!2d75.12491874553407!3d19.296285154285172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb5d003ebad9c7%3A0x9b1ec3f82eccbca4!2sGrampanchayat%20Office%20Avhane%20Bk!5e0!3m2!1sen!2sin!4v1773584442960!5m2!1sen!2sin"
-    }
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30125.438548714494!2d75.12491874553407!3d19.296285154285172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb5d003ebad9c7%3A0x9b1ec3f82eccbca4!2sGrampanchayat%20Office%20Avhane%20Bk!5e0!3m2!1sen!2sin!4v1773584442960!5m2!1sen!2sin"
   },
 
   "complaintPage": {
