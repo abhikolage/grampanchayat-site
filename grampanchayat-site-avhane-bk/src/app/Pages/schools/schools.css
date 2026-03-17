@@ -1,23 +1,10 @@
-.interactive-gradient-btn {
-            background: linear-gradient(43deg, #2b8bcb 0%, #4a9952 100%);
-            transition: all 0.3s ease;
-        }
-        .interactive-gradient-btn:hover {
-            opacity: 0.9;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px -5px rgba(43, 139, 203, 0.4);
-        }
+
         .school-card {
             @apply bg-white rounded-2xl border border-slate-100 shadow-card-warm transition-all duration-300;
         }
-        /* .school-card:hover {
-            @apply shadow-card-hover-warm -translate-y-1;
-        } */
         .school-tab {
             @apply px-6 py-4 flex items-center gap-3 transition-all duration-300 border-b-4 border-transparent font-bold text-slate-500 hover:text-primary-blue;
         }
-        .school-tab.active {
-            @apply border-primary-blue text-white;
-            background: linear-gradient(43deg, #2b8bcb 0%, #4a9952 100%);
-
-        }
+          .school-tab.active {
+            @apply border-primary-blue text-white bg-brand-gradient;
+          }

@@ -1,14 +1,3 @@
-.gradient-btn {
-  background: linear-gradient(43deg, #2b8bcb 0%, #4a9952 100%);
-  transition: all 0.2s ease;
-  color: white;
-}
-
-  .gradient-btn:hover {
-    opacity: 0.9;
-    box-shadow: 0 10px 15px -3px rgba(43, 139, 203, 0.3);
-  }
-
 .form-input-focus {
   @apply focus:ring-primary-blue focus:border-primary-blue;
 }
