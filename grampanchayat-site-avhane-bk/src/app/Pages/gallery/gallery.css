@@ -1,9 +1,7 @@
 .gallery-item {
             @apply relative overflow-hidden rounded-xl bg-white p-3 shadow-card-warm border border-white transition-all duration-500;
         }
-        /* .gallery-item:hover {
-            @apply shadow-card-hover-warm -translate-y-2;
-        } */
+
         .gallery-caption {
             @apply absolute inset-x-3 bottom-3 bg-brand-gradient text-white p-4 translate-y-full transition-transform duration-300 rounded-b-lg font-bold text-center;
         }
