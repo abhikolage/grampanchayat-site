@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ComplaintService {
 
-  private apiUrl = "https://grampanchayat-avhane-bk-api.onrender.com/api/complaint";
+  private apiUrl = "https://grampanchayat-site-api.onrender.com/api/complaint";
 
   constructor(private http: HttpClient) {}
 
