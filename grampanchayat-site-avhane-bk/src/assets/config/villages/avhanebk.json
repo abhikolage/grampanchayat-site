@@ -5,6 +5,19 @@
   "icon": "assets/avhanebk/logo-icons/avhane-bk-logo.png",
   "year": "© 2026",
   "homepageRoute": "/home",
+  "site": {
+    "title": "आव्हाणे बु ग्रामपंचायत | Avhane Bk Official Website",
+    "description": "आव्हाणे बुद्रुक ग्रामपंचायत - सेवा, योजना, ग्रामविकास कामे आणि गावाची संपूर्ण माहिती",
+    "keywords": "Avhane Bk, Avhane Budruk, Avhane, Avhane Bk Grampanchayat, आव्हाणे बु, आव्हाणे बुद्रुक, आव्हाणे, आव्हाणे बु ग्रामपंचायत, आव्हाणे बुद्रुक ग्रामपंचायत",
+    "author": "Avhane BK Grampanchayat",
+    "url": "https://avhanebk.in"
+  },
+  "social": {
+    "image": "https://avhanebk.in/assets/avhanebk/village/temple.jpg"
+  },
+  "analytics": {
+    "googleId": "G-DSVVJ7F7HN"
+  },
   "contact": {
     "phone": "+९१ ९७६७ ०२ ८७०६",
     "email": "avhanebu@gmail.com"
