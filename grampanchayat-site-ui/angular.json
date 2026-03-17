@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "grampanchayat-site-avhane-bk": {
+    "grampanchayat-site-ui": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -64,10 +64,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "grampanchayat-site-avhane-bk:build:production"
+              "buildTarget": "grampanchayat-site-ui:build:production"
             },
             "development": {
-              "buildTarget": "grampanchayat-site-avhane-bk:build:development"
+              "buildTarget": "grampanchayat-site-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
