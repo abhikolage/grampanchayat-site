@@ -36,13 +36,4 @@ export class SiteConfigService {
   getConfig(){
     return this.config;
   }
-
-  setFavicon() {
-    const favicon = document.getElementById('appFavicon') as HTMLLinkElement;
-
-    if (favicon) {
-      favicon.href = this.config.icon;
-    }
-  }
-
 }

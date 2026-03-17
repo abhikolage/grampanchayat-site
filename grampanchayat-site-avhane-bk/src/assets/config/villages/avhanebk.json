@@ -2,7 +2,7 @@
   "villageTitle": "स्मार्ट ग्रामपंचायत",
   "villageName": "आव्हाणे बु",
   "type": "ग्रामपंचायत",
-  "icon": "assets/avhanebk/logo-icons/logo.png",
+  "icon": "assets/avhanebk/logo-icons/avhane-bk-logo.png",
   "year": "© 2026",
   "homepageRoute": "/home",
   "contact": {
@@ -41,9 +41,9 @@
 
   "header": {
     "logos": [
-      "assets/avhanebk/logo-icons/logo1.png",
-      "assets/avhanebk/logo-icons/logo2.png",
-      "assets/avhanebk/logo-icons/logo.png"
+      "assets/avhanebk/logo-icons/state-emblem-logo.png",
+      "assets/avhanebk/logo-icons/govt-of-mh-logo.png",
+      "assets/avhanebk/logo-icons/avhane-bk-logo.png"
     ],
 
     "menus": [
