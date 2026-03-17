@@ -7,7 +7,7 @@ import { ContactModel } from '../Models/contact.model';
 })
 export class ContactService {
 
-  private apiUrl = "https://grampanchayat-site-api.onrender.com//api/contact";
+  private apiUrl = "https://grampanchayat-site-api.onrender.com/api/contact";
 
   constructor(private http: HttpClient) {}
 
