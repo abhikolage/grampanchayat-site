@@ -2,8 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/grampanchayat-site-avhane-bk-api/GrampanchayatAPI/bin/Debug/net8.0
-/grampanchayat-site-avhane-bk-api/GrampanchayatAPI/obj
-/grampanchayat-site-avhane-bk-api/GrampanchayatAPI/.vs
-/grampanchayat-site-avhane-bk/.vs
+/grampanchayat-site-api/GrampanchayatAPI/bin/Debug/net8.0
+/grampanchayat-site-api/GrampanchayatAPI/obj
+/grampanchayat-site-api/GrampanchayatAPI/.vs
+/grampanchayat-site-ui/.vs
 /.vs
