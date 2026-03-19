@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef, Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { ComplaintService } from '../../Services/complaint.service';
 import { FormsModule } from '@angular/forms';
 import { SiteConfigService } from '../../Services/site-config.service';
 
 @Component({
   selector: 'app-complaints',
-  imports: [RouterLink, RouterLinkActive, CommonModule, FormsModule],
+  imports: [RouterLink, CommonModule, FormsModule],
   templateUrl: './complaints.html',
   styleUrl: './complaints.css',
 })
