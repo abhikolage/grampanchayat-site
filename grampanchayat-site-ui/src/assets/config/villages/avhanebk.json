@@ -1026,7 +1026,7 @@
         "totalStudents": "१०१",
         "teachersCount": "४",
         "classrooms": "६",
-        "libraryBooks": "१५००",
+        "libraryBooks": "१००",
         "callButtonText": "संपर्क करा",
         "teachers": [
           {
@@ -1066,7 +1066,7 @@
         "totalStudents": "२१",
         "teachersCount": "२",
         "classrooms": "४",
-        "libraryBooks": "१२००",
+        "libraryBooks": "१००",
         "callButtonText": "संपर्क करा",
         "teachers": [
           {
@@ -1092,7 +1092,7 @@
         "totalStudents": "२२",
         "teachersCount": "२",
         "classrooms": "४",
-        "libraryBooks": "१०००",
+        "libraryBooks": "१००",
         "callButtonText": "संपर्क करा",
         "teachers": [
           {
@@ -1118,7 +1118,7 @@
         "totalStudents": "४३",
         "teachersCount": "२",
         "classrooms": "४",
-        "libraryBooks": "१३००",
+        "libraryBooks": "१००",
         "callButtonText": "संपर्क करा",
         "teachers": [
           {
@@ -1141,35 +1141,55 @@
         "id": 5,
         "name": "श्री. गजानन माध्य. विद्यालय, आव्हाणे बु",
         "location": "आव्हाणे बु",
-        "totalStudents": "८०",
-        "teachersCount": "७",
-        "classrooms": "८",
-        "libraryBooks": "१३००",
+        "totalStudents": "४४०",
+        "teachersCount": "१६",
+        "classrooms": "१६",
+        "libraryBooks": "५००",
         "callButtonText": "संपर्क करा",
         "teachers": [
           {
-            "name": "श्री. विनायक पाटील 5",
+            "name": "श्री. रमेश लांडे",
             "role": "मुख्याध्यापक",
-            "quote": "शिक्षण हाच विकासाचा खरा पाया आहे.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "image": "assets/avhanebk/logo-icons/man-icon.png",
+            "phoneDisplay": "+९१ ९८५००३८६८३",
+            "phone": "9850038683"
           },
           {
-            "name": "सौ. अंजली शिंदे 5",
-            "role": "वरिष्ठ शिक्षिका",
-            "quote": "प्रत्येक मूल हे खास असते.",
-            "image": "assets/avhanebk/logo-icons/woman-icon.png"
+            "name": "श्री. विजय कोळगे",
+            "role": "सहशिक्षक",
+            "image": "assets/avhanebk/logo-icons/man-icon.png",
+            "phoneDisplay": "+९१ ९५५२५४३४९४",
+            "phone": "9552543494"
           },
           {
-            "name": "श्री. विनायक पाटील 5",
-            "role": "क्रीडा शिक्षक",
-            "quote": "खेळातूनच शिस्त आणि जिद्द निर्माण होते.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "name": "श्री. कैलास जाधव",
+            "role": "सहशिक्षक",
+            "image": "assets/avhanebk/logo-icons/man-icon.png",
+            "phoneDisplay": "+९१ ९९२२४३६३४५",
+            "phone": "9922436345"
           },
           {
-            "name": "श्री. विनायक पाटील 5",
-            "role": "भाषा शिक्षक",
-            "quote": "वाचाल तर वाचाल.",
-            "image": "assets/avhanebk/logo-icons/man-icon.png"
+            "name": "श्री. निवृत्ती झाडे",
+            "role": "सहशिक्षक",
+            "image": "assets/avhanebk/logo-icons/man-icon.png",
+            "phoneDisplay": "+९१ ",
+            "phone": ""
+          },
+
+          {
+            "name": "श्री. संदीप बोरुडे",
+            "role": "सहशिक्षक",
+            "image": "assets/avhanebk/logo-icons/man-icon.png",
+            "phoneDisplay": "+९१ ",
+            "phone": ""
+          },
+
+          {
+            "name": "श्री. योगेश नरवडे ",
+            "role": "सहशिक्षक",
+            "image": "assets/avhanebk/logo-icons/man-icon.png",
+            "phoneDisplay": "+९१ ",
+            "phone": ""
           }
         ]
       }

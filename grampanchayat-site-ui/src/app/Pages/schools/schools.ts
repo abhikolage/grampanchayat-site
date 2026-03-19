@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { School } from '../../Models/school.model';
 // import { SchoolService } from '../../Services/school.service';
 import { CommonModule } from '@angular/common';
@@ -8,7 +8,7 @@ import { SiteConfigService } from '../../Services/site-config.service';
 @Component({
   selector: 'app-schools',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, CommonModule],
+  imports: [RouterLink, CommonModule],
   templateUrl: './schools.html',
   styleUrl: './schools.css',
 })
